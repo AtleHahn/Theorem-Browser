@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Double negation in classical propositional logic · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;low&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Double negation in classical propositional logic</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Double_negation" target="_blank" rel="noopener">Double negation</a><button type="button" data-source="https://en.wikipedia.org/wiki/Double_negation">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge gray">low</span></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div><div class="field" data-noteworthiness-field hidden><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"></div></div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;source&quot;: &quot;Double_negation_a7877a62.md&quot;,
+  &quot;record_sha256&quot;: &quot;89cba21c806497c583b7ec65b9d7fceb9e8ef096eb11e538d66ee7a6abbe0d0a&quot;,
+  &quot;reviewer&quot;: &quot;/root&quot;,
+  &quot;disposition&quot;: &quot;accepted&quot;,
+  &quot;coverage_checked&quot;: true,
+  &quot;findings&quot;: [
+    &quot;Read complete raw source, infobox, all three Notes and bibliography/endmatter and final entry independently. Checked all nine elimination inferences and three introduction inferences against A1/A3, supplied L2 and hypothetical syllogism.&quot;,
+    &quot;Directions belong to one proof; external L2 and syllogism are explicitly stated, unused dangling L1 removed. No intuitionistic/minimal conclusion inferred from classical derivation; statement/metadata concern formal derivability.&quot;
+  ]
+}</pre><a download="Double_negation_a7877a62.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22source%22%3A%20%22Double_negation_a7877a62.md%22%2C%0A%20%20%22record_sha256%22%3A%20%2289cba21c806497c583b7ec65b9d7fceb9e8ef096eb11e538d66ee7a6abbe0d0a%22%2C%0A%20%20%22reviewer%22%3A%20%22/root%22%2C%0A%20%20%22disposition%22%3A%20%22accepted%22%2C%0A%20%20%22coverage_checked%22%3A%20true%2C%0A%20%20%22findings%22%3A%20%5B%0A%20%20%20%20%22Read%20complete%20raw%20source%2C%20infobox%2C%20all%20three%20Notes%20and%20bibliography/endmatter%20and%20final%20entry%20independently.%20Checked%20all%20nine%20elimination%20inferences%20and%20three%20introduction%20inferences%20against%20A1/A3%2C%20supplied%20L2%20and%20hypothetical%20syllogism.%22%2C%0A%20%20%20%20%22Directions%20belong%20to%20one%20proof%3B%20external%20L2%20and%20syllogism%20are%20explicitly%20stated%2C%20unused%20dangling%20L1%20removed.%20No%20intuitionistic/minimal%20conclusion%20inferred%20from%20classical%20derivation%3B%20statement/metadata%20concern%20formal%20derivability.%22%0A%20%20%5D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Consider the classical Hilbert propositional calculus with formulas built using negation <span class="math" data-display="false">\neg</span> and implication <span class="math" data-display="false">\to</span>, axiom schemes</p>
+<span class="math" data-display="true">\mathrm{A1}:\phi\to(\psi\to\phi),</span><span class="math" data-display="true">\mathrm{A2}:(\phi\to(\psi\to\xi))\to((\phi\to\psi)\to(\phi\to\xi)),</span><span class="math" data-display="true">\mathrm{A3}:(\neg\phi\to\neg\psi)\to(\psi\to\phi),</span><p>and modus ponens (from <span class="math" data-display="false">A</span> and <span class="math" data-display="false">A\to B</span>, infer <span class="math" data-display="false">B</span>). For each propositional formula <span class="math" data-display="false">p</span>, both <span class="math" data-display="false">\neg\neg p\to p</span> and <span class="math" data-display="false">p\to\neg\neg p</span> are derivable.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The logical connectives, all axiom schemes and the sole inference rule are explicitly given. Derivable means obtainable by a finite sequence of those steps, a direct formalization of undergraduate proof practice.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mathematical logic</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Formal propositional formulas</span><span class="badge blue">Hilbert axiom schemes</span><span class="badge blue">Derivability</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Axiom substitution and hypothetical syllogism</h3><p>Use the standard derived lemma <span class="math" data-display="false">\mathrm{L2}:A\to((A\to B)\to B)</span> and the hypothetical-syllogism derived rule: from <span class="math" data-display="false">A\to B</span> and <span class="math" data-display="false">B\to C</span>, infer <span class="math" data-display="false">A\to C</span>.</p>
+<h3 id="elimination">Elimination</h3>
+<p>We first prove <span class="math" data-display="false">{\displaystyle \neg \neg p\to p}</span>. For shortness, we denote <span class="math" data-display="false">{\displaystyle q\to (r\to q)}</span> by φ<sub>0</sub>. We also use repeatedly the method of the <a href="https://en.wikipedia.org/wiki/Hypothetical_syllogism#As_a_metatheorem">hypothetical syllogism metatheorem</a> as a shorthand for several proof steps.</p>
+<blockquote>
+<p>(1) <span class="math" data-display="false">{\displaystyle \varphi _{0}}</span>       (instance of (A1))</p>
+</blockquote>
+<blockquote>
+<p>(2) <span class="math" data-display="false">{\displaystyle (\neg \neg \varphi _{0}\to \neg \neg p)\to (\neg p\to \neg \varphi _{0})}</span>       (instance of (A3))</p>
+</blockquote>
+<blockquote>
+<p>(3) <span class="math" data-display="false">{\displaystyle (\neg p\to \neg \varphi _{0})\to (\varphi _{0}\to p)}</span>       (instance of (A3))</p>
+</blockquote>
+<blockquote>
+<p>(4) <span class="math" data-display="false">{\displaystyle (\neg \neg \varphi _{0}\to \neg \neg p)\to (\varphi _{0}\to p)}</span>       (from (2) and (3) by the hypothetical syllogism metatheorem)</p>
+</blockquote>
+<blockquote>
+<p>(5) <span class="math" data-display="false">{\displaystyle \neg \neg p\to (\neg \neg \varphi _{0}\to \neg \neg p)}</span>       (instance of (A1))</p>
+</blockquote>
+<blockquote>
+<p>(6) <span class="math" data-display="false">{\displaystyle \neg \neg p\to (\varphi _{0}\to p)}</span>       (from (4) and (5) by the hypothetical syllogism metatheorem)</p>
+</blockquote>
+<blockquote>
+<p>(7) <span class="math" data-display="false">{\displaystyle \varphi _{0}\to ((\varphi _{0}\to p)\to p)}</span>       (instance of (L2))</p>
+</blockquote>
+<blockquote>
+<p>(8) <span class="math" data-display="false">{\displaystyle (\varphi _{0}\to p)\to p}</span>       (from (1) and (7) by modus ponens)</p>
+</blockquote>
+<blockquote>
+<p>(9) <span class="math" data-display="false">{\displaystyle \neg \neg p\to p}</span>       (from (6) and (8) by the hypothetical syllogism metatheorem)</p>
+</blockquote>
+<h3 id="introduction">Introduction</h3>
+<p>We now prove <span class="math" data-display="false">{\displaystyle p\to \neg \neg p}</span>.</p>
+<blockquote>
+<p>(1) <span class="math" data-display="false">{\displaystyle \neg \neg \neg p\to \neg p}</span>       (instance of the first part of the theorem we have just proven)</p>
+</blockquote>
+<blockquote>
+<p>(2) <span class="math" data-display="false">{\displaystyle (\neg \neg \neg p\to \neg p)\to (p\to \neg \neg p)}</span>       (instance of (A3))</p>
+</blockquote>
+<blockquote>
+<p>(3) <span class="math" data-display="false">{\displaystyle p\to \neg \neg p}</span>       (from (1) and (2) by modus ponens)</p>
+</blockquote>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Check the finite Hilbert derivation by substitution and modus ponens, using two explicitly stated derived rules. The distinction between axiom schemes and derivability is a small formal-logic extension; no arithmetic coding or semantic completeness is involved.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Propositional proof systems</span><span class="badge blue">Axiom substitution</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>L2: A→((A→B)→B) in the stated Hilbert system</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Lemma</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A implies ((A implies B) implies B) is derivable in the given Hilbert calculus.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Obtain the displayed elimination step from phi0.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>A supplied finite propositional derived lemma.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Hypothetical-syllogism derived rule for the stated Hilbert system</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Technique</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>From derivable A implies B and B implies C one may derive A implies C in this system.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Compose the displayed implication lines.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>A supplied formal derivation rule.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Consider the classical Hilbert propositional calculus with formulas built using negation <span class="math" data-display="false">\neg</span> and implication <span class="math" data-display="false">\to</span>, axiom schemes</p>
+<span class="math" data-display="true">\mathrm{A1}:\phi\to(\psi\to\phi),</span><span class="math" data-display="true">\mathrm{A2}:(\phi\to(\psi\to\xi))\to((\phi\to\psi)\to(\phi\to\xi)),</span><span class="math" data-display="true">\mathrm{A3}:(\neg\phi\to\neg\psi)\to(\psi\to\phi),</span><p>and modus ponens (from <span class="math" data-display="false">A</span> and <span class="math" data-display="false">A\to B</span>, infer <span class="math" data-display="false">B</span>). For each propositional formula <span class="math" data-display="false">p</span>, both <span class="math" data-display="false">\neg\neg p\to p</span> and <span class="math" data-display="false">p\to\neg\neg p</span> are derivable.</p>
+<hr><h3 id="proof-1--axiom-substitution-and-hypothetical-syllogism">Proof 1 — Axiom substitution and hypothetical syllogism</h3>
+<p>Use the standard derived lemma <span class="math" data-display="false">\mathrm{L2}:A\to((A\to B)\to B)</span> and the hypothetical-syllogism derived rule: from <span class="math" data-display="false">A\to B</span> and <span class="math" data-display="false">B\to C</span>, infer <span class="math" data-display="false">A\to C</span>.</p>
+<h3 id="elimination">Elimination</h3>
+<p>We first prove <span class="math" data-display="false">{\displaystyle \neg \neg p\to p}</span>. For shortness, we denote <span class="math" data-display="false">{\displaystyle q\to (r\to q)}</span> by φ<sub>0</sub>. We also use repeatedly the method of the <a href="https://en.wikipedia.org/wiki/Hypothetical_syllogism#As_a_metatheorem">hypothetical syllogism metatheorem</a> as a shorthand for several proof steps.</p>
+<blockquote>
+<p>(1) <span class="math" data-display="false">{\displaystyle \varphi _{0}}</span>       (instance of (A1))</p>
+</blockquote>
+<blockquote>
+<p>(2) <span class="math" data-display="false">{\displaystyle (\neg \neg \varphi _{0}\to \neg \neg p)\to (\neg p\to \neg \varphi _{0})}</span>       (instance of (A3))</p>
+</blockquote>
+<blockquote>
+<p>(3) <span class="math" data-display="false">{\displaystyle (\neg p\to \neg \varphi _{0})\to (\varphi _{0}\to p)}</span>       (instance of (A3))</p>
+</blockquote>
+<blockquote>
+<p>(4) <span class="math" data-display="false">{\displaystyle (\neg \neg \varphi _{0}\to \neg \neg p)\to (\varphi _{0}\to p)}</span>       (from (2) and (3) by the hypothetical syllogism metatheorem)</p>
+</blockquote>
+<blockquote>
+<p>(5) <span class="math" data-display="false">{\displaystyle \neg \neg p\to (\neg \neg \varphi _{0}\to \neg \neg p)}</span>       (instance of (A1))</p>
+</blockquote>
+<blockquote>
+<p>(6) <span class="math" data-display="false">{\displaystyle \neg \neg p\to (\varphi _{0}\to p)}</span>       (from (4) and (5) by the hypothetical syllogism metatheorem)</p>
+</blockquote>
+<blockquote>
+<p>(7) <span class="math" data-display="false">{\displaystyle \varphi _{0}\to ((\varphi _{0}\to p)\to p)}</span>       (instance of (L2))</p>
+</blockquote>
+<blockquote>
+<p>(8) <span class="math" data-display="false">{\displaystyle (\varphi _{0}\to p)\to p}</span>       (from (1) and (7) by modus ponens)</p>
+</blockquote>
+<blockquote>
+<p>(9) <span class="math" data-display="false">{\displaystyle \neg \neg p\to p}</span>       (from (6) and (8) by the hypothetical syllogism metatheorem)</p>
+</blockquote>
+<h3 id="introduction">Introduction</h3>
+<p>We now prove <span class="math" data-display="false">{\displaystyle p\to \neg \neg p}</span>.</p>
+<blockquote>
+<p>(1) <span class="math" data-display="false">{\displaystyle \neg \neg \neg p\to \neg p}</span>       (instance of the first part of the theorem we have just proven)</p>
+</blockquote>
+<blockquote>
+<p>(2) <span class="math" data-display="false">{\displaystyle (\neg \neg \neg p\to \neg p)\to (p\to \neg \neg p)}</span>       (instance of (A3))</p>
+</blockquote>
+<blockquote>
+<p>(3) <span class="math" data-display="false">{\displaystyle p\to \neg \neg p}</span>       (from (1) and (2) by modus ponens)</p>
+</blockquote>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The logical connectives, all axiom schemes and the sole inference rule are explicitly given. Derivable means obtainable by a finite sequence of those steps, a direct formalization of undergraduate proof practice.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mathematical logic</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Formal propositional formulas</span><span class="badge blue">Hilbert axiom schemes</span><span class="badge blue">Derivability</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Axiom substitution and hypothetical syllogism</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Check the finite Hilbert derivation by substitution and modus ponens, using two explicitly stated derived rules. The distinction between axiom schemes and derivability is a small formal-logic extension; no arithmetic coding or semantic completeness is involved.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Propositional proof systems</span><span class="badge blue">Axiom substitution</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>L2: A→((A→B)→B) in the stated Hilbert system</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Lemma</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A implies ((A implies B) implies B) is derivable in the given Hilbert calculus.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Obtain the displayed elimination step from phi0.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>A supplied finite propositional derived lemma.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Hypothetical-syllogism derived rule for the stated Hilbert system</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Technique</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>From derivable A implies B and B implies C one may derive A implies C in this system.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Compose the displayed implication lines.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>A supplied formal derivation rule.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

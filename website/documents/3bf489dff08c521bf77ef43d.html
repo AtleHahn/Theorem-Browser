@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Minkowski inequality for finite complex vectors · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;may have an unsatisfactory proof&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Has at least one proof with concepts from a different area&quot;, &quot;Highschool level Statement - All proofs have at least undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Minkowski inequality for finite complex vectors</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Minkowski_inequality" target="_blank" rel="noopener">Minkowski inequality</a><button type="button" data-source="https://en.wikipedia.org/wiki/Minkowski_inequality">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field" data-noteworthiness-field><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"><span class="badge gold">Has at least one proof with concepts from a different area</span><span class="badge gold">Highschool level Statement - All proofs have at least undergraduate level</span></div></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;minkowski-finite-complex-vectors&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;remove&quot;,
+  &quot;decision_summary&quot;: &quot;Remove the likely flag; a strictly lower-category alternative is not established.&quot;,
+  &quot;explanation&quot;: &quot;Finite Holder or Young reduces the measure-space language, but for arbitrary real p the suggested proofs still use real-exponent convexity or continuity (weighted AM-GM). The stored counting-measure application is already undergraduate. A proof only for integer/rational p, or a shorter finite norm argument with real analysis, does not establish a high-school proof of the full statement.&quot;,
+  &quot;statement_level&quot;: &quot;High school only&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: null,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/minkowski-finite-complex-vectors.md&quot;,
+  &quot;content_sha256&quot;: &quot;edcd6795a8fe558261ac91e3fc99e4ec967b78639e0c53dd15aeef208d1bc6c0&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;c9de4a1f3ef6a300ddfc168189a7fd5f20249d4e12bc97b45fae3599d60ab036&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;minkowski-finite-complex-vectors&quot;,
+    &quot;title&quot;: &quot;Minkowski inequality for finite complex vectors&quot;,
+    &quot;content_file&quot;: &quot;minkowski-finite-complex-vectors.md&quot;,
+    &quot;importance&quot;: &quot;medium&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;yes&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Complex numbers&quot;,
+        &quot;Finite sums&quot;,
+        &quot;Real powers&quot;
+      ],
+      &quot;level_justification&quot;: &quot;The displayed finite numerical inequality uses complex absolute values, finite sums and real powers; no vector-space theory is needed to understand it. This rating concerns understanding the statement, independently of the difficulty of its proof.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;High school mathematics&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Specialize to a finite counting measure&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Finite norms&quot;,
+          &quot;Counting measure&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Interpret the supplied integral norm inequality on a finite counting space, where every integral is a finite sum. Undergraduate finite-dimensional norms and this elementary counting-measure interpretation suffice; general Lebesgue-space theory is unnecessary.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;no&quot;,
+          &quot;justification&quot;: &quot;Counting measure converts the imported Lp inequality into the specified finite complex sums. The essential general inequality is external.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Lp Minkowski inequality&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Specialize to a finite counting measure&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The Lp norm of a sum is at most the sum of norms.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/minkowski-finite-complex-vectors.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Specialize to a finite counting measure&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Apply solely on the n-point counting space.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Finite-sum specialization of the norm inequality, requiring no general integration theory.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;complete&quot;,
+          &quot;notes&quot;: []
+        },
+        &quot;id&quot;: &quot;minkowski-finite-complex-vectors-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [
+          &quot;Measure Theory&quot;,
+          &quot;Functional Analysis&quot;
+        ],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Minkowski inequality&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Minkowski_inequality&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/3774/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Minkowski_inequality_1f448d62.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Minkowski inequality&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Minkowski_inequality&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Minkowski_inequality_1f448d62.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Read complete raw source and checked statement/proof scope, dependencies and boundaries.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Removed source-local section numbering and irrelevant preamble; supplied the source hypotheses and definitions locally.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration, full-run batch 75: Restored Minkowski inequality opening counting-measure specialization and display; general inequality/norm stated as prerequisite.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Finite inequalities; no measure theory. Prove finite Holder from Young or weighted AM-GM, then apply it to |x_k+y_k|^(p-1)|x_k| and the analogous y-term; treat p=1 separately. This avoids the general Lp/measure-space Minkowski theorem.&quot;,
+      &quot;references&quot;: [
+        &quot;../proof-database/young-product-inequality.md&quot;,
+        &quot;../proof-database/weighted-am-gm-inequality.md&quot;,
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="minkowski-finite-complex-vectors.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22minkowski-finite-complex-vectors%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22remove%22%2C%0A%20%20%22decision_summary%22%3A%20%22Remove%20the%20likely%20flag%3B%20a%20strictly%20lower-category%20alternative%20is%20not%20established.%22%2C%0A%20%20%22explanation%22%3A%20%22Finite%20Holder%20or%20Young%20reduces%20the%20measure-space%20language%2C%20but%20for%20arbitrary%20real%20p%20the%20suggested%20proofs%20still%20use%20real-exponent%20convexity%20or%20continuity%20%28weighted%20AM-GM%29.%20The%20stored%20counting-measure%20application%20is%20already%20undergraduate.%20A%20proof%20only%20for%20integer/rational%20p%2C%20or%20a%20shorter%20finite%20norm%20argument%20with%20real%20analysis%2C%20does%20not%20establish%20a%20high-school%20proof%20of%20the%20full%20statement.%22%2C%0A%20%20%22statement_level%22%3A%20%22High%20school%20only%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20null%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/minkowski-finite-complex-vectors.md%22%2C%0A%20%20%22content_sha256%22%3A%20%22edcd6795a8fe558261ac91e3fc99e4ec967b78639e0c53dd15aeef208d1bc6c0%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%22c9de4a1f3ef6a300ddfc168189a7fd5f20249d4e12bc97b45fae3599d60ab036%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22minkowski-finite-complex-vectors%22%2C%0A%20%20%20%20%22title%22%3A%20%22Minkowski%20inequality%20for%20finite%20complex%20vectors%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22minkowski-finite-complex-vectors.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22medium%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Complex%20numbers%22%2C%0A%20%20%20%20%20%20%20%20%22Finite%20sums%22%2C%0A%20%20%20%20%20%20%20%20%22Real%20powers%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20displayed%20finite%20numerical%20inequality%20uses%20complex%20absolute%20values%2C%20finite%20sums%20and%20real%20powers%3B%20no%20vector-space%20theory%20is%20needed%20to%20understand%20it.%20This%20rating%20concerns%20understanding%20the%20statement%2C%20independently%20of%20the%20difficulty%20of%20its%20proof.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22High%20school%20mathematics%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Specialize%20to%20a%20finite%20counting%20measure%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Finite%20norms%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Counting%20measure%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Interpret%20the%20supplied%20integral%20norm%20inequality%20on%20a%20finite%20counting%20space%2C%20where%20every%20integral%20is%20a%20finite%20sum.%20Undergraduate%20finite-dimensional%20norms%20and%20this%20elementary%20counting-measure%20interpretation%20suffice%3B%20general%20Lebesgue-space%20theory%20is%20unnecessary.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22Counting%20measure%20converts%20the%20imported%20Lp%20inequality%20into%20the%20specified%20finite%20complex%20sums.%20The%20essential%20general%20inequality%20is%20external.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Lp%20Minkowski%20inequality%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Specialize%20to%20a%20finite%20counting%20measure%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20Lp%20norm%20of%20a%20sum%20is%20at%20most%20the%20sum%20of%20norms.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/minkowski-finite-complex-vectors.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Specialize%20to%20a%20finite%20counting%20measure%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Apply%20solely%20on%20the%20n-point%20counting%20space.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Finite-sum%20specialization%20of%20the%20norm%20inequality%2C%20requiring%20no%20general%20integration%20theory.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22complete%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22minkowski-finite-complex-vectors-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Measure%20Theory%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Functional%20Analysis%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Minkowski%20inequality%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Minkowski_inequality%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/3774/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Minkowski_inequality_1f448d62.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Minkowski%20inequality%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Minkowski_inequality%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Minkowski_inequality_1f448d62.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Read%20complete%20raw%20source%20and%20checked%20statement/proof%20scope%2C%20dependencies%20and%20boundaries.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Removed%20source-local%20section%20numbering%20and%20irrelevant%20preamble%3B%20supplied%20the%20source%20hypotheses%20and%20definitions%20locally.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%2C%20full-run%20batch%2075%3A%20Restored%20Minkowski%20inequality%20opening%20counting-measure%20specialization%20and%20display%3B%20general%20inequality/norm%20stated%20as%20prerequisite.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Finite%20inequalities%3B%20no%20measure%20theory.%20Prove%20finite%20Holder%20from%20Young%20or%20weighted%20AM-GM%2C%20then%20apply%20it%20to%20%7Cx_k%2By_k%7C%5E%28p-1%29%7Cx_k%7C%20and%20the%20analogous%20y-term%3B%20treat%20p%3D1%20separately.%20This%20avoids%20the%20general%20Lp/measure-space%20Minkowski%20theorem.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../proof-database/young-product-inequality.md%22%2C%0A%20%20%20%20%20%20%20%20%22../proof-database/weighted-am-gm-inequality.md%22%2C%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>For <span class="math" data-display="false">n\ge1</span>, <span class="math" data-display="false">1\le p&lt;\infty</span>, and <span class="math" data-display="false">x,y\in\mathbb C^n</span>, <span class="math" data-display="true">(\sum_{k=1}^n|x_k+y_k|^p)^{1/p}\le(\sum_{k=1}^n|x_k|^p)^{1/p}+(\sum_{k=1}^n|y_k|^p)^{1/p}.</span></p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The displayed finite numerical inequality uses complex absolute values, finite sums and real powers; no vector-space theory is needed to understand it. This rating concerns understanding the statement, independently of the difficulty of its proof.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">High School Mathematics</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Complex numbers</span><span class="badge blue">Finite sums</span><span class="badge blue">Real powers</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Specialize to a finite counting measure</h3><p>The <span class="math" data-display="false">L^p</span> Minkowski inequality is <span class="math" data-display="false">\|f+g\|_p\leq\|f\|_p+\|g\|_p</span>, where <span class="math" data-display="false">\|f\|_p=(\int|f|^p\,d\mu)^{1/p}</span>.</p>
+<p>The Minkowski inequality can be specialized to sequences and vectors by using the counting measure on <span class="math" data-display="false">S=\{1,\ldots,n\}</span>:</p>
+<span class="math" data-display="true">\left(\sum_{k=1}^n|x_k+y_k|^p\right)^{1/p}
+\leq\left(\sum_{k=1}^n|x_k|^p\right)^{1/p}
++\left(\sum_{k=1}^n|y_k|^p\right)^{1/p}.</span><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Interpret the supplied integral norm inequality on a finite counting space, where every integral is a finite sum. Undergraduate finite-dimensional norms and this elementary counting-measure interpretation suffice; general Lebesgue-space theory is unnecessary.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Functional analysis</span></div></div></div><div class="field"><div class="field-label">Warning</div><div class="field-value"><p>This proof is essentially a specialization of a (potentially much) more general result and may therefore be considered unsatisfactory by some readers.</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Finite norms</span><span class="badge blue">Counting measure</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Lp Minkowski inequality</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The Lp norm of a sum is at most the sum of norms.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Apply solely on the n-point counting space.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Finite-sum specialization of the norm inequality, requiring no general integration theory.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>For <span class="math" data-display="false">n\ge1</span>, <span class="math" data-display="false">1\le p&lt;\infty</span>, and <span class="math" data-display="false">x,y\in\mathbb C^n</span>, <span class="math" data-display="true">(\sum_{k=1}^n|x_k+y_k|^p)^{1/p}\le(\sum_{k=1}^n|x_k|^p)^{1/p}+(\sum_{k=1}^n|y_k|^p)^{1/p}.</span></p>
+<hr><h3 id="proof-1--specialize-to-a-finite-counting-measure">Proof 1 — Specialize to a finite counting measure</h3>
+<p>The <span class="math" data-display="false">L^p</span> Minkowski inequality is <span class="math" data-display="false">\|f+g\|_p\leq\|f\|_p+\|g\|_p</span>, where <span class="math" data-display="false">\|f\|_p=(\int|f|^p\,d\mu)^{1/p}</span>.</p>
+<p>The Minkowski inequality can be specialized to sequences and vectors by using the counting measure on <span class="math" data-display="false">S=\{1,\ldots,n\}</span>:</p>
+<span class="math" data-display="true">\left(\sum_{k=1}^n|x_k+y_k|^p\right)^{1/p}
+\leq\left(\sum_{k=1}^n|x_k|^p\right)^{1/p}
++\left(\sum_{k=1}^n|y_k|^p\right)^{1/p}.</span></section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The displayed finite numerical inequality uses complex absolute values, finite sums and real powers; no vector-space theory is needed to understand it. This rating concerns understanding the statement, independently of the difficulty of its proof.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">High School Mathematics</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Complex numbers</span><span class="badge blue">Finite sums</span><span class="badge blue">Real powers</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Specialize to a finite counting measure</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Interpret the supplied integral norm inequality on a finite counting space, where every integral is a finite sum. Undergraduate finite-dimensional norms and this elementary counting-measure interpretation suffice; general Lebesgue-space theory is unnecessary.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Functional analysis</span></div></div></div><div class="field"><div class="field-label">Warning</div><div class="field-value"><p>This proof is essentially a specialization of a (potentially much) more general result and may therefore be considered unsatisfactory by some readers.</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Finite norms</span><span class="badge blue">Counting measure</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Lp Minkowski inequality</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The Lp norm of a sum is at most the sum of norms.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Apply solely on the n-point counting space.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Finite-sum specialization of the norm inequality, requiring no general integration theory.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

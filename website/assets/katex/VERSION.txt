@@ -1,0 +1,3 @@
+KaTeX 0.16.32
+https://registry.npmjs.org/katex/-/katex-0.16.32.tgz
+Archive SHA-256: 86d325b660cb0cd4319b4c4abd403b822d8a9820737b14cbdc8daaab463cde26

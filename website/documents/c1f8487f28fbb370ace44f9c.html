@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Mean exit time from a symmetric finite interval · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;medium&quot;, &quot;issue&quot;: [&quot;simpler proof likely available&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Undergraduate level Statement - All proofs beyond undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Mean exit time from a symmetric finite interval</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Optional_stopping_theorem" target="_blank" rel="noopener">Optional stopping theorem</a><button type="button" data-source="https://en.wikipedia.org/wiki/Optional_stopping_theorem">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge green">medium</span></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div><div class="field" data-noteworthiness-field hidden><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"></div></div></div></div><div class="metadata-fields"></div><div class="simpler-proof-warning"><div class="metadata-fields"><div class="field"><div class="field-label">Warning</div><div class="field-value"><span class="badge red">A simpler or elementary proof is likely available but is not yet incorporated here.</span></div></div></div></div><div data-simpler-assessment data-warning="true"><div class="metadata-fields"><div class="field"><div class="field-label">Simpler proof assessment</div><div class="field-value"><p>Likely alternative prerequisite level: Undergraduate level; lowest recorded proof level: Beyond undergraduate level. From any interior state, a run of 2m steps in one direction exits with probability at least 2^(-2m). Blockwise conditioning bounds the exit-time tail geometrically, proving finite expectation. First-step conditioning gives u(j)=1+(u(j-1)+u(j+1))/2 and u(+/-m)=0. The unique finite-system solution is u(j)=m^2-j^2, so u(0)=m^2. Finite probabilities, convergent geometric sums and difference equations replace optional stopping.</p>
+</div></div></div></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;symmetric-random-walk-interval-exit-time&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;retain&quot;,
+  &quot;decision_summary&quot;: &quot;Retain the likely flag for a strictly lower-category alternative.&quot;,
+  &quot;explanation&quot;: &quot;From any interior state, a run of 2m steps in one direction exits with probability at least 2^(-2m). Blockwise conditioning bounds the exit-time tail geometrically, proving finite expectation. First-step conditioning gives u(j)=1+(u(j-1)+u(j+1))/2 and u(+/-m)=0. The unique finite-system solution is u(j)=m^2-j^2, so u(0)=m^2. Finite probabilities, convergent geometric sums and difference equations replace optional stopping.&quot;,
+  &quot;statement_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/symmetric-random-walk-interval-exit-time.md&quot;,
+  &quot;content_sha256&quot;: &quot;88cebe4f32b762112796d617f20831bf48fc2b41d321199b423b629b9ab4a099&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;1a67d99d3b6a27f0c7600bfdb82c1798a5e4109beafc0eb1c4b7469bf4aae1d8&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;symmetric-random-walk-interval-exit-time&quot;,
+    &quot;title&quot;: &quot;Mean exit time from a symmetric finite interval&quot;,
+    &quot;content_file&quot;: &quot;symmetric-random-walk-interval-exit-time.md&quot;,
+    &quot;importance&quot;: &quot;medium&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;no&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Simple symmetric random walks&quot;,
+        &quot;Hitting times&quot;,
+        &quot;Probability and expectation over unbounded time&quot;
+      ],
+      &quot;level_justification&quot;: &quot;The random walk is repeated independent fair plus/minus-one choices, and first exit is the first step reaching either stated integer. Expected time is the weighted sum of these discrete probabilities. These concrete sequence/probability definitions suffice without martingales or stopping-time theory.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Probability Theory&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Quadratic martingale — outline&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;no&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Martingales&quot;,
+          &quot;Stopping times&quot;,
+          &quot;Optional stopping&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Use the quadratic martingale and optional stopping at the integrable exit time. Martingales, stopping times and the optional-stopping hypotheses are a cumulative probability extension not confidently within the allowance, despite the elementary final expectation equation.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;no&quot;,
+          &quot;justification&quot;: &quot;Imports optional stopping, the quadratic martingale and finite-exit-time background, then evaluates endpoint values.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Finite expected exit time of a simple random walk from a finite interval&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Quadratic martingale — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;A simple random walk exits a finite interval in finite expected time.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/symmetric-random-walk-interval-exit-time.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Quadratic martingale — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Supply integrability of tau.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Concrete finite-state random-walk consequence.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;X_n^2-n is a martingale for a simple symmetric random walk&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Quadratic martingale — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;X_n squared-n is a martingale for the symmetric walk.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/symmetric-random-walk-interval-exit-time.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Quadratic martingale — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Choose the process to stop.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Conditional-expectation martingale property.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Optional stopping with integrable stopping time and bounded pre-stop increments&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Quadratic martingale — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Optional stopping preserves the mean under integrable stopping time and bounded pre-stop increments.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/symmetric-random-walk-interval-exit-time.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Quadratic martingale — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Set E Y_tau=E Y0.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Martingale stopping theorem and hypotheses.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;routine_omissions&quot;,
+          &quot;notes&quot;: [
+            &quot;The source omits the routine pre-stop increment bound for the squared-walk martingale; finite expected exit time is an external prerequisite, not inferred circularly from the conclusion.&quot;
+          ]
+        },
+        &quot;id&quot;: &quot;symmetric-random-walk-interval-exit-time-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Optional stopping theorem&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Optional_stopping_theorem&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/5867/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;provisional&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Optional_stopping_theorem_8ad71983.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Optional stopping theorem&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Optional_stopping_theorem&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Optional_stopping_theorem_8ad71983.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Read complete raw source and checked statement/proof scope, dependencies and boundaries.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Made the finite expected exit time prerequisite explicit from the immediately preceding random-walk application and its Markov-chain-theory reference.; Kept the source optional-stopping calculation; routine bounded-pre-stop-increment check is recorded as omitted.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Elementary probability and finite differences. Let u(j) be the mean exit time from j. First justify finiteness by a uniform positive chance of exiting within 2m steps; then u(j)=1+(u(j-1)+u(j+1))/2 with u(+/-m)=0. Solve to get u(j)=m^2-j^2. No martingale or optional stopping theorem is needed.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="symmetric-random-walk-interval-exit-time.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22symmetric-random-walk-interval-exit-time%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22retain%22%2C%0A%20%20%22decision_summary%22%3A%20%22Retain%20the%20likely%20flag%20for%20a%20strictly%20lower-category%20alternative.%22%2C%0A%20%20%22explanation%22%3A%20%22From%20any%20interior%20state%2C%20a%20run%20of%202m%20steps%20in%20one%20direction%20exits%20with%20probability%20at%20least%202%5E%28-2m%29.%20Blockwise%20conditioning%20bounds%20the%20exit-time%20tail%20geometrically%2C%20proving%20finite%20expectation.%20First-step%20conditioning%20gives%20u%28j%29%3D1%2B%28u%28j-1%29%2Bu%28j%2B1%29%29/2%20and%20u%28%2B/-m%29%3D0.%20The%20unique%20finite-system%20solution%20is%20u%28j%29%3Dm%5E2-j%5E2%2C%20so%20u%280%29%3Dm%5E2.%20Finite%20probabilities%2C%20convergent%20geometric%20sums%20and%20difference%20equations%20replace%20optional%20stopping.%22%2C%0A%20%20%22statement_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/symmetric-random-walk-interval-exit-time.md%22%2C%0A%20%20%22content_sha256%22%3A%20%2288cebe4f32b762112796d617f20831bf48fc2b41d321199b423b629b9ab4a099%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%221a67d99d3b6a27f0c7600bfdb82c1798a5e4109beafc0eb1c4b7469bf4aae1d8%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22symmetric-random-walk-interval-exit-time%22%2C%0A%20%20%20%20%22title%22%3A%20%22Mean%20exit%20time%20from%20a%20symmetric%20finite%20interval%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22symmetric-random-walk-interval-exit-time.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22medium%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Simple%20symmetric%20random%20walks%22%2C%0A%20%20%20%20%20%20%20%20%22Hitting%20times%22%2C%0A%20%20%20%20%20%20%20%20%22Probability%20and%20expectation%20over%20unbounded%20time%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20random%20walk%20is%20repeated%20independent%20fair%20plus/minus-one%20choices%2C%20and%20first%20exit%20is%20the%20first%20step%20reaching%20either%20stated%20integer.%20Expected%20time%20is%20the%20weighted%20sum%20of%20these%20discrete%20probabilities.%20These%20concrete%20sequence/probability%20definitions%20suffice%20without%20martingales%20or%20stopping-time%20theory.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Probability%20Theory%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Quadratic%20martingale%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Martingales%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Stopping%20times%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Optional%20stopping%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Use%20the%20quadratic%20martingale%20and%20optional%20stopping%20at%20the%20integrable%20exit%20time.%20Martingales%2C%20stopping%20times%20and%20the%20optional-stopping%20hypotheses%20are%20a%20cumulative%20probability%20extension%20not%20confidently%20within%20the%20allowance%2C%20despite%20the%20elementary%20final%20expectation%20equation.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22Imports%20optional%20stopping%2C%20the%20quadratic%20martingale%20and%20finite-exit-time%20background%2C%20then%20evaluates%20endpoint%20values.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Finite%20expected%20exit%20time%20of%20a%20simple%20random%20walk%20from%20a%20finite%20interval%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Quadratic%20martingale%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22A%20simple%20random%20walk%20exits%20a%20finite%20interval%20in%20finite%20expected%20time.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/symmetric-random-walk-interval-exit-time.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Quadratic%20martingale%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Supply%20integrability%20of%20tau.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Concrete%20finite-state%20random-walk%20consequence.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22X_n%5E2-n%20is%20a%20martingale%20for%20a%20simple%20symmetric%20random%20walk%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Quadratic%20martingale%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22X_n%20squared-n%20is%20a%20martingale%20for%20the%20symmetric%20walk.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/symmetric-random-walk-interval-exit-time.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Quadratic%20martingale%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Choose%20the%20process%20to%20stop.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Conditional-expectation%20martingale%20property.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Optional%20stopping%20with%20integrable%20stopping%20time%20and%20bounded%20pre-stop%20increments%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Quadratic%20martingale%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Optional%20stopping%20preserves%20the%20mean%20under%20integrable%20stopping%20time%20and%20bounded%20pre-stop%20increments.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/symmetric-random-walk-interval-exit-time.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Quadratic%20martingale%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Set%20E%20Y_tau%3DE%20Y0.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Martingale%20stopping%20theorem%20and%20hypotheses.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22routine_omissions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22The%20source%20omits%20the%20routine%20pre-stop%20increment%20bound%20for%20the%20squared-walk%20martingale%3B%20finite%20expected%20exit%20time%20is%20an%20external%20prerequisite%2C%20not%20inferred%20circularly%20from%20the%20conclusion.%22%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22symmetric-random-walk-interval-exit-time-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Optional%20stopping%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Optional_stopping_theorem%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/5867/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22provisional%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Optional_stopping_theorem_8ad71983.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Optional%20stopping%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Optional_stopping_theorem%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Optional_stopping_theorem_8ad71983.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Read%20complete%20raw%20source%20and%20checked%20statement/proof%20scope%2C%20dependencies%20and%20boundaries.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Made%20the%20finite%20expected%20exit%20time%20prerequisite%20explicit%20from%20the%20immediately%20preceding%20random-walk%20application%20and%20its%20Markov-chain-theory%20reference.%3B%20Kept%20the%20source%20optional-stopping%20calculation%3B%20routine%20bounded-pre-stop-increment%20check%20is%20recorded%20as%20omitted.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Elementary%20probability%20and%20finite%20differences.%20Let%20u%28j%29%20be%20the%20mean%20exit%20time%20from%20j.%20First%20justify%20finiteness%20by%20a%20uniform%20positive%20chance%20of%20exiting%20within%202m%20steps%3B%20then%20u%28j%29%3D1%2B%28u%28j-1%29%2Bu%28j%2B1%29%29/2%20with%20u%28%2B/-m%29%3D0.%20Solve%20to%20get%20u%28j%29%3Dm%5E2-j%5E2.%20No%20martingale%20or%20optional%20stopping%20theorem%20is%20needed.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>For a simple symmetric random walk <span class="math" data-display="false">(X_n)</span> starting at <span class="math" data-display="false">0</span>, let <span class="math" data-display="false">\tau</span> be the first hit of <span class="math" data-display="false">-m</span> or <span class="math" data-display="false">m</span>, with integer <span class="math" data-display="false">m\ge1</span>. Then <span class="math" data-display="false">\mathbb E\tau=m^2</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The random walk is repeated independent fair plus/minus-one choices, and first exit is the first step reaching either stated integer. Expected time is the weighted sum of these discrete probabilities. These concrete sequence/probability definitions suffice without martingales or stopping-time theory.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Probability theory</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Simple symmetric random walks</span><span class="badge blue">Hitting times</span><span class="badge blue">Probability and expectation over unbounded time</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Quadratic martingale — outline</h3><p>The stopped walk in a finite interval has finite expected exit time, as supplied by standard finite-state Markov-chain theory. Use the martingale <span class="math" data-display="false">Y_n=X_n^2-n</span>. Optional stopping gives <span class="math" data-display="false">0=\mathbb E Y_0=\mathbb E Y_\tau=m^2-\mathbb E\tau</span>, hence <span class="math" data-display="false">\mathbb E\tau=m^2</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Use the quadratic martingale and optional stopping at the integrable exit time. Martingales, stopping times and the optional-stopping hypotheses are a cumulative probability extension not confidently within the allowance, despite the elementary final expectation equation.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Martingales</span><span class="badge blue">Stopping times</span><span class="badge blue">Optional stopping</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source omits the routine pre-stop increment bound for the squared-walk martingale; finite expected exit time is an external prerequisite, not inferred circularly from the conclusion.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Finite expected exit time of a simple random walk from a finite interval</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A simple random walk exits a finite interval in finite expected time.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Supply integrability of tau.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Concrete finite-state random-walk consequence.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>X_n^2-n is a martingale for a simple symmetric random walk</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>X_n squared-n is a martingale for the symmetric walk.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Choose the process to stop.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Conditional-expectation martingale property.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Optional stopping with integrable stopping time and bounded pre-stop increments</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Optional stopping preserves the mean under integrable stopping time and bounded pre-stop increments.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Set E Y_tau=E Y0.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Martingale stopping theorem and hypotheses.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source omits the routine pre-stop increment bound for the squared-walk martingale; finite expected exit time is an external prerequisite, not inferred circularly from the conclusion.</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>For a simple symmetric random walk <span class="math" data-display="false">(X_n)</span> starting at <span class="math" data-display="false">0</span>, let <span class="math" data-display="false">\tau</span> be the first hit of <span class="math" data-display="false">-m</span> or <span class="math" data-display="false">m</span>, with integer <span class="math" data-display="false">m\ge1</span>. Then <span class="math" data-display="false">\mathbb E\tau=m^2</span>.</p>
+<hr><h3 id="proof-1--quadratic-martingale--outline">Proof 1 — Quadratic martingale — outline</h3>
+<p>The stopped walk in a finite interval has finite expected exit time, as supplied by standard finite-state Markov-chain theory. Use the martingale <span class="math" data-display="false">Y_n=X_n^2-n</span>. Optional stopping gives <span class="math" data-display="false">0=\mathbb E Y_0=\mathbb E Y_\tau=m^2-\mathbb E\tau</span>, hence <span class="math" data-display="false">\mathbb E\tau=m^2</span>.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The random walk is repeated independent fair plus/minus-one choices, and first exit is the first step reaching either stated integer. Expected time is the weighted sum of these discrete probabilities. These concrete sequence/probability definitions suffice without martingales or stopping-time theory.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Probability theory</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Simple symmetric random walks</span><span class="badge blue">Hitting times</span><span class="badge blue">Probability and expectation over unbounded time</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Quadratic martingale — outline</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Use the quadratic martingale and optional stopping at the integrable exit time. Martingales, stopping times and the optional-stopping hypotheses are a cumulative probability extension not confidently within the allowance, despite the elementary final expectation equation.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Martingales</span><span class="badge blue">Stopping times</span><span class="badge blue">Optional stopping</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source omits the routine pre-stop increment bound for the squared-walk martingale; finite expected exit time is an external prerequisite, not inferred circularly from the conclusion.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Finite expected exit time of a simple random walk from a finite interval</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A simple random walk exits a finite interval in finite expected time.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Supply integrability of tau.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Concrete finite-state random-walk consequence.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>X_n^2-n is a martingale for a simple symmetric random walk</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>X_n squared-n is a martingale for the symmetric walk.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Choose the process to stop.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Conditional-expectation martingale property.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Optional stopping with integrable stopping time and bounded pre-stop increments</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Optional stopping preserves the mean under integrable stopping time and bounded pre-stop increments.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Set E Y_tau=E Y0.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Martingale stopping theorem and hypotheses.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source omits the routine pre-stop increment bound for the squared-walk martingale; finite expected exit time is an external prerequisite, not inferred circularly from the conclusion.</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

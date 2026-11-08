@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Ingleton’s inequality for subspaces · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;medium&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Ingleton’s inequality for subspaces</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Ingleton%27s_inequality" target="_blank" rel="noopener">Ingleton&#x27;s inequality</a><button type="button" data-source="https://en.wikipedia.org/wiki/Ingleton%27s_inequality">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge green">medium</span></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div><div class="field" data-noteworthiness-field hidden><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"></div></div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;source&quot;: &quot;Ingleton&#x27;s_inequality_8662e035.md&quot;,
+  &quot;record_sha256&quot;: &quot;660ff12036121cec3edbaf643492c9458c67473d1820272a0c758d4079e4c2d1&quot;,
+  &quot;reviewer&quot;: &quot;/root&quot;,
+  &quot;disposition&quot;: &quot;accepted&quot;,
+  &quot;coverage_checked&quot;: true,
+  &quot;findings&quot;: [
+    &quot;Full raw source/endmatter read. Checked each inclusion/dimension identity and final I1234⊆I34 cancellation; substantive correct source chain survives without the redundant wrong displays. Ordinary subspace sum is justified by source dimension identity and spanning definition, not a newly invented direct-sum correction. All finite arbitrary-field scopes and local proof assemblies checked.&quot;
+  ],
+  &quot;limits&quot;: &quot;Independent source/standalone editorial mathematical review; not formal verification.&quot;
+}</pre><a download="Ingleton&#x27;s_inequality_8662e035.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22source%22%3A%20%22Ingleton%27s_inequality_8662e035.md%22%2C%0A%20%20%22record_sha256%22%3A%20%22660ff12036121cec3edbaf643492c9458c67473d1820272a0c758d4079e4c2d1%22%2C%0A%20%20%22reviewer%22%3A%20%22/root%22%2C%0A%20%20%22disposition%22%3A%20%22accepted%22%2C%0A%20%20%22coverage_checked%22%3A%20true%2C%0A%20%20%22findings%22%3A%20%5B%0A%20%20%20%20%22Full%20raw%20source/endmatter%20read.%20Checked%20each%20inclusion/dimension%20identity%20and%20final%20I1234%E2%8A%86I34%20cancellation%3B%20substantive%20correct%20source%20chain%20survives%20without%20the%20redundant%20wrong%20displays.%20Ordinary%20subspace%20sum%20is%20justified%20by%20source%20dimension%20identity%20and%20spanning%20definition%2C%20not%20a%20newly%20invented%20direct-sum%20correction.%20All%20finite%20arbitrary-field%20scopes%20and%20local%20proof%20assemblies%20checked.%22%0A%20%20%5D%2C%0A%20%20%22limits%22%3A%20%22Independent%20source/standalone%20editorial%20mathematical%20review%3B%20not%20formal%20verification.%22%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Let <span class="math" data-display="false">V_1,V_2,V_3,V_4</span> be finite-dimensional subspaces of a vector space over an arbitrary field. Write <span class="math" data-display="false">d(U)=\dim U</span>, <span class="math" data-display="false">V_{ij}=V_i+V_j</span>, <span class="math" data-display="false">V_{ijk}=V_i+V_j+V_k</span>, <span class="math" data-display="false">I_{ij}=V_i\cap V_j</span>, <span class="math" data-display="false">I_{ijk}=V_i\cap V_j\cap V_k</span>, and <span class="math" data-display="false">I_{1234}=V_1\cap V_2\cap V_3\cap V_4</span>. Here sums are ordinary subspace sums. <span class="math" data-display="false">d(V_1)+d(V_2)+d(V_{123})+d(V_{124})+d(V_{34})\le d(V_{12})+d(V_{13})+d(V_{14})+d(V_{23})+d(V_{24})</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Matrices, determinants, kernels, linear independence and bases are standard undergraduate linear algebra. Over an algebraically closed field, the extra condition simply guarantees polynomial roots; infinite dimensions mean cardinalities of bases. The specific matrix or dimension claim adds no specialist construction.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Linear algebra</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Finite-dimensional vector spaces over an arbitrary field</span><span class="badge blue">Sums and intersections of subspaces</span><span class="badge blue">Dimension</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Intersection bounds followed by dimension cancellation</h3><p>We will use frequently the standard vector space identity:
+dim(<em>U</em>) + dim(<em>W</em>) = dim(<em>U</em>+<em>W</em>) + dim(<em>U</em>∩<em>W</em>).</p>
+<ol>
+<li>It is clear that (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + <em>V</em><sub>3</sub> ⊆ (<em>V</em><sub>1</sub>+ <em>V</em><sub>3</sub>) ∩ (<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>), then</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim((<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)+<em>V</em><sub>3</sub>)</td>
+<td>≤</td>
+<td>dim((<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>)∩(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>)),</td>
+<td>hence</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>)</td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) − dim((<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)+<em>V</em><sub>3</sub>)</td>
+</tr>
+<tr>
+<td></td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) − dim((<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>)∩(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>))</td>
+</tr>
+<tr>
+<td></td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) – {dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) – dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>)}</td>
+</tr>
+<tr>
+<td></td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) – dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>)</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li>It is clear that (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) ⊆ (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>), then</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim{(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>)+(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>)}</td>
+<td>≤</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>),</td>
+<td>hence</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>)</td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) − dim{(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>)}</td>
+</tr>
+<tr>
+<td></td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li>From (1) and (2) we have:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>)</td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)</td>
+</tr>
+<tr>
+<td></td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)</td>
+</tr>
+<tr>
+<td></td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>From (3) we have</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+<td>≤</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) − dim(<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>)+ dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+</tr>
+</tbody>
+</table>
+<p>If we add (dim(<em>V</em><sub>1</sub>)+dim(<em>V</em><sub>2</sub>)+dim(<em>V</em><sub>3</sub>+<em>V</em><sub>4</sub>)) at both sides of the last inequality, we get</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>) + dim(<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>3</sub>+<em>V</em><sub>4</sub>)</td>
+<td>≤</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>1</sub>)+dim(<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+</tr>
+</tbody>
+</table>
+<p>Since the inequality dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) ≤ dim(<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) holds, we have finished the proof.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Derive the triple-intersection bounds, combine them for the fourfold intersection, then cancel dimensions and use inclusion in V3 intersection V4. All steps are finite-dimensional undergraduate linear algebra.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Subspace inclusions</span><span class="badge blue">Dimension formula</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Dimension formula d(U)+d(W)=d(U+W)+d(U∩W)</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>dim U + dim W = dim(U+W) + dim(U intersection W).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Convert sums and intersections throughout the inequalities.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Standard linear algebra.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Let <span class="math" data-display="false">V_1,V_2,V_3,V_4</span> be finite-dimensional subspaces of a vector space over an arbitrary field. Write <span class="math" data-display="false">d(U)=\dim U</span>, <span class="math" data-display="false">V_{ij}=V_i+V_j</span>, <span class="math" data-display="false">V_{ijk}=V_i+V_j+V_k</span>, <span class="math" data-display="false">I_{ij}=V_i\cap V_j</span>, <span class="math" data-display="false">I_{ijk}=V_i\cap V_j\cap V_k</span>, and <span class="math" data-display="false">I_{1234}=V_1\cap V_2\cap V_3\cap V_4</span>. Here sums are ordinary subspace sums. <span class="math" data-display="false">d(V_1)+d(V_2)+d(V_{123})+d(V_{124})+d(V_{34})\le d(V_{12})+d(V_{13})+d(V_{14})+d(V_{23})+d(V_{24})</span>.</p>
+<hr><h3 id="proof-1--intersection-bounds-followed-by-dimension-cancellation">Proof 1 — Intersection bounds followed by dimension cancellation</h3>
+<p>We will use frequently the standard vector space identity:
+dim(<em>U</em>) + dim(<em>W</em>) = dim(<em>U</em>+<em>W</em>) + dim(<em>U</em>∩<em>W</em>).</p>
+<ol>
+<li>It is clear that (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + <em>V</em><sub>3</sub> ⊆ (<em>V</em><sub>1</sub>+ <em>V</em><sub>3</sub>) ∩ (<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>), then</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim((<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)+<em>V</em><sub>3</sub>)</td>
+<td>≤</td>
+<td>dim((<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>)∩(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>)),</td>
+<td>hence</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>)</td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) − dim((<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)+<em>V</em><sub>3</sub>)</td>
+</tr>
+<tr>
+<td></td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) − dim((<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>)∩(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>))</td>
+</tr>
+<tr>
+<td></td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) – {dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) – dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>)}</td>
+</tr>
+<tr>
+<td></td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) – dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>)</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li>It is clear that (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) ⊆ (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>), then</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim{(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>)+(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>)}</td>
+<td>≤</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>),</td>
+<td>hence</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>)</td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) − dim{(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + (<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>)}</td>
+</tr>
+<tr>
+<td></td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li>From (1) and (2) we have:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>)</td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)</td>
+</tr>
+<tr>
+<td></td>
+<td>≥</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>)</td>
+</tr>
+<tr>
+<td></td>
+<td>=</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>From (3) we have</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+<td>≤</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) − dim(<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>)+ dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+</tr>
+</tbody>
+</table>
+<p>If we add (dim(<em>V</em><sub>1</sub>)+dim(<em>V</em><sub>2</sub>)+dim(<em>V</em><sub>3</sub>+<em>V</em><sub>4</sub>)) at both sides of the last inequality, we get</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dim(<em>V</em><sub>1</sub>) + dim(<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>3</sub>+<em>V</em><sub>4</sub>)</td>
+<td>≤</td>
+<td>dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>1</sub>)+dim(<em>V</em><sub>2</sub>) + dim(<em>V</em><sub>3</sub>+<em>V</em><sub>4</sub>) − dim(<em>V</em><sub>3</sub>) − dim(<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>3</sub>) + dim(<em>V</em><sub>1</sub>+<em>V</em><sub>4</sub>) + dim(<em>V</em><sub>2</sub>+<em>V</em><sub>4</sub>)</td>
+</tr>
+</tbody>
+</table>
+<p>Since the inequality dim(<em>V</em><sub>1</sub>∩<em>V</em><sub>2</sub>∩<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) ≤ dim(<em>V</em><sub>3</sub>∩<em>V</em><sub>4</sub>) holds, we have finished the proof.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Matrices, determinants, kernels, linear independence and bases are standard undergraduate linear algebra. Over an algebraically closed field, the extra condition simply guarantees polynomial roots; infinite dimensions mean cardinalities of bases. The specific matrix or dimension claim adds no specialist construction.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Linear algebra</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Finite-dimensional vector spaces over an arbitrary field</span><span class="badge blue">Sums and intersections of subspaces</span><span class="badge blue">Dimension</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Intersection bounds followed by dimension cancellation</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Derive the triple-intersection bounds, combine them for the fourfold intersection, then cancel dimensions and use inclusion in V3 intersection V4. All steps are finite-dimensional undergraduate linear algebra.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Subspace inclusions</span><span class="badge blue">Dimension formula</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Dimension formula d(U)+d(W)=d(U+W)+d(U∩W)</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>dim U + dim W = dim(U+W) + dim(U intersection W).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Convert sums and intersections throughout the inequalities.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Standard linear algebra.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

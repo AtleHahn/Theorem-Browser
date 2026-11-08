@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Euler’s polyhedron formula · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;may have an unsatisfactory proof&quot;], &quot;assessed_proof_count&quot;: 2, &quot;reason_candidates&quot;: [&quot;Has at least one proof with concepts from a different area&quot;, &quot;Highschool level Statement - All proofs have at least undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Euler’s polyhedron formula</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Euler_characteristic" target="_blank" rel="noopener">Euler characteristic</a><button type="button" data-source="https://en.wikipedia.org/wiki/Euler_characteristic">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>2</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field" data-noteworthiness-field><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"><span class="badge gold">Has at least one proof with concepts from a different area</span><span class="badge gold">Highschool level Statement - All proofs have at least undergraduate level</span></div></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;euler-polyhedron-formula&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;remove&quot;,
+  &quot;decision_summary&quot;: &quot;Remove the likely flag; a strictly lower-category alternative is not established.&quot;,
+  &quot;explanation&quot;: &quot;The suggested planar deletion proof still needs a justified planar representation and separation/face bookkeeping. Replacing shelling by edge deletion removes machinery, but the screening did not establish a school-only treatment of those steps for every convex three-polytope. Since an undergraduate proof is already stored, a lower category is not established conservatively.&quot;,
+  &quot;statement_level&quot;: &quot;High school only&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;,
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;,
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: null,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/euler-polyhedron-formula.md&quot;,
+  &quot;content_sha256&quot;: &quot;362f4759c320504397af95b8b44b906b3ae802a5cf11e40b838e0341bc3dc07d&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;33832b46150c5d4f82295a387a3a5c73339047190035833bda5c014444f5ccac&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;euler-polyhedron-formula&quot;,
+    &quot;title&quot;: &quot;Euler’s polyhedron formula&quot;,
+    &quot;content_file&quot;: &quot;euler-polyhedron-formula.md&quot;,
+    &quot;importance&quot;: &quot;high&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;yes&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Convex polyhedra&quot;,
+        &quot;Vertices, edges and faces&quot;
+      ],
+      &quot;level_justification&quot;: &quot;The statement is a geometric counting relation for ordinary convex polyhedra.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Discrete Geometry&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Triangulate and shell the punctured surface — outline&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Disk topology&quot;,
+          &quot;Triangulations&quot;,
+          &quot;Finite count invariance&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Apply the supplied sphere/disk representation and disk-triangulation removal theorem, then track finite counts. Introductory topology supplies homeomorphisms and disks; the concrete shelling statement is a small extension and its proof is not needed.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;partly&quot;,
+          &quot;justification&quot;: &quot;The deletion count is local; the sphere and shelling prerequisites are substantive external ingredients.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;The boundary of a three-dimensional convex polytope is homeomorphic to S2 and its faces are disks&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Triangulate and shell the punctured surface — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;A convex three-dimensional polytope has boundary homeomorphic to a sphere and disk faces.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/euler-polyhedron-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Triangulate and shell the punctured surface — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Represent its punctured boundary as a disk.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Concrete Euclidean topology.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;A finite triangulated closed 2-disk admits successive boundary triangle removals, each along one boundary edge or two consecutive boundary edges, maintaining a disk with simple boundary until one triangle remains&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Triangulate and shell the punctured surface — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;A finite triangulated disk can be reduced to one triangle by boundary triangle removals preserving a disk.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/euler-polyhedron-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Triangulate and shell the punctured surface — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Choose a valid removal order.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Explicit finite triangulation statement.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;A diagonal through a disk face separates it into two disk faces; a spherical polyhedral surface with one disk face removed can be represented as a planar disk&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Triangulate and shell the punctured surface — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;A diagonal cuts a disk face into two disks, and deleting one disk face of the spherical boundary gives a planar disk representation.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/euler-polyhedron-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Triangulate and shell the punctured surface — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Triangulate and flatten the punctured boundary.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Elementary plane separation and disk topology.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;routine_omissions&quot;,
+          &quot;notes&quot;: [
+            &quot;The valid removal order is supplied only as the named shelling prerequisite; its existence proof is not in the article.&quot;
+          ]
+        },
+        &quot;id&quot;: &quot;euler-polyhedron-formula-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [
+          &quot;Graph Theory&quot;,
+          &quot;General Topology&quot;
+        ],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Euler characteristic&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Euler_characteristic&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/1844/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      },
+      {
+        &quot;proof_number&quot;: 2,
+        &quot;proof_title&quot;: &quot;Use the boundary sphere and homology invariance&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;no&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Singular homology&quot;,
+          &quot;Cellular Euler characteristic&quot;
+        ],
+        &quot;level_justification&quot;: &quot;This proof uses homology of the sphere and its equality with the cellular alternating count. That actual homological route requires algebraic topology despite the elementary polyhedron statement.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;no&quot;,
+          &quot;justification&quot;: &quot;The boundary-to-sphere reduction is supplied; the sphere value and homological identifications are external.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Homotopy-equivalent spaces have isomorphic singular homology groups&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 2 — Use the boundary sphere and homology invariance&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Homotopy-equivalent spaces have isomorphic singular homology groups.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/euler-polyhedron-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 2 — Use the boundary sphere and homology invariance&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Transfer the sphere invariant to the polyhedral boundary.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Singular homology and homotopy invariance.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;For n&gt;=1, the sphere S^n has rational homology Q in degrees0 and n and zero otherwise&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 2 — Use the boundary sphere and homology invariance&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The rational homology of the n-sphere is rational numbers in degrees zero and n and zero elsewhere, for positive n.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/euler-polyhedron-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 2 — Use the boundary sphere and homology invariance&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Evaluate the Euler characteristic of the two-sphere.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Sphere homology groups.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Convex polyhedral boundary is homeomorphic to S2; for its finite cell decomposition, the alternating cell count equals the homological Euler characteristic&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 2 — Use the boundary sphere and homology invariance&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The convex boundary is a sphere topologically, and its alternating cell count equals its homological Euler characteristic.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/euler-polyhedron-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 2 — Use the boundary sphere and homology invariance&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Identify V-E+F with the invariant.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;The homology/cell-count comparison.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;complete&quot;,
+          &quot;notes&quot;: []
+        },
+        &quot;id&quot;: &quot;euler-polyhedron-formula-proof-2&quot;,
+        &quot;fields_used_beyond_statement&quot;: [
+          &quot;Algebraic Topology&quot;
+        ],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Euler characteristic&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Euler_characteristic&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/1844/proofs/1&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Euler_characteristic_e0a7dc49.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Euler characteristic&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Euler_characteristic&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Euler_characteristic_e0a7dc49.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Full424 raw lines, all tables,15 Notes, bibliography and endmatter read; fresh standalone and source-role review.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Made the actual statement domains, definitions and dependencies local.; Preserved canonical convex-polyhedron statement after legacy comparison; separately retained the more general spherical disk-face statement.; Independent review made the homological definition standalone and included statement prerequisites in each proof assessment.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration, batch 36: Euler characteristic, Proof of Euler formula and Homotopy invariance: restored full removal/triangulation/shelling prose and both count cases, plus source boundary-sphere paragraph for Proof 2. Removed figure references; retained cell-count bridge and source shelling limitation. Made the convex-boundary sphere and disk-face prerequisite explicit.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Elementary planar graph geometry. Project the convex polyhedron to a planar drawing, then delete cycle edges until a tree remains. Each deletion reduces both E and F by one; for the tree E=V-1 and F=1. This avoids homology and the stronger shelling theorem, while retaining elementary planar separation.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="euler-polyhedron-formula.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22euler-polyhedron-formula%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22remove%22%2C%0A%20%20%22decision_summary%22%3A%20%22Remove%20the%20likely%20flag%3B%20a%20strictly%20lower-category%20alternative%20is%20not%20established.%22%2C%0A%20%20%22explanation%22%3A%20%22The%20suggested%20planar%20deletion%20proof%20still%20needs%20a%20justified%20planar%20representation%20and%20separation/face%20bookkeeping.%20Replacing%20shelling%20by%20edge%20deletion%20removes%20machinery%2C%20but%20the%20screening%20did%20not%20establish%20a%20school-only%20treatment%20of%20those%20steps%20for%20every%20convex%20three-polytope.%20Since%20an%20undergraduate%20proof%20is%20already%20stored%2C%20a%20lower%20category%20is%20not%20established%20conservatively.%22%2C%0A%20%20%22statement_level%22%3A%20%22High%20school%20only%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20null%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/euler-polyhedron-formula.md%22%2C%0A%20%20%22content_sha256%22%3A%20%22362f4759c320504397af95b8b44b906b3ae802a5cf11e40b838e0341bc3dc07d%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%2233832b46150c5d4f82295a387a3a5c73339047190035833bda5c014444f5ccac%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22euler-polyhedron-formula%22%2C%0A%20%20%20%20%22title%22%3A%20%22Euler%E2%80%99s%20polyhedron%20formula%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22euler-polyhedron-formula.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22high%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Convex%20polyhedra%22%2C%0A%20%20%20%20%20%20%20%20%22Vertices%2C%20edges%20and%20faces%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20statement%20is%20a%20geometric%20counting%20relation%20for%20ordinary%20convex%20polyhedra.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Discrete%20Geometry%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Triangulate%20and%20shell%20the%20punctured%20surface%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Disk%20topology%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Triangulations%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Finite%20count%20invariance%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Apply%20the%20supplied%20sphere/disk%20representation%20and%20disk-triangulation%20removal%20theorem%2C%20then%20track%20finite%20counts.%20Introductory%20topology%20supplies%20homeomorphisms%20and%20disks%3B%20the%20concrete%20shelling%20statement%20is%20a%20small%20extension%20and%20its%20proof%20is%20not%20needed.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22partly%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20deletion%20count%20is%20local%3B%20the%20sphere%20and%20shelling%20prerequisites%20are%20substantive%20external%20ingredients.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22The%20boundary%20of%20a%20three-dimensional%20convex%20polytope%20is%20homeomorphic%20to%20S2%20and%20its%20faces%20are%20disks%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Triangulate%20and%20shell%20the%20punctured%20surface%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22A%20convex%20three-dimensional%20polytope%20has%20boundary%20homeomorphic%20to%20a%20sphere%20and%20disk%20faces.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/euler-polyhedron-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Triangulate%20and%20shell%20the%20punctured%20surface%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Represent%20its%20punctured%20boundary%20as%20a%20disk.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Concrete%20Euclidean%20topology.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22A%20finite%20triangulated%20closed%202-disk%20admits%20successive%20boundary%20triangle%20removals%2C%20each%20along%20one%20boundary%20edge%20or%20two%20consecutive%20boundary%20edges%2C%20maintaining%20a%20disk%20with%20simple%20boundary%20until%20one%20triangle%20remains%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Triangulate%20and%20shell%20the%20punctured%20surface%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22A%20finite%20triangulated%20disk%20can%20be%20reduced%20to%20one%20triangle%20by%20boundary%20triangle%20removals%20preserving%20a%20disk.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/euler-polyhedron-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Triangulate%20and%20shell%20the%20punctured%20surface%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Choose%20a%20valid%20removal%20order.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Explicit%20finite%20triangulation%20statement.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22A%20diagonal%20through%20a%20disk%20face%20separates%20it%20into%20two%20disk%20faces%3B%20a%20spherical%20polyhedral%20surface%20with%20one%20disk%20face%20removed%20can%20be%20represented%20as%20a%20planar%20disk%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Triangulate%20and%20shell%20the%20punctured%20surface%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22A%20diagonal%20cuts%20a%20disk%20face%20into%20two%20disks%2C%20and%20deleting%20one%20disk%20face%20of%20the%20spherical%20boundary%20gives%20a%20planar%20disk%20representation.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/euler-polyhedron-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Triangulate%20and%20shell%20the%20punctured%20surface%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Triangulate%20and%20flatten%20the%20punctured%20boundary.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Elementary%20plane%20separation%20and%20disk%20topology.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22routine_omissions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22The%20valid%20removal%20order%20is%20supplied%20only%20as%20the%20named%20shelling%20prerequisite%3B%20its%20existence%20proof%20is%20not%20in%20the%20article.%22%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22euler-polyhedron-formula-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Graph%20Theory%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22General%20Topology%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Euler%20characteristic%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Euler_characteristic%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/1844/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%202%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Use%20the%20boundary%20sphere%20and%20homology%20invariance%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Singular%20homology%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Cellular%20Euler%20characteristic%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22This%20proof%20uses%20homology%20of%20the%20sphere%20and%20its%20equality%20with%20the%20cellular%20alternating%20count.%20That%20actual%20homological%20route%20requires%20algebraic%20topology%20despite%20the%20elementary%20polyhedron%20statement.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20boundary-to-sphere%20reduction%20is%20supplied%3B%20the%20sphere%20value%20and%20homological%20identifications%20are%20external.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Homotopy-equivalent%20spaces%20have%20isomorphic%20singular%20homology%20groups%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%202%20%E2%80%94%20Use%20the%20boundary%20sphere%20and%20homology%20invariance%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Homotopy-equivalent%20spaces%20have%20isomorphic%20singular%20homology%20groups.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/euler-polyhedron-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%202%20%E2%80%94%20Use%20the%20boundary%20sphere%20and%20homology%20invariance%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Transfer%20the%20sphere%20invariant%20to%20the%20polyhedral%20boundary.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Singular%20homology%20and%20homotopy%20invariance.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22For%20n%3E%3D1%2C%20the%20sphere%20S%5En%20has%20rational%20homology%20Q%20in%20degrees0%20and%20n%20and%20zero%20otherwise%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%202%20%E2%80%94%20Use%20the%20boundary%20sphere%20and%20homology%20invariance%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20rational%20homology%20of%20the%20n-sphere%20is%20rational%20numbers%20in%20degrees%20zero%20and%20n%20and%20zero%20elsewhere%2C%20for%20positive%20n.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/euler-polyhedron-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%202%20%E2%80%94%20Use%20the%20boundary%20sphere%20and%20homology%20invariance%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Evaluate%20the%20Euler%20characteristic%20of%20the%20two-sphere.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Sphere%20homology%20groups.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Convex%20polyhedral%20boundary%20is%20homeomorphic%20to%20S2%3B%20for%20its%20finite%20cell%20decomposition%2C%20the%20alternating%20cell%20count%20equals%20the%20homological%20Euler%20characteristic%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%202%20%E2%80%94%20Use%20the%20boundary%20sphere%20and%20homology%20invariance%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20convex%20boundary%20is%20a%20sphere%20topologically%2C%20and%20its%20alternating%20cell%20count%20equals%20its%20homological%20Euler%20characteristic.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/euler-polyhedron-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%202%20%E2%80%94%20Use%20the%20boundary%20sphere%20and%20homology%20invariance%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Identify%20V-E%2BF%20with%20the%20invariant.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20homology/cell-count%20comparison.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22complete%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22euler-polyhedron-formula-proof-2%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Algebraic%20Topology%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Euler%20characteristic%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Euler_characteristic%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/1844/proofs/1%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Euler_characteristic_e0a7dc49.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Euler%20characteristic%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Euler_characteristic%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Euler_characteristic_e0a7dc49.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Full424%20raw%20lines%2C%20all%20tables%2C15%20Notes%2C%20bibliography%20and%20endmatter%20read%3B%20fresh%20standalone%20and%20source-role%20review.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Made%20the%20actual%20statement%20domains%2C%20definitions%20and%20dependencies%20local.%3B%20Preserved%20canonical%20convex-polyhedron%20statement%20after%20legacy%20comparison%3B%20separately%20retained%20the%20more%20general%20spherical%20disk-face%20statement.%3B%20Independent%20review%20made%20the%20homological%20definition%20standalone%20and%20included%20statement%20prerequisites%20in%20each%20proof%20assessment.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%2C%20batch%2036%3A%20Euler%20characteristic%2C%20Proof%20of%20Euler%20formula%20and%20Homotopy%20invariance%3A%20restored%20full%20removal/triangulation/shelling%20prose%20and%20both%20count%20cases%2C%20plus%20source%20boundary-sphere%20paragraph%20for%20Proof%202.%20Removed%20figure%20references%3B%20retained%20cell-count%20bridge%20and%20source%20shelling%20limitation.%20Made%20the%20convex-boundary%20sphere%20and%20disk-face%20prerequisite%20explicit.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Elementary%20planar%20graph%20geometry.%20Project%20the%20convex%20polyhedron%20to%20a%20planar%20drawing%2C%20then%20delete%20cycle%20edges%20until%20a%20tree%20remains.%20Each%20deletion%20reduces%20both%20E%20and%20F%20by%20one%3B%20for%20the%20tree%20E%3DV-1%20and%20F%3D1.%20This%20avoids%20homology%20and%20the%20stronger%20shelling%20theorem%2C%20while%20retaining%20elementary%20planar%20separation.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>For a three-dimensional convex polytope with V vertices, E edges and F faces, V−E+F=2.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The statement is a geometric counting relation for ordinary convex polyhedra.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Convex and discrete geometry</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Convex polyhedra</span><span class="badge blue">Vertices, edges and faces</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Triangulate and shell the punctured surface — outline</h3><p>The boundary of a convex three-dimensional polytope is homeomorphic to a sphere, and its faces are disks.</p>
+<p>Remove one face of the polyhedral surface. By pulling the edges of the missing face away from each other, deform all the rest into a planar graph of points and curves, in such a way that the perimeter of the missing face is placed externally, surrounding the graph obtained. (The assumption that the polyhedral surface is homeomorphic to the sphere at the beginning is what makes this possible.) After this deformation, the regular faces are generally not regular anymore. The number of vertices and edges has remained the same, but the number of faces has been reduced by 1. Therefore, proving Euler's formula for the polyhedron reduces to proving <span class="math" data-display="false">{\displaystyle \ V-E+F=1\ }</span> for this deformed, planar object.</p>
+<p>If there is a face with more than three sides, draw a diagonal—that is, a curve through the face connecting two vertices that are not yet connected. Each new diagonal adds one edge and one face and does not change the number of vertices, so it does not change the quantity <span class="math" data-display="false">{\displaystyle \ V-E+F~.}</span> (The assumption that all faces are disks is needed here, to show via the Jordan curve theorem that this operation increases the number of faces by one.) Continue adding edges in this manner until all of the faces are triangular.</p>
+<p>Apply repeatedly either of the following two transformations, maintaining the invariant that the exterior boundary is always a simple cycle:</p>
+<ol>
+<li>Remove a triangle with only one edge adjacent to the exterior. This decreases the number of edges and faces by one each and does not change the number of vertices, so it preserves <span class="math" data-display="false">{\displaystyle \ V-E+F~.}</span></li>
+<li>Remove a triangle with two edges shared by the exterior of the network. Each triangle removal removes a vertex, two edges and one face, so it preserves <span class="math" data-display="false">{\displaystyle \ V-E+F~.}</span></li>
+</ol>
+<p>These transformations eventually reduce the planar graph to a single triangle. (Without the simple-cycle invariant, removing a triangle might disconnect the remaining triangles, invalidating the rest of the argument. A valid removal order is an elementary example of a shelling.)</p>
+<p>At this point the lone triangle has <span class="math" data-display="false">{\displaystyle \ V=3\ ,}</span><span class="math" data-display="false">{\displaystyle \ E=3\ ,}</span> and <span class="math" data-display="false">{\displaystyle \ F=1\ ,}</span> so that <span class="math" data-display="false">{\displaystyle \ V-E+F=1~.}</span> Since each of the two above transformation steps preserved this quantity, we have shown <span class="math" data-display="false">{\displaystyle \ V-E+F=1\ }</span> for the deformed, planar object thus demonstrating <span class="math" data-display="false">{\displaystyle \ V-E+F=2\ }</span> for the polyhedron. This proves the theorem.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Apply the supplied sphere/disk representation and disk-triangulation removal theorem, then track finite counts. Introductory topology supplies homeomorphisms and disks; the concrete shelling statement is a small extension and its proof is not needed.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Disk topology</span><span class="badge blue">Triangulations</span><span class="badge blue">Finite count invariance</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The valid removal order is supplied only as the named shelling prerequisite; its existence proof is not in the article.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>The boundary of a three-dimensional convex polytope is homeomorphic to S2 and its faces are disks</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A convex three-dimensional polytope has boundary homeomorphic to a sphere and disk faces.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Represent its punctured boundary as a disk.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Concrete Euclidean topology.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>A finite triangulated closed 2-disk admits successive boundary triangle removals, each along one boundary edge or two consecutive boundary edges, maintaining a disk with simple boundary until one triangle remains</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A finite triangulated disk can be reduced to one triangle by boundary triangle removals preserving a disk.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Choose a valid removal order.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit finite triangulation statement.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>A diagonal through a disk face separates it into two disk faces; a spherical polyhedral surface with one disk face removed can be represented as a planar disk</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A diagonal cuts a disk face into two disks, and deleting one disk face of the spherical boundary gives a planar disk representation.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Triangulate and flatten the punctured boundary.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Elementary plane separation and disk topology.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The valid removal order is supplied only as the named shelling prerequisite; its existence proof is not in the article.</p>
+</div></div></div><hr><h3>Proof 2: Use the boundary sphere and homology invariance</h3><p>Any convex polyhedron is homeomorphic to the three-dimensional ball, so its surface is homeomorphic (hence homotopy equivalent) to the two-dimensional sphere, which has Euler characteristic 2. This explains why the surface of a convex polyhedron has Euler characteristic 2.</p>
+<p>For the polyhedral boundary, its Euler characteristic is the alternating cell count <span class="math" data-display="false">V-E+F</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>This proof uses homology of the sphere and its equality with the cellular alternating count. That actual homological route requires algebraic topology despite the elementary polyhedron statement.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Algebraic topology</span></div></div></div><div class="field"><div class="field-label">Warning</div><div class="field-value"><p>This proof is essentially a specialization of a (potentially much) more general result and may therefore be considered unsatisfactory by some readers.</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Singular homology</span><span class="badge blue">Cellular Euler characteristic</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Homotopy-equivalent spaces have isomorphic singular homology groups</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Homotopy-equivalent spaces have isomorphic singular homology groups.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Transfer the sphere invariant to the polyhedral boundary.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Singular homology and homotopy invariance.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>For n&gt;=1, the sphere S^n has rational homology Q in degrees0 and n and zero otherwise</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The rational homology of the n-sphere is rational numbers in degrees zero and n and zero elsewhere, for positive n.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Evaluate the Euler characteristic of the two-sphere.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Sphere homology groups.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Convex polyhedral boundary is homeomorphic to S2; for its finite cell decomposition, the alternating cell count equals the homological Euler characteristic</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The convex boundary is a sphere topologically, and its alternating cell count equals its homological Euler characteristic.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Identify V-E+F with the invariant.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The homology/cell-count comparison.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>For a three-dimensional convex polytope with V vertices, E edges and F faces, V−E+F=2.</p>
+<hr><h3 id="proof-1--triangulate-and-shell-the-punctured-surface--outline">Proof 1 — Triangulate and shell the punctured surface — outline</h3>
+<p>The boundary of a convex three-dimensional polytope is homeomorphic to a sphere, and its faces are disks.</p>
+<p>Remove one face of the polyhedral surface. By pulling the edges of the missing face away from each other, deform all the rest into a planar graph of points and curves, in such a way that the perimeter of the missing face is placed externally, surrounding the graph obtained. (The assumption that the polyhedral surface is homeomorphic to the sphere at the beginning is what makes this possible.) After this deformation, the regular faces are generally not regular anymore. The number of vertices and edges has remained the same, but the number of faces has been reduced by 1. Therefore, proving Euler's formula for the polyhedron reduces to proving <span class="math" data-display="false">{\displaystyle \ V-E+F=1\ }</span> for this deformed, planar object.</p>
+<p>If there is a face with more than three sides, draw a diagonal—that is, a curve through the face connecting two vertices that are not yet connected. Each new diagonal adds one edge and one face and does not change the number of vertices, so it does not change the quantity <span class="math" data-display="false">{\displaystyle \ V-E+F~.}</span> (The assumption that all faces are disks is needed here, to show via the Jordan curve theorem that this operation increases the number of faces by one.) Continue adding edges in this manner until all of the faces are triangular.</p>
+<p>Apply repeatedly either of the following two transformations, maintaining the invariant that the exterior boundary is always a simple cycle:</p>
+<ol>
+<li>Remove a triangle with only one edge adjacent to the exterior. This decreases the number of edges and faces by one each and does not change the number of vertices, so it preserves <span class="math" data-display="false">{\displaystyle \ V-E+F~.}</span></li>
+<li>Remove a triangle with two edges shared by the exterior of the network. Each triangle removal removes a vertex, two edges and one face, so it preserves <span class="math" data-display="false">{\displaystyle \ V-E+F~.}</span></li>
+</ol>
+<p>These transformations eventually reduce the planar graph to a single triangle. (Without the simple-cycle invariant, removing a triangle might disconnect the remaining triangles, invalidating the rest of the argument. A valid removal order is an elementary example of a shelling.)</p>
+<p>At this point the lone triangle has <span class="math" data-display="false">{\displaystyle \ V=3\ ,}</span><span class="math" data-display="false">{\displaystyle \ E=3\ ,}</span> and <span class="math" data-display="false">{\displaystyle \ F=1\ ,}</span> so that <span class="math" data-display="false">{\displaystyle \ V-E+F=1~.}</span> Since each of the two above transformation steps preserved this quantity, we have shown <span class="math" data-display="false">{\displaystyle \ V-E+F=1\ }</span> for the deformed, planar object thus demonstrating <span class="math" data-display="false">{\displaystyle \ V-E+F=2\ }</span> for the polyhedron. This proves the theorem.</p>
+<hr><h3 id="proof-2--use-the-boundary-sphere-and-homology-invariance">Proof 2 — Use the boundary sphere and homology invariance</h3>
+<p>Any convex polyhedron is homeomorphic to the three-dimensional ball, so its surface is homeomorphic (hence homotopy equivalent) to the two-dimensional sphere, which has Euler characteristic 2. This explains why the surface of a convex polyhedron has Euler characteristic 2.</p>
+<p>For the polyhedral boundary, its Euler characteristic is the alternating cell count <span class="math" data-display="false">V-E+F</span>.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The statement is a geometric counting relation for ordinary convex polyhedra.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Convex and discrete geometry</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Convex polyhedra</span><span class="badge blue">Vertices, edges and faces</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Triangulate and shell the punctured surface — outline</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Apply the supplied sphere/disk representation and disk-triangulation removal theorem, then track finite counts. Introductory topology supplies homeomorphisms and disks; the concrete shelling statement is a small extension and its proof is not needed.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Disk topology</span><span class="badge blue">Triangulations</span><span class="badge blue">Finite count invariance</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The valid removal order is supplied only as the named shelling prerequisite; its existence proof is not in the article.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>The boundary of a three-dimensional convex polytope is homeomorphic to S2 and its faces are disks</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A convex three-dimensional polytope has boundary homeomorphic to a sphere and disk faces.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Represent its punctured boundary as a disk.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Concrete Euclidean topology.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>A finite triangulated closed 2-disk admits successive boundary triangle removals, each along one boundary edge or two consecutive boundary edges, maintaining a disk with simple boundary until one triangle remains</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A finite triangulated disk can be reduced to one triangle by boundary triangle removals preserving a disk.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Choose a valid removal order.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit finite triangulation statement.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>A diagonal through a disk face separates it into two disk faces; a spherical polyhedral surface with one disk face removed can be represented as a planar disk</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A diagonal cuts a disk face into two disks, and deleting one disk face of the spherical boundary gives a planar disk representation.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Triangulate and flatten the punctured boundary.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Elementary plane separation and disk topology.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The valid removal order is supplied only as the named shelling prerequisite; its existence proof is not in the article.</p>
+</div></div></div><hr><h3>Proof 2: Use the boundary sphere and homology invariance</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>This proof uses homology of the sphere and its equality with the cellular alternating count. That actual homological route requires algebraic topology despite the elementary polyhedron statement.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Algebraic topology</span></div></div></div><div class="field"><div class="field-label">Warning</div><div class="field-value"><p>This proof is essentially a specialization of a (potentially much) more general result and may therefore be considered unsatisfactory by some readers.</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Singular homology</span><span class="badge blue">Cellular Euler characteristic</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Homotopy-equivalent spaces have isomorphic singular homology groups</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Homotopy-equivalent spaces have isomorphic singular homology groups.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Transfer the sphere invariant to the polyhedral boundary.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Singular homology and homotopy invariance.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>For n&gt;=1, the sphere S^n has rational homology Q in degrees0 and n and zero otherwise</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The rational homology of the n-sphere is rational numbers in degrees zero and n and zero elsewhere, for positive n.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Evaluate the Euler characteristic of the two-sphere.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Sphere homology groups.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Convex polyhedral boundary is homeomorphic to S2; for its finite cell decomposition, the alternating cell count equals the homological Euler characteristic</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The convex boundary is a sphere topologically, and its alternating cell count equals its homological Euler characteristic.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Identify V-E+F with the invariant.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The homology/cell-count comparison.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

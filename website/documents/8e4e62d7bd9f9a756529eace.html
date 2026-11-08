@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Whittaker–Shannon sinc interpolation · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Undergraduate level Statement - All proofs beyond undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Whittaker–Shannon sinc interpolation</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem" target="_blank" rel="noopener">Nyquist–Shannon sampling theorem</a><button type="button" data-source="https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field" data-noteworthiness-field><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"><span class="badge gold">Undergraduate level Statement - All proofs beyond undergraduate level</span></div></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;whittaker-shannon-interpolation&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;remove&quot;,
+  &quot;decision_summary&quot;: &quot;Remove the likely flag; a strictly lower-category alternative is not established.&quot;,
+  &quot;explanation&quot;: &quot;The suggested direct Fourier-series route retains L2 convergence, compact-frequency inversion and Cauchy-Schwarz justification, which are precisely the convergence prerequisites already identified in the stored proof. Removing a separate Poisson identity does not establish a lower category for the stated pointwise symmetric-sum limit and its full integrable-function hypotheses.&quot;,
+  &quot;statement_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: null,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/whittaker-shannon-interpolation.md&quot;,
+  &quot;content_sha256&quot;: &quot;64ce308ef08e971a21665beac52ef27d2bbe5a4c58c522e2656f65bf2cbf72f4&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;47b74ebf884a924df5ce08050bb7b755cff73600e4b498666dcbbd2d339aafa6&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;whittaker-shannon-interpolation&quot;,
+    &quot;title&quot;: &quot;Whittaker–Shannon sinc interpolation&quot;,
+    &quot;content_file&quot;: &quot;whittaker-shannon-interpolation.md&quot;,
+    &quot;importance&quot;: &quot;high&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;no&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Fourier transforms&quot;,
+        &quot;Bandlimited continuous integrable functions&quot;,
+        &quot;Uniform sampling&quot;,
+        &quot;Sinc function&quot;,
+        &quot;Convergence of bilateral series&quot;
+      ],
+      &quot;level_justification&quot;: &quot;Calculus supplies the explicitly given Fourier integral and sinc function; analysis supplies the symmetric partial-sum limit. The signal is continuous and integrable, so no L2 equivalence classes or distributional transform are needed to understand reconstruction.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Harmonic Analysis&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Filter the periodized spectrum and invert — outline&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;no&quot;,
+        &quot;required_topics&quot;: [
+          &quot;L2 Fourier convergence&quot;,
+          &quot;Poisson summation&quot;,
+          &quot;Fourier inversion&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Periodize the spectrum, filter it and invert symmetric L2 Fourier partial sums. The convergence justification uses L2 Fourier theory and general integrable transforms, beyond elementary Fourier calculations.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;no&quot;,
+          &quot;justification&quot;: &quot;The source filtering calculation and Fourier-pair substitution are local; the Fourier-analysis and convergence theorems are imported explicitly.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Poisson summation in Fourier-series form&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The periodized spectrum has the displayed Fourier series with coefficients T x(nT).&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/whittaker-shannon-interpolation.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Express the sampled spectrum.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Fourier periodization in the stated convergence framework.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Rectangle/sinc Fourier transform pair&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The scaled shifted sinc function has transform T rect(Tf) exp(-2pi i nTf).&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/whittaker-shannon-interpolation.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Identify each reconstruction term.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Explicit Fourier integral pair.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;L2 Fourier-series convergence and continuity of inverse integration on a finite frequency interval&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Fourier partial sums converge in L2 on the frequency interval and inverse integration there is continuous into pointwise values.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/whittaker-shannon-interpolation.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Pass to the sinc-sum limit.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Hilbert Fourier-series convergence.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Fourier inversion for continuous integrable functions with integrable transform&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;implicitly_assumed&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;A continuous integrable function with integrable transform is recovered by Fourier inversion.&quot;,
+            &quot;identification_status&quot;: &quot;inferred_from_context&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/whittaker-shannon-interpolation.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Filter the periodized spectrum and invert — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Identify the limit with x(t).&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;General integrable Fourier inversion.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;routine_omissions&quot;,
+          &quot;notes&quot;: [
+            &quot;Source inverts the infinite series formally. The standard finite-interval L2 interpretation and inverse-integration convergence are explicit prerequisites; no new convergence proof supplied.&quot;
+          ]
+        },
+        &quot;id&quot;: &quot;whittaker-shannon-interpolation-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [
+          &quot;Functional Analysis&quot;
+        ],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Nyquist–Shannon sampling theorem&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/6445/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Nyquist–Shannon_sampling_theorem_ec6cdfb1.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Nyquist–Shannon sampling theorem&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Nyquist–Shannon_sampling_theorem_ec6cdfb1.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Read complete raw source and checked statement/proof scope, dependencies and boundaries.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;As in the source ordinary-transform discussion, specified continuous integrable x and bandlimited transform; distributional extensions are not claimed.; Restored Poisson identity, normalized sinc and rectangle definitions locally. Stated the standard convergence prerequisites behind the source formal termwise inverse transform, using symmetric partial sums.; Independent review confirms the ordinary-transform hypotheses give a bounded compactly supported spectrum, so the named finite-frequency L2 prerequisites apply; no assertion that arbitrary time-domain L2 convergence is pointwise is made.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration, full-run batch 128: Nyquist–Shannon, Derivation as a special case of Poisson summation and Aliasing Eq1: restored full filtering explanation, filter cases, Fourier chain and inverse display; explicit T normalization, symmetric frequency region and convergence prerequisites.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Classical Fourier series and L2 estimates. Expand the band-limited transform directly in its Fourier series on [-1/(2T),1/(2T)], identify coefficients as sampled values, and inverse-integrate each partial sum to obtain sinc. L2 convergence and Cauchy-Schwarz justify the limit. This avoids the separate Poisson/distribution route but retains Fourier analysis.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="whittaker-shannon-interpolation.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22whittaker-shannon-interpolation%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22remove%22%2C%0A%20%20%22decision_summary%22%3A%20%22Remove%20the%20likely%20flag%3B%20a%20strictly%20lower-category%20alternative%20is%20not%20established.%22%2C%0A%20%20%22explanation%22%3A%20%22The%20suggested%20direct%20Fourier-series%20route%20retains%20L2%20convergence%2C%20compact-frequency%20inversion%20and%20Cauchy-Schwarz%20justification%2C%20which%20are%20precisely%20the%20convergence%20prerequisites%20already%20identified%20in%20the%20stored%20proof.%20Removing%20a%20separate%20Poisson%20identity%20does%20not%20establish%20a%20lower%20category%20for%20the%20stated%20pointwise%20symmetric-sum%20limit%20and%20its%20full%20integrable-function%20hypotheses.%22%2C%0A%20%20%22statement_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20null%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/whittaker-shannon-interpolation.md%22%2C%0A%20%20%22content_sha256%22%3A%20%2264ce308ef08e971a21665beac52ef27d2bbe5a4c58c522e2656f65bf2cbf72f4%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%2247b74ebf884a924df5ce08050bb7b755cff73600e4b498666dcbbd2d339aafa6%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22whittaker-shannon-interpolation%22%2C%0A%20%20%20%20%22title%22%3A%20%22Whittaker%E2%80%93Shannon%20sinc%20interpolation%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22whittaker-shannon-interpolation.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22high%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Fourier%20transforms%22%2C%0A%20%20%20%20%20%20%20%20%22Bandlimited%20continuous%20integrable%20functions%22%2C%0A%20%20%20%20%20%20%20%20%22Uniform%20sampling%22%2C%0A%20%20%20%20%20%20%20%20%22Sinc%20function%22%2C%0A%20%20%20%20%20%20%20%20%22Convergence%20of%20bilateral%20series%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22Calculus%20supplies%20the%20explicitly%20given%20Fourier%20integral%20and%20sinc%20function%3B%20analysis%20supplies%20the%20symmetric%20partial-sum%20limit.%20The%20signal%20is%20continuous%20and%20integrable%2C%20so%20no%20L2%20equivalence%20classes%20or%20distributional%20transform%20are%20needed%20to%20understand%20reconstruction.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Harmonic%20Analysis%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22L2%20Fourier%20convergence%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Poisson%20summation%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Fourier%20inversion%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Periodize%20the%20spectrum%2C%20filter%20it%20and%20invert%20symmetric%20L2%20Fourier%20partial%20sums.%20The%20convergence%20justification%20uses%20L2%20Fourier%20theory%20and%20general%20integrable%20transforms%2C%20beyond%20elementary%20Fourier%20calculations.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20source%20filtering%20calculation%20and%20Fourier-pair%20substitution%20are%20local%3B%20the%20Fourier-analysis%20and%20convergence%20theorems%20are%20imported%20explicitly.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Poisson%20summation%20in%20Fourier-series%20form%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20periodized%20spectrum%20has%20the%20displayed%20Fourier%20series%20with%20coefficients%20T%20x%28nT%29.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/whittaker-shannon-interpolation.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Express%20the%20sampled%20spectrum.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Fourier%20periodization%20in%20the%20stated%20convergence%20framework.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Rectangle/sinc%20Fourier%20transform%20pair%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20scaled%20shifted%20sinc%20function%20has%20transform%20T%20rect%28Tf%29%20exp%28-2pi%20i%20nTf%29.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/whittaker-shannon-interpolation.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Identify%20each%20reconstruction%20term.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Explicit%20Fourier%20integral%20pair.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22L2%20Fourier-series%20convergence%20and%20continuity%20of%20inverse%20integration%20on%20a%20finite%20frequency%20interval%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Fourier%20partial%20sums%20converge%20in%20L2%20on%20the%20frequency%20interval%20and%20inverse%20integration%20there%20is%20continuous%20into%20pointwise%20values.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/whittaker-shannon-interpolation.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Pass%20to%20the%20sinc-sum%20limit.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Hilbert%20Fourier-series%20convergence.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Fourier%20inversion%20for%20continuous%20integrable%20functions%20with%20integrable%20transform%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22implicitly_assumed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22A%20continuous%20integrable%20function%20with%20integrable%20transform%20is%20recovered%20by%20Fourier%20inversion.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22inferred_from_context%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/whittaker-shannon-interpolation.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Filter%20the%20periodized%20spectrum%20and%20invert%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Identify%20the%20limit%20with%20x%28t%29.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22General%20integrable%20Fourier%20inversion.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22routine_omissions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22Source%20inverts%20the%20infinite%20series%20formally.%20The%20standard%20finite-interval%20L2%20interpretation%20and%20inverse-integration%20convergence%20are%20explicit%20prerequisites%3B%20no%20new%20convergence%20proof%20supplied.%22%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22whittaker-shannon-interpolation-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Functional%20Analysis%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Nyquist%E2%80%93Shannon%20sampling%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Nyquist%25E2%2580%2593Shannon_sampling_theorem%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/6445/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Nyquist%E2%80%93Shannon_sampling_theorem_ec6cdfb1.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Nyquist%E2%80%93Shannon%20sampling%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Nyquist%25E2%2580%2593Shannon_sampling_theorem%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Nyquist%E2%80%93Shannon_sampling_theorem_ec6cdfb1.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Read%20complete%20raw%20source%20and%20checked%20statement/proof%20scope%2C%20dependencies%20and%20boundaries.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22As%20in%20the%20source%20ordinary-transform%20discussion%2C%20specified%20continuous%20integrable%20x%20and%20bandlimited%20transform%3B%20distributional%20extensions%20are%20not%20claimed.%3B%20Restored%20Poisson%20identity%2C%20normalized%20sinc%20and%20rectangle%20definitions%20locally.%20Stated%20the%20standard%20convergence%20prerequisites%20behind%20the%20source%20formal%20termwise%20inverse%20transform%2C%20using%20symmetric%20partial%20sums.%3B%20Independent%20review%20confirms%20the%20ordinary-transform%20hypotheses%20give%20a%20bounded%20compactly%20supported%20spectrum%2C%20so%20the%20named%20finite-frequency%20L2%20prerequisites%20apply%3B%20no%20assertion%20that%20arbitrary%20time-domain%20L2%20convergence%20is%20pointwise%20is%20made.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%2C%20full-run%20batch%20128%3A%20Nyquist%E2%80%93Shannon%2C%20Derivation%20as%20a%20special%20case%20of%20Poisson%20summation%20and%20Aliasing%20Eq1%3A%20restored%20full%20filtering%20explanation%2C%20filter%20cases%2C%20Fourier%20chain%20and%20inverse%20display%3B%20explicit%20T%20normalization%2C%20symmetric%20frequency%20region%20and%20convergence%20prerequisites.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Classical%20Fourier%20series%20and%20L2%20estimates.%20Expand%20the%20band-limited%20transform%20directly%20in%20its%20Fourier%20series%20on%20%5B-1/%282T%29%2C1/%282T%29%5D%2C%20identify%20coefficients%20as%20sampled%20values%2C%20and%20inverse-integrate%20each%20partial%20sum%20to%20obtain%20sinc.%20L2%20convergence%20and%20Cauchy-Schwarz%20justify%20the%20limit.%20This%20avoids%20the%20separate%20Poisson/distribution%20route%20but%20retains%20Fourier%20analysis.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Let <span class="math" data-display="false">B&gt;0</span>, let <span class="math" data-display="false">x:\mathbb R\to\mathbb C</span> be continuous and integrable, and let <span class="math" data-display="false">X(f)=\int_{\mathbb R}x(t)e^{-2\pi i ft}\,dt</span> vanish for <span class="math" data-display="false">|f|\ge B</span>. Let <span class="math" data-display="false">0&lt;T\le1/(2B)</span>. Write <span class="math" data-display="false">\operatorname{sinc}(u)=\sin(\pi u)/(\pi u)</span> for <span class="math" data-display="false">u\ne0</span> and <span class="math" data-display="false">\operatorname{sinc}(0)=1</span>. Then for every real <span class="math" data-display="false">t</span>, <span class="math" data-display="false">x(t)=\lim_{N\to\infty}\sum_{n=-N}^{N}x(nT)\operatorname{sinc}((t-nT)/T)</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Calculus supplies the explicitly given Fourier integral and sinc function; analysis supplies the symmetric partial-sum limit. The signal is continuous and integrable, so no L2 equivalence classes or distributional transform are needed to understand reconstruction.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Harmonic analysis on Euclidean spaces</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Fourier transforms</span><span class="badge blue">Bandlimited continuous integrable functions</span><span class="badge blue">Uniform sampling</span><span class="badge blue">Sinc function</span><span class="badge blue">Convergence of bilateral series</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Filter the periodized spectrum and invert — outline</h3><p>Put <span class="math" data-display="false">f_s=1/T</span>. Use Poisson summation in its Fourier-series form:</p>
+<span class="math" data-display="true">X_{1/T}(f):=\sum_{k=-\infty}^{\infty}X(f-k/T)
+=\sum_{n=-\infty}^{\infty}T x(nT)e^{-i2\pi nTf}.</span><p>When there is no overlap of the copies (also known as “images”) of <span class="math" data-display="false">X(f)</span>, the <span class="math" data-display="false">k=0</span> term can be recovered by the product</p>
+<span class="math" data-display="true">X(f)=H(f)\cdot X_{1/T}(f),</span><p>where</p>
+<span class="math" data-display="true">H(f)=
+\begin{cases}
+1&amp;|f|&lt;B,\\
+0&amp;|f|&gt;f_s-B.
+\end{cases}</span><p>All that remains is to derive the formula for reconstruction. <span class="math" data-display="false">H(f)</span> need not be precisely defined in the region <span class="math" data-display="false">B\leq |f|\leq f_s-B</span> because <span class="math" data-display="false">X_{1/T}(f)</span> is zero in that region. However, the worst case is when <span class="math" data-display="false">B=f_s/2</span>, the Nyquist frequency. A function that is sufficient for that and all less severe cases is</p>
+<span class="math" data-display="true">H(f)=\operatorname{rect}(f/f_s)=
+\begin{cases}
+1&amp;|f|&lt;f_s/2,\\
+0&amp;|f|&gt;f_s/2.
+\end{cases}</span><p>Endpoint values are immaterial. Therefore,</p>
+<span class="math" data-display="true">\begin{aligned}
+X(f)&amp;=\operatorname{rect}(f/f_s)\cdot X_{1/T}(f)\\
+&amp;=\operatorname{rect}(Tf)\cdot\sum_{n=-\infty}^{\infty}T x(nT)e^{-i2\pi nTf}\\
+&amp;=\sum_{n=-\infty}^{\infty}x(nT)\,
+\underbrace{T\operatorname{rect}(Tf)e^{-i2\pi nTf}}_{\mathcal F\{\operatorname{sinc}((t-nT)/T)\}}.
+\end{aligned}</span><p>The inverse transform of both sides produces the Whittaker–Shannon interpolation formula:</p>
+<span class="math" data-display="true">x(t)=\sum_{n=-\infty}^{\infty}x(nT)\operatorname{sinc}\left(\frac{t-nT}{T}\right),</span><p>which shows how the samples <span class="math" data-display="false">x(nT)</span> can be combined to reconstruct <span class="math" data-display="false">x(t)</span>.</p>
+<p>Here the Fourier series is interpreted through symmetric partial sums in <span class="math" data-display="false">L^2</span> on the finite frequency interval, and inversion gives the corresponding sinc partial sums. The standard compact-frequency <span class="math" data-display="false">L^2</span> inversion estimate and Fourier inversion for continuous integrable functions with integrable transform give convergence at every <span class="math" data-display="false">t</span>. The source suppresses this convergence justification and quotes the sinc/rectangle transform pair.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Periodize the spectrum, filter it and invert symmetric L2 Fourier partial sums. The convergence justification uses L2 Fourier theory and general integrable transforms, beyond elementary Fourier calculations.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">L2 Fourier convergence</span><span class="badge blue">Poisson summation</span><span class="badge blue">Fourier inversion</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>Source inverts the infinite series formally. The standard finite-interval L2 interpretation and inverse-integration convergence are explicit prerequisites; no new convergence proof supplied.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Poisson summation in Fourier-series form</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The periodized spectrum has the displayed Fourier series with coefficients T x(nT).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Express the sampled spectrum.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Fourier periodization in the stated convergence framework.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Rectangle/sinc Fourier transform pair</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The scaled shifted sinc function has transform T rect(Tf) exp(-2pi i nTf).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Identify each reconstruction term.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit Fourier integral pair.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>L2 Fourier-series convergence and continuity of inverse integration on a finite frequency interval</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Fourier partial sums converge in L2 on the frequency interval and inverse integration there is continuous into pointwise values.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Pass to the sinc-sum limit.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Hilbert Fourier-series convergence.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fourier inversion for continuous integrable functions with integrable transform</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A continuous integrable function with integrable transform is recovered by Fourier inversion.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Identify the limit with x(t).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>General integrable Fourier inversion.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>Source inverts the infinite series formally. The standard finite-interval L2 interpretation and inverse-integration convergence are explicit prerequisites; no new convergence proof supplied.</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Let <span class="math" data-display="false">B&gt;0</span>, let <span class="math" data-display="false">x:\mathbb R\to\mathbb C</span> be continuous and integrable, and let <span class="math" data-display="false">X(f)=\int_{\mathbb R}x(t)e^{-2\pi i ft}\,dt</span> vanish for <span class="math" data-display="false">|f|\ge B</span>. Let <span class="math" data-display="false">0&lt;T\le1/(2B)</span>. Write <span class="math" data-display="false">\operatorname{sinc}(u)=\sin(\pi u)/(\pi u)</span> for <span class="math" data-display="false">u\ne0</span> and <span class="math" data-display="false">\operatorname{sinc}(0)=1</span>. Then for every real <span class="math" data-display="false">t</span>, <span class="math" data-display="false">x(t)=\lim_{N\to\infty}\sum_{n=-N}^{N}x(nT)\operatorname{sinc}((t-nT)/T)</span>.</p>
+<hr><h3 id="proof-1--filter-the-periodized-spectrum-and-invert--outline">Proof 1 — Filter the periodized spectrum and invert — outline</h3>
+<p>Put <span class="math" data-display="false">f_s=1/T</span>. Use Poisson summation in its Fourier-series form:</p>
+<span class="math" data-display="true">X_{1/T}(f):=\sum_{k=-\infty}^{\infty}X(f-k/T)
+=\sum_{n=-\infty}^{\infty}T x(nT)e^{-i2\pi nTf}.</span><p>When there is no overlap of the copies (also known as “images”) of <span class="math" data-display="false">X(f)</span>, the <span class="math" data-display="false">k=0</span> term can be recovered by the product</p>
+<span class="math" data-display="true">X(f)=H(f)\cdot X_{1/T}(f),</span><p>where</p>
+<span class="math" data-display="true">H(f)=
+\begin{cases}
+1&amp;|f|&lt;B,\\
+0&amp;|f|&gt;f_s-B.
+\end{cases}</span><p>All that remains is to derive the formula for reconstruction. <span class="math" data-display="false">H(f)</span> need not be precisely defined in the region <span class="math" data-display="false">B\leq |f|\leq f_s-B</span> because <span class="math" data-display="false">X_{1/T}(f)</span> is zero in that region. However, the worst case is when <span class="math" data-display="false">B=f_s/2</span>, the Nyquist frequency. A function that is sufficient for that and all less severe cases is</p>
+<span class="math" data-display="true">H(f)=\operatorname{rect}(f/f_s)=
+\begin{cases}
+1&amp;|f|&lt;f_s/2,\\
+0&amp;|f|&gt;f_s/2.
+\end{cases}</span><p>Endpoint values are immaterial. Therefore,</p>
+<span class="math" data-display="true">\begin{aligned}
+X(f)&amp;=\operatorname{rect}(f/f_s)\cdot X_{1/T}(f)\\
+&amp;=\operatorname{rect}(Tf)\cdot\sum_{n=-\infty}^{\infty}T x(nT)e^{-i2\pi nTf}\\
+&amp;=\sum_{n=-\infty}^{\infty}x(nT)\,
+\underbrace{T\operatorname{rect}(Tf)e^{-i2\pi nTf}}_{\mathcal F\{\operatorname{sinc}((t-nT)/T)\}}.
+\end{aligned}</span><p>The inverse transform of both sides produces the Whittaker–Shannon interpolation formula:</p>
+<span class="math" data-display="true">x(t)=\sum_{n=-\infty}^{\infty}x(nT)\operatorname{sinc}\left(\frac{t-nT}{T}\right),</span><p>which shows how the samples <span class="math" data-display="false">x(nT)</span> can be combined to reconstruct <span class="math" data-display="false">x(t)</span>.</p>
+<p>Here the Fourier series is interpreted through symmetric partial sums in <span class="math" data-display="false">L^2</span> on the finite frequency interval, and inversion gives the corresponding sinc partial sums. The standard compact-frequency <span class="math" data-display="false">L^2</span> inversion estimate and Fourier inversion for continuous integrable functions with integrable transform give convergence at every <span class="math" data-display="false">t</span>. The source suppresses this convergence justification and quotes the sinc/rectangle transform pair.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Calculus supplies the explicitly given Fourier integral and sinc function; analysis supplies the symmetric partial-sum limit. The signal is continuous and integrable, so no L2 equivalence classes or distributional transform are needed to understand reconstruction.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Harmonic analysis on Euclidean spaces</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Fourier transforms</span><span class="badge blue">Bandlimited continuous integrable functions</span><span class="badge blue">Uniform sampling</span><span class="badge blue">Sinc function</span><span class="badge blue">Convergence of bilateral series</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Filter the periodized spectrum and invert — outline</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Periodize the spectrum, filter it and invert symmetric L2 Fourier partial sums. The convergence justification uses L2 Fourier theory and general integrable transforms, beyond elementary Fourier calculations.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">L2 Fourier convergence</span><span class="badge blue">Poisson summation</span><span class="badge blue">Fourier inversion</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>Source inverts the infinite series formally. The standard finite-interval L2 interpretation and inverse-integration convergence are explicit prerequisites; no new convergence proof supplied.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Poisson summation in Fourier-series form</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The periodized spectrum has the displayed Fourier series with coefficients T x(nT).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Express the sampled spectrum.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Fourier periodization in the stated convergence framework.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Rectangle/sinc Fourier transform pair</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The scaled shifted sinc function has transform T rect(Tf) exp(-2pi i nTf).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Identify each reconstruction term.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit Fourier integral pair.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>L2 Fourier-series convergence and continuity of inverse integration on a finite frequency interval</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Fourier partial sums converge in L2 on the frequency interval and inverse integration there is continuous into pointwise values.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Pass to the sinc-sum limit.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Hilbert Fourier-series convergence.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fourier inversion for continuous integrable functions with integrable transform</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A continuous integrable function with integrable transform is recovered by Fourier inversion.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Identify the limit with x(t).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>General integrable Fourier inversion.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>Source inverts the infinite series formally. The standard finite-interval L2 interpretation and inverse-integration convergence are explicit prerequisites; no new convergence proof supplied.</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

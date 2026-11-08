@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Fourier-domain periodization and sampled values · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;simpler proof likely available&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Undergraduate level Statement - All proofs beyond undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Fourier-domain periodization and sampled values</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Poisson_summation_formula" target="_blank" rel="noopener">Poisson summation formula</a><button type="button" data-source="https://en.wikipedia.org/wiki/Poisson_summation_formula">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div><div class="field" data-noteworthiness-field hidden><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"></div></div></div></div><div class="metadata-fields"></div><div class="simpler-proof-warning"><div class="metadata-fields"><div class="field"><div class="field-label">Warning</div><div class="field-value"><span class="badge red">A simpler or elementary proof is likely available but is not yet incorporated here.</span></div></div></div></div><div data-simpler-assessment data-warning="true"><div class="metadata-fields"><div class="field"><div class="field-label">Simpler proof assessment</div><div class="field-value"><p>Likely alternative prerequisite level: Undergraduate level; lowest recorded proof level: Beyond undergraduate level. Periodize the Schwartz transform and compute its Fourier coefficients by termwise integration over one period followed by unfolding to the real line. Fourier inversion identifies them as T s(nT), with the sign convention in the statement. Rapid decay of both transforms gives absolute/uniform convergence, so Fourier uniqueness yields pointwise equality. Ordinary real Fourier integrals, series and estimates replace tempered distributions and Dirac combs; the alternative remains undergraduate.</p>
+</div></div></div></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;poisson-dual-periodization&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;retain&quot;,
+  &quot;decision_summary&quot;: &quot;Retain the likely flag for a strictly lower-category alternative.&quot;,
+  &quot;explanation&quot;: &quot;Periodize the Schwartz transform and compute its Fourier coefficients by termwise integration over one period followed by unfolding to the real line. Fourier inversion identifies them as T s(nT), with the sign convention in the statement. Rapid decay of both transforms gives absolute/uniform convergence, so Fourier uniqueness yields pointwise equality. Ordinary real Fourier integrals, series and estimates replace tempered distributions and Dirac combs; the alternative remains undergraduate.&quot;,
+  &quot;statement_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/poisson-dual-periodization.md&quot;,
+  &quot;content_sha256&quot;: &quot;332f9e7d85e2578232e3a0aecadbf434f6eb5ccecb4bb24c30558df969bea604&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;9bb88fa37cc21f87c7ce780b85d8aeaac80dca2970759768ec64c4dbb2a1e3c2&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;poisson-dual-periodization&quot;,
+    &quot;title&quot;: &quot;Fourier-domain periodization and sampled values&quot;,
+    &quot;content_file&quot;: &quot;poisson-dual-periodization.md&quot;,
+    &quot;importance&quot;: &quot;high&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;no&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Fourier analysis&quot;,
+        &quot;Integrable functions&quot;,
+        &quot;Fourier series&quot;
+      ],
+      &quot;level_justification&quot;: &quot;Calculus supplies improper Fourier integrals and analysis supplies convergent series. Schwartz means smooth with each derivative decaying faster than every inverse power; this is a direct quantified growth condition. The transform is explicitly given, with no distribution or L2 completion involved.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Harmonic Analysis&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Fourier transform a sampled Dirac comb&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;no&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Tempered distributions&quot;,
+          &quot;Dirac comb&quot;,
+          &quot;Schwartz functions&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Fourier-transform the sampled Dirac comb using distributional modulation and convolution, then upgrade equality for Schwartz sums. Tempered distributions and Schwartz-space Fourier calculus require graduate analysis.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;partly&quot;,
+          &quot;justification&quot;: &quot;The local deduction is supplied, but the named analytic prerequisites are used without local proofs.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Scaled Dirac-comb identity, stated locally&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Fourier transform a sampled Dirac comb&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The displayed exponential comb equals T times the spacing-T Dirac comb as a distribution.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/poisson-dual-periodization.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Fourier transform a sampled Dirac comb&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Replace the modulation sum by sampled point masses.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Distributional Poisson-comb identity.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Fourier modulation and delta-transform identities for tempered distributions&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Fourier transform a sampled Dirac comb&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Fourier modulation shifts frequency and the transform of a translated delta is the stated exponential.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/poisson-dual-periodization.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Fourier transform a sampled Dirac comb&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Transform the weighted point masses.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Tempered-distribution Fourier rules.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Fourier convolution theorem for the displayed tempered distributions&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Fourier transform a sampled Dirac comb&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Fourier transform exchanges the displayed distributional convolution and product.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/poisson-dual-periodization.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Fourier transform a sampled Dirac comb&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Give the equivalent comb-convolution calculation.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Distributional convolution calculus.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;complete&quot;,
+          &quot;notes&quot;: []
+        },
+        &quot;id&quot;: &quot;poisson-dual-periodization-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [
+          &quot;Functional Analysis&quot;
+        ],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Poisson summation formula&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Poisson_summation_formula&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/4490/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Poisson_summation_formula_e5aac691.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Poisson summation formula&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Poisson_summation_formula&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Poisson_summation_formula_e5aac691.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Read complete raw source and checked statement/proof scope, dependencies and boundaries.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Removed source-local section numbering and irrelevant preamble; supplied the source hypotheses and definitions locally.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration, full-run batch 89: Poisson summation formula, Distributional formulation: restored all modulation/delta-transform steps and source&#x27;s equivalent convolution calculation within existing proof; retained Schwartz pointwise justification and sign reindexing.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Classical Fourier series and ordinary integrals. Periodize the Schwartz transform, compute its Fourier coefficients by integrating over one period and unfolding the sum, and apply Fourier inversion. Rapid decay justifies absolute/uniform convergence. This proves the identity without Dirac combs or tempered distributions.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="poisson-dual-periodization.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22poisson-dual-periodization%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22retain%22%2C%0A%20%20%22decision_summary%22%3A%20%22Retain%20the%20likely%20flag%20for%20a%20strictly%20lower-category%20alternative.%22%2C%0A%20%20%22explanation%22%3A%20%22Periodize%20the%20Schwartz%20transform%20and%20compute%20its%20Fourier%20coefficients%20by%20termwise%20integration%20over%20one%20period%20followed%20by%20unfolding%20to%20the%20real%20line.%20Fourier%20inversion%20identifies%20them%20as%20T%20s%28nT%29%2C%20with%20the%20sign%20convention%20in%20the%20statement.%20Rapid%20decay%20of%20both%20transforms%20gives%20absolute/uniform%20convergence%2C%20so%20Fourier%20uniqueness%20yields%20pointwise%20equality.%20Ordinary%20real%20Fourier%20integrals%2C%20series%20and%20estimates%20replace%20tempered%20distributions%20and%20Dirac%20combs%3B%20the%20alternative%20remains%20undergraduate.%22%2C%0A%20%20%22statement_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/poisson-dual-periodization.md%22%2C%0A%20%20%22content_sha256%22%3A%20%22332f9e7d85e2578232e3a0aecadbf434f6eb5ccecb4bb24c30558df969bea604%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%229bb88fa37cc21f87c7ce780b85d8aeaac80dca2970759768ec64c4dbb2a1e3c2%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22poisson-dual-periodization%22%2C%0A%20%20%20%20%22title%22%3A%20%22Fourier-domain%20periodization%20and%20sampled%20values%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22poisson-dual-periodization.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22high%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Fourier%20analysis%22%2C%0A%20%20%20%20%20%20%20%20%22Integrable%20functions%22%2C%0A%20%20%20%20%20%20%20%20%22Fourier%20series%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22Calculus%20supplies%20improper%20Fourier%20integrals%20and%20analysis%20supplies%20convergent%20series.%20Schwartz%20means%20smooth%20with%20each%20derivative%20decaying%20faster%20than%20every%20inverse%20power%3B%20this%20is%20a%20direct%20quantified%20growth%20condition.%20The%20transform%20is%20explicitly%20given%2C%20with%20no%20distribution%20or%20L2%20completion%20involved.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Harmonic%20Analysis%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Fourier%20transform%20a%20sampled%20Dirac%20comb%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Tempered%20distributions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Dirac%20comb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Schwartz%20functions%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Fourier-transform%20the%20sampled%20Dirac%20comb%20using%20distributional%20modulation%20and%20convolution%2C%20then%20upgrade%20equality%20for%20Schwartz%20sums.%20Tempered%20distributions%20and%20Schwartz-space%20Fourier%20calculus%20require%20graduate%20analysis.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22partly%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20local%20deduction%20is%20supplied%2C%20but%20the%20named%20analytic%20prerequisites%20are%20used%20without%20local%20proofs.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Scaled%20Dirac-comb%20identity%2C%20stated%20locally%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Fourier%20transform%20a%20sampled%20Dirac%20comb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20displayed%20exponential%20comb%20equals%20T%20times%20the%20spacing-T%20Dirac%20comb%20as%20a%20distribution.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/poisson-dual-periodization.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Fourier%20transform%20a%20sampled%20Dirac%20comb%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Replace%20the%20modulation%20sum%20by%20sampled%20point%20masses.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Distributional%20Poisson-comb%20identity.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Fourier%20modulation%20and%20delta-transform%20identities%20for%20tempered%20distributions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Fourier%20transform%20a%20sampled%20Dirac%20comb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Fourier%20modulation%20shifts%20frequency%20and%20the%20transform%20of%20a%20translated%20delta%20is%20the%20stated%20exponential.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/poisson-dual-periodization.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Fourier%20transform%20a%20sampled%20Dirac%20comb%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Transform%20the%20weighted%20point%20masses.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Tempered-distribution%20Fourier%20rules.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Fourier%20convolution%20theorem%20for%20the%20displayed%20tempered%20distributions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Fourier%20transform%20a%20sampled%20Dirac%20comb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Fourier%20transform%20exchanges%20the%20displayed%20distributional%20convolution%20and%20product.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/poisson-dual-periodization.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Fourier%20transform%20a%20sampled%20Dirac%20comb%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Give%20the%20equivalent%20comb-convolution%20calculation.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Distributional%20convolution%20calculus.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22complete%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22poisson-dual-periodization-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Functional%20Analysis%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Poisson%20summation%20formula%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Poisson_summation_formula%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/4490/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Poisson_summation_formula_e5aac691.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Poisson%20summation%20formula%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Poisson_summation_formula%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Poisson_summation_formula_e5aac691.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Read%20complete%20raw%20source%20and%20checked%20statement/proof%20scope%2C%20dependencies%20and%20boundaries.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Removed%20source-local%20section%20numbering%20and%20irrelevant%20preamble%3B%20supplied%20the%20source%20hypotheses%20and%20definitions%20locally.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%2C%20full-run%20batch%2089%3A%20Poisson%20summation%20formula%2C%20Distributional%20formulation%3A%20restored%20all%20modulation/delta-transform%20steps%20and%20source%27s%20equivalent%20convolution%20calculation%20within%20existing%20proof%3B%20retained%20Schwartz%20pointwise%20justification%20and%20sign%20reindexing.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Classical%20Fourier%20series%20and%20ordinary%20integrals.%20Periodize%20the%20Schwartz%20transform%2C%20compute%20its%20Fourier%20coefficients%20by%20integrating%20over%20one%20period%20and%20unfolding%20the%20sum%2C%20and%20apply%20Fourier%20inversion.%20Rapid%20decay%20justifies%20absolute/uniform%20convergence.%20This%20proves%20the%20identity%20without%20Dirac%20combs%20or%20tempered%20distributions.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Let <span class="math" data-display="false">s</span> be Schwartz on <span class="math" data-display="false">\mathbb R</span>, <span class="math" data-display="false">S(f)=\int_{\mathbb R}s(x)e^{-2\pi ixf}\,dx</span>, and <span class="math" data-display="false">T&gt;0</span>. Then <span class="math" data-display="true">\sum_{k\in\mathbb Z}S(f+k/T)=T\sum_{n\in\mathbb Z}s(nT)e^{-2\pi inTf}.</span> Both series converge absolutely for every real <span class="math" data-display="false">f</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Calculus supplies improper Fourier integrals and analysis supplies convergent series. Schwartz means smooth with each derivative decaying faster than every inverse power; this is a direct quantified growth condition. The transform is explicitly given, with no distribution or L2 completion involved.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Harmonic analysis on Euclidean spaces</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Fourier analysis</span><span class="badge blue">Integrable functions</span><span class="badge blue">Fourier series</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Fourier transform a sampled Dirac comb</h3><p>Use the distributional comb identity</p>
+<span class="math" data-display="true">\sum_{k=-\infty}^{\infty}e^{i2\pi(k/T)x}
+=T\sum_{n=-\infty}^{\infty}\delta(x-nT)</span><p>and the Fourier modulation rule. Then</p>
+<span class="math" data-display="true">\begin{aligned}
+\sum_{k=-\infty}^{\infty}S(f-k/T)
+&amp;=\sum_{k=-\infty}^{\infty}\mathcal F\{s(x)e^{i2\pi(k/T)x}\}(f)\\
+&amp;=\mathcal F\left\{s(x)\underbrace{\sum_{k=-\infty}^{\infty}e^{i2\pi(k/T)x}}_{T\sum_{n=-\infty}^{\infty}\delta(x-nT)}\right\}(f)\\
+&amp;=\mathcal F\left\{\sum_{n=-\infty}^{\infty}T s(nT)\delta(x-nT)\right\}(f)\\
+&amp;=\sum_{n=-\infty}^{\infty}T s(nT)\mathcal F\{\delta(x-nT)\}(f)\\
+&amp;=\sum_{n=-\infty}^{\infty}T s(nT)e^{-i2\pi nTf}.
+\end{aligned}</span><p>Equivalently, writing <span class="math" data-display="false">*</span> for convolution, the same calculation begins</p>
+<span class="math" data-display="true">\begin{aligned}
+\sum_{k=-\infty}^{\infty}S(f-k/T)
+&amp;=S(f)*\sum_{k=-\infty}^{\infty}\delta(f-k/T)\\
+&amp;=S(f)*\mathcal F\left\{T\sum_{n=-\infty}^{\infty}\delta(x-nT)\right\}(f)\\
+&amp;=\mathcal F\left\{s(x)T\sum_{n=-\infty}^{\infty}\delta(x-nT)\right\}(f)\\
+&amp;=\mathcal F\left\{\sum_{n=-\infty}^{\infty}T s(nT)\delta(x-nT)\right\}(f),
+\end{aligned}</span><p>and finishes as above.</p>
+<p>Reindex <span class="math" data-display="false">k</span> to replace the minus sign by a plus sign. For Schwartz <span class="math" data-display="false">s</span>, both sides are convergent smooth periodic functions, so their distributional equality gives pointwise equality.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Fourier-transform the sampled Dirac comb using distributional modulation and convolution, then upgrade equality for Schwartz sums. Tempered distributions and Schwartz-space Fourier calculus require graduate analysis.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Tempered distributions</span><span class="badge blue">Dirac comb</span><span class="badge blue">Schwartz functions</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Scaled Dirac-comb identity, stated locally</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The displayed exponential comb equals T times the spacing-T Dirac comb as a distribution.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Replace the modulation sum by sampled point masses.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Distributional Poisson-comb identity.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fourier modulation and delta-transform identities for tempered distributions</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Fourier modulation shifts frequency and the transform of a translated delta is the stated exponential.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Transform the weighted point masses.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Tempered-distribution Fourier rules.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fourier convolution theorem for the displayed tempered distributions</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Fourier transform exchanges the displayed distributional convolution and product.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Give the equivalent comb-convolution calculation.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Distributional convolution calculus.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Let <span class="math" data-display="false">s</span> be Schwartz on <span class="math" data-display="false">\mathbb R</span>, <span class="math" data-display="false">S(f)=\int_{\mathbb R}s(x)e^{-2\pi ixf}\,dx</span>, and <span class="math" data-display="false">T&gt;0</span>. Then <span class="math" data-display="true">\sum_{k\in\mathbb Z}S(f+k/T)=T\sum_{n\in\mathbb Z}s(nT)e^{-2\pi inTf}.</span> Both series converge absolutely for every real <span class="math" data-display="false">f</span>.</p>
+<hr><h3 id="proof-1--fourier-transform-a-sampled-dirac-comb">Proof 1 — Fourier transform a sampled Dirac comb</h3>
+<p>Use the distributional comb identity</p>
+<span class="math" data-display="true">\sum_{k=-\infty}^{\infty}e^{i2\pi(k/T)x}
+=T\sum_{n=-\infty}^{\infty}\delta(x-nT)</span><p>and the Fourier modulation rule. Then</p>
+<span class="math" data-display="true">\begin{aligned}
+\sum_{k=-\infty}^{\infty}S(f-k/T)
+&amp;=\sum_{k=-\infty}^{\infty}\mathcal F\{s(x)e^{i2\pi(k/T)x}\}(f)\\
+&amp;=\mathcal F\left\{s(x)\underbrace{\sum_{k=-\infty}^{\infty}e^{i2\pi(k/T)x}}_{T\sum_{n=-\infty}^{\infty}\delta(x-nT)}\right\}(f)\\
+&amp;=\mathcal F\left\{\sum_{n=-\infty}^{\infty}T s(nT)\delta(x-nT)\right\}(f)\\
+&amp;=\sum_{n=-\infty}^{\infty}T s(nT)\mathcal F\{\delta(x-nT)\}(f)\\
+&amp;=\sum_{n=-\infty}^{\infty}T s(nT)e^{-i2\pi nTf}.
+\end{aligned}</span><p>Equivalently, writing <span class="math" data-display="false">*</span> for convolution, the same calculation begins</p>
+<span class="math" data-display="true">\begin{aligned}
+\sum_{k=-\infty}^{\infty}S(f-k/T)
+&amp;=S(f)*\sum_{k=-\infty}^{\infty}\delta(f-k/T)\\
+&amp;=S(f)*\mathcal F\left\{T\sum_{n=-\infty}^{\infty}\delta(x-nT)\right\}(f)\\
+&amp;=\mathcal F\left\{s(x)T\sum_{n=-\infty}^{\infty}\delta(x-nT)\right\}(f)\\
+&amp;=\mathcal F\left\{\sum_{n=-\infty}^{\infty}T s(nT)\delta(x-nT)\right\}(f),
+\end{aligned}</span><p>and finishes as above.</p>
+<p>Reindex <span class="math" data-display="false">k</span> to replace the minus sign by a plus sign. For Schwartz <span class="math" data-display="false">s</span>, both sides are convergent smooth periodic functions, so their distributional equality gives pointwise equality.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Calculus supplies improper Fourier integrals and analysis supplies convergent series. Schwartz means smooth with each derivative decaying faster than every inverse power; this is a direct quantified growth condition. The transform is explicitly given, with no distribution or L2 completion involved.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Harmonic analysis on Euclidean spaces</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Fourier analysis</span><span class="badge blue">Integrable functions</span><span class="badge blue">Fourier series</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Fourier transform a sampled Dirac comb</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Fourier-transform the sampled Dirac comb using distributional modulation and convolution, then upgrade equality for Schwartz sums. Tempered distributions and Schwartz-space Fourier calculus require graduate analysis.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Tempered distributions</span><span class="badge blue">Dirac comb</span><span class="badge blue">Schwartz functions</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Scaled Dirac-comb identity, stated locally</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The displayed exponential comb equals T times the spacing-T Dirac comb as a distribution.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Replace the modulation sum by sampled point masses.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Distributional Poisson-comb identity.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fourier modulation and delta-transform identities for tempered distributions</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Fourier modulation shifts frequency and the transform of a translated delta is the stated exponential.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Transform the weighted point masses.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Tempered-distribution Fourier rules.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fourier convolution theorem for the displayed tempered distributions</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Fourier transform exchanges the displayed distributional convolution and product.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Give the equivalent comb-convolution calculation.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Distributional convolution calculus.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

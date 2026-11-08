@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Dedekind’s linear independence of characters · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;simpler proof likely available&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Has at least one proof with concepts from a different area&quot;, &quot;Undergraduate level Statement - All proofs beyond undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Dedekind’s linear independence of characters</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Chinese_remainder_theorem" target="_blank" rel="noopener">Chinese remainder theorem</a><button type="button" data-source="https://en.wikipedia.org/wiki/Chinese_remainder_theorem">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div><div class="field" data-noteworthiness-field hidden><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"></div></div></div></div><div class="metadata-fields"></div><div class="simpler-proof-warning"><div class="metadata-fields"><div class="field"><div class="field-label">Warning</div><div class="field-value"><span class="badge red">A simpler or elementary proof is likely available but is not yet incorporated here.</span></div></div></div></div><div data-simpler-assessment data-warning="true"><div class="metadata-fields"><div class="field"><div class="field-label">Simpler proof assessment</div><div class="field-value"><p>Likely alternative prerequisite level: Undergraduate level; lowest recorded proof level: Beyond undergraduate level. Choose a nontrivial relation among the characters with the fewest nonzero coefficients. A one-term relation is impossible by evaluation at the identity. For two different characters choose y where their values differ. Subtract f_j(y) times the relation at x from the relation at xy. One term disappears while another remains nonzero because the coefficients lie in an integral domain. This contradicts minimality, for arbitrary monoids and integral domains, without monoid rings or CRT.</p>
+</div></div></div></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;dedekind-character-independence-crt&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;retain&quot;,
+  &quot;decision_summary&quot;: &quot;Retain the likely flag for a strictly lower-category alternative.&quot;,
+  &quot;explanation&quot;: &quot;Choose a nontrivial relation among the characters with the fewest nonzero coefficients. A one-term relation is impossible by evaluation at the identity. For two different characters choose y where their values differ. Subtract f_j(y) times the relation at x from the relation at xy. One term disappears while another remains nonzero because the coefficients lie in an integral domain. This contradicts minimality, for arbitrary monoids and integral domains, without monoid rings or CRT.&quot;,
+  &quot;statement_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/dedekind-character-independence-crt.md&quot;,
+  &quot;content_sha256&quot;: &quot;445105dbbf2112b27aeefa19078e1e8ab3d38136063b8b54b1eecdbdd53853f7&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;76843cd664d4134b04caa72234d2d5cbadbe64048a85419ba84443943bfe1b84&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;dedekind-character-independence-crt&quot;,
+    &quot;title&quot;: &quot;Dedekind’s linear independence of characters&quot;,
+    &quot;content_file&quot;: &quot;dedekind-character-independence-crt.md&quot;,
+    &quot;importance&quot;: &quot;high&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;no&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;monoids&quot;,
+        &quot;commutative integral domains&quot;,
+        &quot;identity-preserving multiplicative maps&quot;,
+        &quot;linear independence of functions&quot;
+      ],
+      &quot;level_justification&quot;: &quot;Introductory algebra supplies groups, cosets, quotients, homomorphisms and linear independence. Complement or composition-series conditions and monoid vocabulary are small algebraic extensions; finite-tree automorphisms are adjacency-preserving permutations. No additional structural theory is required.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Linear Algebra&quot;,
+        &quot;Universal Algebra&quot;,
+        &quot;Commutative Algebra&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Separate character values by comaximal kernels&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;no&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Monoid algebras&quot;,
+          &quot;Two-sided ideals&quot;,
+          &quot;Ring CRT&quot;
+        ],
+        &quot;level_justification&quot;: &quot;The proof adds monoid algebras and their linear extension property to fraction fields, noncommutative two-sided ideals and the ring CRT. Retain beyond undergraduate provisionally because the combined algebraic constructions exceed a confidently small extension, even though the individual linear-algebra steps are basic.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;partly&quot;,
+          &quot;justification&quot;: &quot;The fraction-field reduction, character-kernel separation and coefficient argument are local; general ring CRT remains an external substantive theorem.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Chinese remainder theorem for pairwise comaximal two-sided ideals: R/∩Ii ≅ ∏R/Ii&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;For pairwise comaximal two-sided ideals, reduction onto the product of quotient rings is surjective with intersection kernel.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/dedekind-character-independence-crt.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Separate the character evaluations.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Elementary ring CRT once the algebra is constructed.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Fraction field of an integral domain&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;An integral domain embeds in its fraction field.&quot;,
+            &quot;identification_status&quot;: &quot;inferred_from_context&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/dedekind-character-independence-crt.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Reduce to field coefficients.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Introductory algebra.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;First isomorphism theorem and distinct maximal two-sided ideals are comaximal&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;implicitly_assumed&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;A surjective ring map has quotient isomorphic to its image, and distinct maximal two-sided ideals are comaximal.&quot;,
+            &quot;identification_status&quot;: &quot;inferred_from_context&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/dedekind-character-independence-crt.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Verify the CRT hypotheses.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Basic ring and ideal theory.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Nonzero linear functionals with the same kernel are proportional&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;implicitly_assumed&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Two nonzero linear functionals with the same kernel are proportional.&quot;,
+            &quot;identification_status&quot;: &quot;inferred_from_context&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/dedekind-character-independence-crt.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Distinguish the character kernels.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Linear algebra.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Simultaneous character evaluation is surjective&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;proved_in_this_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The simultaneous character evaluation map from k[M] to the finite product of k is surjective.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/dedekind-character-independence-crt.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Separate character values by comaximal kernels&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Force all coefficients of the relation to vanish.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;The local proof combines the monoid-algebra construction and its ideal structure.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;complete&quot;,
+          &quot;notes&quot;: []
+        },
+        &quot;id&quot;: &quot;dedekind-character-independence-crt-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [
+          &quot;Ring Theory&quot;
+        ],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Chinese remainder theorem&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Chinese_remainder_theorem&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/1398/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;provisional&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Chinese_remainder_theorem_43b1ed65.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Chinese remainder theorem&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Chinese_remainder_theorem&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Chinese_remainder_theorem_43b1ed65.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;The evaluation lemma is a component of this proof, not a second alternative. No commutativity of M is introduced to evade the product assertion.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Preserved canonical ID and arbitrary monoid scope. Retained the correct intersection quotient chain and omitted the unused product-of-kernels equality. Made identity preservation and the commutative-domain convention explicit.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration, full-run batch 27: Chinese remainder theorem, Dedekind’s theorem: full source linear extension, nonproportionality, kernels, three quotient/evaluation maps and coefficient displays restored. Retained identity-preserving arbitrary-monoid scope and intersection-only K; removed source product-of-kernels equality, unjustified for general noncommutative monoid algebras.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Elementary algebra. Take a nonzero linear relation with the fewest terms. Evaluate at xy and subtract f_j(y) times the relation at x, choosing y to distinguish two characters. This produces a shorter relation, contradicting minimality. The domain condition handles nonzero products; no monoid ring or CRT is needed.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="dedekind-character-independence-crt.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22dedekind-character-independence-crt%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22retain%22%2C%0A%20%20%22decision_summary%22%3A%20%22Retain%20the%20likely%20flag%20for%20a%20strictly%20lower-category%20alternative.%22%2C%0A%20%20%22explanation%22%3A%20%22Choose%20a%20nontrivial%20relation%20among%20the%20characters%20with%20the%20fewest%20nonzero%20coefficients.%20A%20one-term%20relation%20is%20impossible%20by%20evaluation%20at%20the%20identity.%20For%20two%20different%20characters%20choose%20y%20where%20their%20values%20differ.%20Subtract%20f_j%28y%29%20times%20the%20relation%20at%20x%20from%20the%20relation%20at%20xy.%20One%20term%20disappears%20while%20another%20remains%20nonzero%20because%20the%20coefficients%20lie%20in%20an%20integral%20domain.%20This%20contradicts%20minimality%2C%20for%20arbitrary%20monoids%20and%20integral%20domains%2C%20without%20monoid%20rings%20or%20CRT.%22%2C%0A%20%20%22statement_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/dedekind-character-independence-crt.md%22%2C%0A%20%20%22content_sha256%22%3A%20%22445105dbbf2112b27aeefa19078e1e8ab3d38136063b8b54b1eecdbdd53853f7%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%2276843cd664d4134b04caa72234d2d5cbadbe64048a85419ba84443943bfe1b84%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22dedekind-character-independence-crt%22%2C%0A%20%20%20%20%22title%22%3A%20%22Dedekind%E2%80%99s%20linear%20independence%20of%20characters%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22dedekind-character-independence-crt.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22high%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22monoids%22%2C%0A%20%20%20%20%20%20%20%20%22commutative%20integral%20domains%22%2C%0A%20%20%20%20%20%20%20%20%22identity-preserving%20multiplicative%20maps%22%2C%0A%20%20%20%20%20%20%20%20%22linear%20independence%20of%20functions%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22Introductory%20algebra%20supplies%20groups%2C%20cosets%2C%20quotients%2C%20homomorphisms%20and%20linear%20independence.%20Complement%20or%20composition-series%20conditions%20and%20monoid%20vocabulary%20are%20small%20algebraic%20extensions%3B%20finite-tree%20automorphisms%20are%20adjacency-preserving%20permutations.%20No%20additional%20structural%20theory%20is%20required.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Linear%20Algebra%22%2C%0A%20%20%20%20%20%20%20%20%22Universal%20Algebra%22%2C%0A%20%20%20%20%20%20%20%20%22Commutative%20Algebra%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Separate%20character%20values%20by%20comaximal%20kernels%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Monoid%20algebras%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Two-sided%20ideals%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Ring%20CRT%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20proof%20adds%20monoid%20algebras%20and%20their%20linear%20extension%20property%20to%20fraction%20fields%2C%20noncommutative%20two-sided%20ideals%20and%20the%20ring%20CRT.%20Retain%20beyond%20undergraduate%20provisionally%20because%20the%20combined%20algebraic%20constructions%20exceed%20a%20confidently%20small%20extension%2C%20even%20though%20the%20individual%20linear-algebra%20steps%20are%20basic.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22partly%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20fraction-field%20reduction%2C%20character-kernel%20separation%20and%20coefficient%20argument%20are%20local%3B%20general%20ring%20CRT%20remains%20an%20external%20substantive%20theorem.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Chinese%20remainder%20theorem%20for%20pairwise%20comaximal%20two-sided%20ideals%3A%20R/%E2%88%A9Ii%20%E2%89%85%20%E2%88%8FR/Ii%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22For%20pairwise%20comaximal%20two-sided%20ideals%2C%20reduction%20onto%20the%20product%20of%20quotient%20rings%20is%20surjective%20with%20intersection%20kernel.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/dedekind-character-independence-crt.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Separate%20the%20character%20evaluations.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Elementary%20ring%20CRT%20once%20the%20algebra%20is%20constructed.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Fraction%20field%20of%20an%20integral%20domain%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22An%20integral%20domain%20embeds%20in%20its%20fraction%20field.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22inferred_from_context%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/dedekind-character-independence-crt.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Reduce%20to%20field%20coefficients.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Introductory%20algebra.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22First%20isomorphism%20theorem%20and%20distinct%20maximal%20two-sided%20ideals%20are%20comaximal%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22implicitly_assumed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22A%20surjective%20ring%20map%20has%20quotient%20isomorphic%20to%20its%20image%2C%20and%20distinct%20maximal%20two-sided%20ideals%20are%20comaximal.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22inferred_from_context%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/dedekind-character-independence-crt.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Verify%20the%20CRT%20hypotheses.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Basic%20ring%20and%20ideal%20theory.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Nonzero%20linear%20functionals%20with%20the%20same%20kernel%20are%20proportional%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22implicitly_assumed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Two%20nonzero%20linear%20functionals%20with%20the%20same%20kernel%20are%20proportional.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22inferred_from_context%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/dedekind-character-independence-crt.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Distinguish%20the%20character%20kernels.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Linear%20algebra.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Simultaneous%20character%20evaluation%20is%20surjective%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22proved_in_this_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20simultaneous%20character%20evaluation%20map%20from%20k%5BM%5D%20to%20the%20finite%20product%20of%20k%20is%20surjective.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/dedekind-character-independence-crt.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Separate%20character%20values%20by%20comaximal%20kernels%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Force%20all%20coefficients%20of%20the%20relation%20to%20vanish.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20local%20proof%20combines%20the%20monoid-algebra%20construction%20and%20its%20ideal%20structure.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22complete%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22dedekind-character-independence-crt-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Ring%20Theory%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Chinese%20remainder%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Chinese_remainder_theorem%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/1398/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22provisional%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Chinese_remainder_theorem_43b1ed65.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Chinese%20remainder%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Chinese_remainder_theorem%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Chinese_remainder_theorem_43b1ed65.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22The%20evaluation%20lemma%20is%20a%20component%20of%20this%20proof%2C%20not%20a%20second%20alternative.%20No%20commutativity%20of%20M%20is%20introduced%20to%20evade%20the%20product%20assertion.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Preserved%20canonical%20ID%20and%20arbitrary%20monoid%20scope.%20Retained%20the%20correct%20intersection%20quotient%20chain%20and%20omitted%20the%20unused%20product-of-kernels%20equality.%20Made%20identity%20preservation%20and%20the%20commutative-domain%20convention%20explicit.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%2C%20full-run%20batch%2027%3A%20Chinese%20remainder%20theorem%2C%20Dedekind%E2%80%99s%20theorem%3A%20full%20source%20linear%20extension%2C%20nonproportionality%2C%20kernels%2C%20three%20quotient/evaluation%20maps%20and%20coefficient%20displays%20restored.%20Retained%20identity-preserving%20arbitrary-monoid%20scope%20and%20intersection-only%20K%3B%20removed%20source%20product-of-kernels%20equality%2C%20unjustified%20for%20general%20noncommutative%20monoid%20algebras.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Elementary%20algebra.%20Take%20a%20nonzero%20linear%20relation%20with%20the%20fewest%20terms.%20Evaluate%20at%20xy%20and%20subtract%20f_j%28y%29%20times%20the%20relation%20at%20x%2C%20choosing%20y%20to%20distinguish%20two%20characters.%20This%20produces%20a%20shorter%20relation%2C%20contradicting%20minimality.%20The%20domain%20condition%20handles%20nonzero%20products%3B%20no%20monoid%20ring%20or%20CRT%20is%20needed.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Let <span class="math" data-display="false">M</span> be a monoid and <span class="math" data-display="false">k</span> a commutative integral domain. Any finite family of distinct identity-preserving monoid homomorphisms <span class="math" data-display="false">f_i:M\to(k,\cdot)</span> is linearly independent over <span class="math" data-display="false">k</span>: if <span class="math" data-display="false">\sum_i\alpha_if_i(x)=0</span> for every <span class="math" data-display="false">x\in M</span>, with <span class="math" data-display="false">\alpha_i\in k</span>, then every <span class="math" data-display="false">\alpha_i=0</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Introductory algebra supplies groups, cosets, quotients, homomorphisms and linear independence. Complement or composition-series conditions and monoid vocabulary are small algebraic extensions; finite-tree automorphisms are adjacency-preserving permutations. No additional structural theory is required.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Linear algebra</span><span class="badge blue">Universal algebra</span><span class="badge blue">Commutative algebra</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">monoids</span><span class="badge blue">commutative integral domains</span><span class="badge blue">identity-preserving multiplicative maps</span><span class="badge blue">linear independence of functions</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Separate character values by comaximal kernels</h3><p>First assume that k is a field, otherwise, replace the integral domain k by its quotient field, and nothing will change. We can linearly extend the monoid homomorphisms  <em>f<sub>i</sub></em> : <em>M</em> → <em>k</em> to k-algebra homomorphisms <em>F<sub>i</sub></em> : <em>k</em>[<em>M</em>] → <em>k</em>, where <em>k</em>[<em>M</em>] is the monoid ring of M over k. Then, by linearity, the condition</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}f_{i}=0,}</span><p>yields</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}F_{i}=0.}</span><p>Next, for <em>i</em>, <em>j</em> ∈ <em>I</em>; <em>i</em> ≠ <em>j</em> the two k-linear maps <em>F<sub>i</sub></em> : <em>k</em>[<em>M</em>] → <em>k</em> and <em>F<sub>j</sub></em> : <em>k</em>[<em>M</em>] → <em>k</em> are not proportional to each other. Otherwise  <em>f<sub>i</sub></em>  and  <em>f<sub>j</sub></em>  would also be proportional, and thus equal since as monoid homomorphisms they satisfy:  <em>f<sub>i</sub></em> (1) = 1 =  <em>f<sub>j</sub></em> (1), which contradicts the assumption that they are distinct.</p>
+<p>Therefore, the kernels Ker <em>F<sub>i</sub></em> and Ker <em>F<sub>j</sub></em> are distinct. Since <em>k</em>[<em>M</em>]/Ker <em>F<sub>i</sub></em> ≅ <em>F<sub>i</sub></em> (<em>k</em>[<em>M</em>]) = <em>k</em> is a field, Ker <em>F<sub>i</sub></em> is a maximal two-sided ideal of <em>k</em>[<em>M</em>] for every i in I. Because they are distinct and maximal the two-sided ideals Ker <em>F<sub>i</sub></em> and Ker <em>F<sub>j</sub></em> are coprime whenever <em>i</em> ≠ <em>j</em>. The Chinese Remainder Theorem (for general rings) yields an isomorphism:</p>
+<span class="math" data-display="true">{\displaystyle {\begin{aligned}\phi :k[M]/K&amp;\to \prod _{i\in I}k[M]/\mathrm {Ker} F_{i}\\\phi (x+K)&amp;=\left(x+\mathrm {Ker} F_{i}\right)_{i\in I}\end{aligned}}}</span><p>where</p>
+<span class="math" data-display="true">{\displaystyle K=\bigcap _{i\in I}\mathrm {Ker} F_{i}.}</span><p>Consequently, the map</p>
+<span class="math" data-display="true">{\displaystyle {\begin{aligned}\Phi :k[M]&amp;\to \prod _{i\in I}k[M]/\mathrm {Ker} F_{i}\\\Phi (x)&amp;=\left(x+\mathrm {Ker} F_{i}\right)_{i\in I}\end{aligned}}}</span><p>is surjective. Under the isomorphisms <em>k</em>[<em>M</em>]/Ker <em>F<sub>i</sub></em> → <em>F<sub>i</sub></em> (<em>k</em>[<em>M</em>]) = <em>k</em>, the map Φ corresponds to:</p>
+<span class="math" data-display="true">{\displaystyle {\begin{aligned}\psi :k[M]&amp;\to \prod _{i\in I}k\\\psi (x)&amp;=\left[F_{i}(x)\right]_{i\in I}\end{aligned}}}</span><p>Now,</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}F_{i}=0}</span><p>yields</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}u_{i}=0}</span><p>for every vector (<em>u<sub>i</sub></em>)<sub><em>i</em>∈<em>I</em></sub> in the image of the map ψ. Since ψ is surjective, this means that</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}u_{i}=0}</span><p>for every vector</p>
+<span class="math" data-display="true">{\displaystyle \left(u_{i}\right)_{i\in I}\in \prod _{i\in I}k.}</span><p>Consequently, (<em>α<sub>i</sub></em>)<sub><em>i</em>∈<em>I</em></sub> = (0)<sub><em>i</em>∈<em>I</em></sub>. QED.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The proof adds monoid algebras and their linear extension property to fraction fields, noncommutative two-sided ideals and the ring CRT. Retain beyond undergraduate provisionally because the combined algebraic constructions exceed a confidently small extension, even though the individual linear-algebra steps are basic.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Associative algebra</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Monoid algebras</span><span class="badge blue">Two-sided ideals</span><span class="badge blue">Ring CRT</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Chinese remainder theorem for pairwise comaximal two-sided ideals: R/∩Ii ≅ ∏R/Ii</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>For pairwise comaximal two-sided ideals, reduction onto the product of quotient rings is surjective with intersection kernel.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Separate the character evaluations.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Elementary ring CRT once the algebra is constructed.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fraction field of an integral domain</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>An integral domain embeds in its fraction field.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Reduce to field coefficients.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Introductory algebra.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>First isomorphism theorem and distinct maximal two-sided ideals are comaximal</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A surjective ring map has quotient isomorphic to its image, and distinct maximal two-sided ideals are comaximal.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Verify the CRT hypotheses.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Basic ring and ideal theory.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Nonzero linear functionals with the same kernel are proportional</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Two nonzero linear functionals with the same kernel are proportional.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Distinguish the character kernels.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Linear algebra.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Simultaneous character evaluation is surjective</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Proved in this proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The simultaneous character evaluation map from k[M] to the finite product of k is surjective.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Force all coefficients of the relation to vanish.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The local proof combines the monoid-algebra construction and its ideal structure.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Let <span class="math" data-display="false">M</span> be a monoid and <span class="math" data-display="false">k</span> a commutative integral domain. Any finite family of distinct identity-preserving monoid homomorphisms <span class="math" data-display="false">f_i:M\to(k,\cdot)</span> is linearly independent over <span class="math" data-display="false">k</span>: if <span class="math" data-display="false">\sum_i\alpha_if_i(x)=0</span> for every <span class="math" data-display="false">x\in M</span>, with <span class="math" data-display="false">\alpha_i\in k</span>, then every <span class="math" data-display="false">\alpha_i=0</span>.</p>
+<hr><h3 id="proof-1--separate-character-values-by-comaximal-kernels">Proof 1 — Separate character values by comaximal kernels</h3>
+<p>First assume that k is a field, otherwise, replace the integral domain k by its quotient field, and nothing will change. We can linearly extend the monoid homomorphisms  <em>f<sub>i</sub></em> : <em>M</em> → <em>k</em> to k-algebra homomorphisms <em>F<sub>i</sub></em> : <em>k</em>[<em>M</em>] → <em>k</em>, where <em>k</em>[<em>M</em>] is the monoid ring of M over k. Then, by linearity, the condition</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}f_{i}=0,}</span><p>yields</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}F_{i}=0.}</span><p>Next, for <em>i</em>, <em>j</em> ∈ <em>I</em>; <em>i</em> ≠ <em>j</em> the two k-linear maps <em>F<sub>i</sub></em> : <em>k</em>[<em>M</em>] → <em>k</em> and <em>F<sub>j</sub></em> : <em>k</em>[<em>M</em>] → <em>k</em> are not proportional to each other. Otherwise  <em>f<sub>i</sub></em>  and  <em>f<sub>j</sub></em>  would also be proportional, and thus equal since as monoid homomorphisms they satisfy:  <em>f<sub>i</sub></em> (1) = 1 =  <em>f<sub>j</sub></em> (1), which contradicts the assumption that they are distinct.</p>
+<p>Therefore, the kernels Ker <em>F<sub>i</sub></em> and Ker <em>F<sub>j</sub></em> are distinct. Since <em>k</em>[<em>M</em>]/Ker <em>F<sub>i</sub></em> ≅ <em>F<sub>i</sub></em> (<em>k</em>[<em>M</em>]) = <em>k</em> is a field, Ker <em>F<sub>i</sub></em> is a maximal two-sided ideal of <em>k</em>[<em>M</em>] for every i in I. Because they are distinct and maximal the two-sided ideals Ker <em>F<sub>i</sub></em> and Ker <em>F<sub>j</sub></em> are coprime whenever <em>i</em> ≠ <em>j</em>. The Chinese Remainder Theorem (for general rings) yields an isomorphism:</p>
+<span class="math" data-display="true">{\displaystyle {\begin{aligned}\phi :k[M]/K&amp;\to \prod _{i\in I}k[M]/\mathrm {Ker} F_{i}\\\phi (x+K)&amp;=\left(x+\mathrm {Ker} F_{i}\right)_{i\in I}\end{aligned}}}</span><p>where</p>
+<span class="math" data-display="true">{\displaystyle K=\bigcap _{i\in I}\mathrm {Ker} F_{i}.}</span><p>Consequently, the map</p>
+<span class="math" data-display="true">{\displaystyle {\begin{aligned}\Phi :k[M]&amp;\to \prod _{i\in I}k[M]/\mathrm {Ker} F_{i}\\\Phi (x)&amp;=\left(x+\mathrm {Ker} F_{i}\right)_{i\in I}\end{aligned}}}</span><p>is surjective. Under the isomorphisms <em>k</em>[<em>M</em>]/Ker <em>F<sub>i</sub></em> → <em>F<sub>i</sub></em> (<em>k</em>[<em>M</em>]) = <em>k</em>, the map Φ corresponds to:</p>
+<span class="math" data-display="true">{\displaystyle {\begin{aligned}\psi :k[M]&amp;\to \prod _{i\in I}k\\\psi (x)&amp;=\left[F_{i}(x)\right]_{i\in I}\end{aligned}}}</span><p>Now,</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}F_{i}=0}</span><p>yields</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}u_{i}=0}</span><p>for every vector (<em>u<sub>i</sub></em>)<sub><em>i</em>∈<em>I</em></sub> in the image of the map ψ. Since ψ is surjective, this means that</p>
+<span class="math" data-display="true">{\displaystyle \sum _{i\in I}\alpha _{i}u_{i}=0}</span><p>for every vector</p>
+<span class="math" data-display="true">{\displaystyle \left(u_{i}\right)_{i\in I}\in \prod _{i\in I}k.}</span><p>Consequently, (<em>α<sub>i</sub></em>)<sub><em>i</em>∈<em>I</em></sub> = (0)<sub><em>i</em>∈<em>I</em></sub>. QED.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Introductory algebra supplies groups, cosets, quotients, homomorphisms and linear independence. Complement or composition-series conditions and monoid vocabulary are small algebraic extensions; finite-tree automorphisms are adjacency-preserving permutations. No additional structural theory is required.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Linear algebra</span><span class="badge blue">Universal algebra</span><span class="badge blue">Commutative algebra</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">monoids</span><span class="badge blue">commutative integral domains</span><span class="badge blue">identity-preserving multiplicative maps</span><span class="badge blue">linear independence of functions</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Separate character values by comaximal kernels</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The proof adds monoid algebras and their linear extension property to fraction fields, noncommutative two-sided ideals and the ring CRT. Retain beyond undergraduate provisionally because the combined algebraic constructions exceed a confidently small extension, even though the individual linear-algebra steps are basic.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Associative algebra</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Monoid algebras</span><span class="badge blue">Two-sided ideals</span><span class="badge blue">Ring CRT</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Chinese remainder theorem for pairwise comaximal two-sided ideals: R/∩Ii ≅ ∏R/Ii</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>For pairwise comaximal two-sided ideals, reduction onto the product of quotient rings is surjective with intersection kernel.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Separate the character evaluations.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Elementary ring CRT once the algebra is constructed.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Fraction field of an integral domain</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>An integral domain embeds in its fraction field.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Reduce to field coefficients.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Introductory algebra.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>First isomorphism theorem and distinct maximal two-sided ideals are comaximal</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A surjective ring map has quotient isomorphic to its image, and distinct maximal two-sided ideals are comaximal.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Verify the CRT hypotheses.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Basic ring and ideal theory.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Nonzero linear functionals with the same kernel are proportional</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Two nonzero linear functionals with the same kernel are proportional.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Distinguish the character kernels.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Linear algebra.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Simultaneous character evaluation is surjective</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Proved in this proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The simultaneous character evaluation map from k[M] to the finite product of k is surjective.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Force all coefficients of the relation to vanish.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The local proof combines the monoid-algebra construction and its ideal structure.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

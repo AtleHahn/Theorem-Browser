@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Cauchy’s differentiation formula · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Undergraduate level Statement - All proofs beyond undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Cauchy’s differentiation formula</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula" target="_blank" rel="noopener">Cauchy&#x27;s integral formula</a><button type="button" data-source="https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field" data-noteworthiness-field><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"><span class="badge gold">Undergraduate level Statement - All proofs beyond undergraduate level</span></div></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;cauchy-derivative-formula&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;remove&quot;,
+  &quot;decision_summary&quot;: &quot;Remove the likely flag; a strictly lower-category alternative is not established.&quot;,
+  &quot;explanation&quot;: &quot;Replacing dominated convergence by uniform estimates does not remove the holomorphic integral formula or analytic-kernel framework. The original metadata already rates the dominated-convergence dependency undergraduate; it is not the reason the stored proof is beyond undergraduate. The proposed replacement has not demonstrated a lower category for the full derivative formula.&quot;,
+  &quot;statement_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: null,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/cauchy-derivative-formula.md&quot;,
+  &quot;content_sha256&quot;: &quot;74a5baa51bff19d44dd7d3634618da40ee6653de4662b541c8a0fb54b8f5c739&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;4046f2fdb2858611a4fa1152a16d73e944c5f2085964d1b79000af0618ac6777&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;cauchy-derivative-formula&quot;,
+    &quot;title&quot;: &quot;Cauchy’s differentiation formula&quot;,
+    &quot;content_file&quot;: &quot;cauchy-derivative-formula.md&quot;,
+    &quot;importance&quot;: &quot;high&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;no&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Holomorphic functions&quot;,
+        &quot;Complex disks and boundary circles&quot;,
+        &quot;Contour integrals&quot;,
+        &quot;Higher complex derivatives&quot;
+      ],
+      &quot;level_justification&quot;: &quot;Multivariable calculus supplies parametrized line integrals, and real analysis supplies derivatives. A complex contour integral is the integral of f(gamma(t))gamma-prime(t); holomorphic means complex differentiable. For the explicitly given circles or smooth curves, these are closely related extensions of familiar calculus, with no residue or Laurent-series machinery needed.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Complex Analysis&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Differentiate the geometric-kernel representation — outline&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;no&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Holomorphy&quot;,
+          &quot;Cauchy integral formula&quot;,
+          &quot;Complex power series&quot;
+        ],
+        &quot;level_justification&quot;: &quot;The proof combines Cauchy’s holomorphic integral formula with locally uniform geometric-kernel expansion and complex differentiation. This requires a complex-analysis framework rather than only real integral estimates.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Cauchy integral formula on a disk&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Differentiate the geometric-kernel representation — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The Cauchy integral of f(z)/(z-a) around the disk equals 2 pi i f(a).&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/cauchy-derivative-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Differentiate the geometric-kernel representation — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Start the representation to be differentiated.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Holomorphic contour-integral theorem.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Geometric-kernel analyticity and complex power-series differentiation&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;implicitly_assumed&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Differentiate the geometric-kernel representation — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The geometric kernel expands uniformly on smaller disks and complex power series differentiate termwise.&quot;,
+            &quot;identification_status&quot;: &quot;inferred_from_context&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/cauchy-derivative-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Differentiate the geometric-kernel representation — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Obtain complex analyticity and the derivative kernels.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;The application is complex power-series analysis.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Dominated convergence for differentiating a fixed-contour integral&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Differentiate the geometric-kernel representation — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Uniform integrable control of the differentiated kernels allows differentiation of the fixed-circle integral.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/cauchy-derivative-formula.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Differentiate the geometric-kernel representation — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Pass each derivative through the contour integral.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;After circle parametrization the compact-interval kernel bounds are ordinary differentiation under an integral.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;partly&quot;,
+          &quot;justification&quot;: &quot;The derivative kernel and formula are supplied; Cauchy’s formula and standard analytic differentiation are stated prerequisites.&quot;
+        },
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;routine_omissions&quot;,
+          &quot;notes&quot;: [
+            &quot;The source compresses the repeated differentiation and its compact-subdisk domination check.&quot;
+          ]
+        },
+        &quot;id&quot;: &quot;cauchy-derivative-formula-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Cauchy&#x27;s integral formula&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/681/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Cauchy&#x27;s_integral_formula_0c22fc3c.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Cauchy&#x27;s integral formula&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Cauchy%27s_integral_formula&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Cauchy&#x27;s_integral_formula_0c22fc3c.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Complete raw article including notes and references read; standalone scope, proof roles, local notation and finalized metadata checked.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Kept all n derivatives within one result and made the distance-to-contour condition explicit.; Independent-review correction: assessed statement topics independently of proof methods; actual named proof prerequisites added to each proof topic list. Circle integral parametrization made explicit where it reduces statement prerequisites to real calculus.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration: Restored geometric-kernel display and source prose; centered series at z0 rather than erroneous zero center for arbitrary disk; retained uniform convergence/dominated-convergence context.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Elementary complex analysis; less measure theory. Differentiate the fixed-circle kernel using uniform difference-quotient estimates, since interior points remain a positive distance from the contour. This replaces dominated convergence by elementary uniform convergence. It does not eliminate Cauchy&#x27;s integral formula or make the result school-level.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="cauchy-derivative-formula.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22cauchy-derivative-formula%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22remove%22%2C%0A%20%20%22decision_summary%22%3A%20%22Remove%20the%20likely%20flag%3B%20a%20strictly%20lower-category%20alternative%20is%20not%20established.%22%2C%0A%20%20%22explanation%22%3A%20%22Replacing%20dominated%20convergence%20by%20uniform%20estimates%20does%20not%20remove%20the%20holomorphic%20integral%20formula%20or%20analytic-kernel%20framework.%20The%20original%20metadata%20already%20rates%20the%20dominated-convergence%20dependency%20undergraduate%3B%20it%20is%20not%20the%20reason%20the%20stored%20proof%20is%20beyond%20undergraduate.%20The%20proposed%20replacement%20has%20not%20demonstrated%20a%20lower%20category%20for%20the%20full%20derivative%20formula.%22%2C%0A%20%20%22statement_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20null%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/cauchy-derivative-formula.md%22%2C%0A%20%20%22content_sha256%22%3A%20%2274a5baa51bff19d44dd7d3634618da40ee6653de4662b541c8a0fb54b8f5c739%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%224046f2fdb2858611a4fa1152a16d73e944c5f2085964d1b79000af0618ac6777%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22cauchy-derivative-formula%22%2C%0A%20%20%20%20%22title%22%3A%20%22Cauchy%E2%80%99s%20differentiation%20formula%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22cauchy-derivative-formula.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22high%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Holomorphic%20functions%22%2C%0A%20%20%20%20%20%20%20%20%22Complex%20disks%20and%20boundary%20circles%22%2C%0A%20%20%20%20%20%20%20%20%22Contour%20integrals%22%2C%0A%20%20%20%20%20%20%20%20%22Higher%20complex%20derivatives%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22Multivariable%20calculus%20supplies%20parametrized%20line%20integrals%2C%20and%20real%20analysis%20supplies%20derivatives.%20A%20complex%20contour%20integral%20is%20the%20integral%20of%20f%28gamma%28t%29%29gamma-prime%28t%29%3B%20holomorphic%20means%20complex%20differentiable.%20For%20the%20explicitly%20given%20circles%20or%20smooth%20curves%2C%20these%20are%20closely%20related%20extensions%20of%20familiar%20calculus%2C%20with%20no%20residue%20or%20Laurent-series%20machinery%20needed.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Complex%20Analysis%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Differentiate%20the%20geometric-kernel%20representation%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Holomorphy%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Cauchy%20integral%20formula%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Complex%20power%20series%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20proof%20combines%20Cauchy%E2%80%99s%20holomorphic%20integral%20formula%20with%20locally%20uniform%20geometric-kernel%20expansion%20and%20complex%20differentiation.%20This%20requires%20a%20complex-analysis%20framework%20rather%20than%20only%20real%20integral%20estimates.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Cauchy%20integral%20formula%20on%20a%20disk%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Differentiate%20the%20geometric-kernel%20representation%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20Cauchy%20integral%20of%20f%28z%29/%28z-a%29%20around%20the%20disk%20equals%202%20pi%20i%20f%28a%29.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/cauchy-derivative-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Differentiate%20the%20geometric-kernel%20representation%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Start%20the%20representation%20to%20be%20differentiated.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Holomorphic%20contour-integral%20theorem.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Geometric-kernel%20analyticity%20and%20complex%20power-series%20differentiation%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22implicitly_assumed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Differentiate%20the%20geometric-kernel%20representation%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20geometric%20kernel%20expands%20uniformly%20on%20smaller%20disks%20and%20complex%20power%20series%20differentiate%20termwise.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22inferred_from_context%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/cauchy-derivative-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Differentiate%20the%20geometric-kernel%20representation%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Obtain%20complex%20analyticity%20and%20the%20derivative%20kernels.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20application%20is%20complex%20power-series%20analysis.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Dominated%20convergence%20for%20differentiating%20a%20fixed-contour%20integral%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Differentiate%20the%20geometric-kernel%20representation%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Uniform%20integrable%20control%20of%20the%20differentiated%20kernels%20allows%20differentiation%20of%20the%20fixed-circle%20integral.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/cauchy-derivative-formula.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Differentiate%20the%20geometric-kernel%20representation%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Pass%20each%20derivative%20through%20the%20contour%20integral.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22After%20circle%20parametrization%20the%20compact-interval%20kernel%20bounds%20are%20ordinary%20differentiation%20under%20an%20integral.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22partly%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20derivative%20kernel%20and%20formula%20are%20supplied%3B%20Cauchy%E2%80%99s%20formula%20and%20standard%20analytic%20differentiation%20are%20stated%20prerequisites.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22routine_omissions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22The%20source%20compresses%20the%20repeated%20differentiation%20and%20its%20compact-subdisk%20domination%20check.%22%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22cauchy-derivative-formula-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Cauchy%27s%20integral%20formula%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Cauchy%2527s_integral_formula%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/681/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Cauchy%27s_integral_formula_0c22fc3c.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Cauchy%27s%20integral%20formula%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Cauchy%2527s_integral_formula%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Cauchy%27s_integral_formula_0c22fc3c.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Complete%20raw%20article%20including%20notes%20and%20references%20read%3B%20standalone%20scope%2C%20proof%20roles%2C%20local%20notation%20and%20finalized%20metadata%20checked.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Kept%20all%20n%20derivatives%20within%20one%20result%20and%20made%20the%20distance-to-contour%20condition%20explicit.%3B%20Independent-review%20correction%3A%20assessed%20statement%20topics%20independently%20of%20proof%20methods%3B%20actual%20named%20proof%20prerequisites%20added%20to%20each%20proof%20topic%20list.%20Circle%20integral%20parametrization%20made%20explicit%20where%20it%20reduces%20statement%20prerequisites%20to%20real%20calculus.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%3A%20Restored%20geometric-kernel%20display%20and%20source%20prose%3B%20centered%20series%20at%20z0%20rather%20than%20erroneous%20zero%20center%20for%20arbitrary%20disk%3B%20retained%20uniform%20convergence/dominated-convergence%20context.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Elementary%20complex%20analysis%3B%20less%20measure%20theory.%20Differentiate%20the%20fixed-circle%20kernel%20using%20uniform%20difference-quotient%20estimates%2C%20since%20interior%20points%20remain%20a%20positive%20distance%20from%20the%20contour.%20This%20replaces%20dominated%20convergence%20by%20elementary%20uniform%20convergence.%20It%20does%20not%20eliminate%20Cauchy%27s%20integral%20formula%20or%20make%20the%20result%20school-level.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Let <span class="math" data-display="false">U\subseteq\mathbb C</span> be open, let <span class="math" data-display="false">f:U\to\mathbb C</span> be holomorphic, and suppose the closed disk <span class="math" data-display="false">\overline D=\{z:|z-z_0|\le r\}</span>, with <span class="math" data-display="false">r&gt;0</span>, lies in <span class="math" data-display="false">U</span>. Let <span class="math" data-display="false">\gamma</span> be its counterclockwise boundary circle. For every integer <span class="math" data-display="false">n\ge0</span> and every <span class="math" data-display="false">a</span> inside the disk,</p>
+<span class="math" data-display="true">f^{(n)}(a)=\frac{n!}{2\pi i}\oint_\gamma\frac{f(z)}{(z-a)^{n+1}}\,dz.</span><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Multivariable calculus supplies parametrized line integrals, and real analysis supplies derivatives. A complex contour integral is the integral of f(gamma(t))gamma-prime(t); holomorphic means complex differentiable. For the explicitly given circles or smooth curves, these are closely related extensions of familiar calculus, with no residue or Laurent-series machinery needed.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Complex Analysis</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Holomorphic functions</span><span class="badge blue">Complex disks and boundary circles</span><span class="badge blue">Contour integrals</span><span class="badge blue">Higher complex derivatives</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Differentiate the geometric-kernel representation — outline</h3><p>Cauchy's integral formula gives</p>
+<span class="math" data-display="true">f(a)=\frac{1}{2\pi i}\oint_\gamma\frac{f(z)}{z-a}\,dz.</span><p>Because <span class="math" data-display="false">{\textstyle {\frac {1}{z-a}}}</span> can be expanded as a power series in the variable <span class="math" data-display="false">{\displaystyle a}</span> as</p>
+<span class="math" data-display="true">{\displaystyle {\frac {1}{z-a}}={\frac {1+{\frac {a-z_0}{z-z_0}}+\left({\frac {a-z_0}{z-z_0}}\right)^{2}+\cdots }{z-z_0}},}</span><p>it follows that holomorphic functions are analytic, i.e. they can be expanded as convergent power series.
+In particular <span class="math" data-display="false">{\displaystyle f}</span> is actually infinitely differentiable, with</p>
+<span class="math" data-display="true">{\displaystyle f^{(n)}(a)={\frac {n!}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{\left(z-a\right)^{n+1}}}\,dz.}</span><p>The geometric series converges uniformly on the contour for <span class="math" data-display="false">a</span> in each smaller closed disk centered at <span class="math" data-display="false">z_0</span>; dominated convergence justifies the integration and differentiation.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The proof combines Cauchy’s holomorphic integral formula with locally uniform geometric-kernel expansion and complex differentiation. This requires a complex-analysis framework rather than only real integral estimates.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Holomorphy</span><span class="badge blue">Cauchy integral formula</span><span class="badge blue">Complex power series</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source compresses the repeated differentiation and its compact-subdisk domination check.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Cauchy integral formula on a disk</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The Cauchy integral of f(z)/(z-a) around the disk equals 2 pi i f(a).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Start the representation to be differentiated.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Holomorphic contour-integral theorem.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Geometric-kernel analyticity and complex power-series differentiation</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The geometric kernel expands uniformly on smaller disks and complex power series differentiate termwise.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Obtain complex analyticity and the derivative kernels.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The application is complex power-series analysis.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Dominated convergence for differentiating a fixed-contour integral</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Uniform integrable control of the differentiated kernels allows differentiation of the fixed-circle integral.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Pass each derivative through the contour integral.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>After circle parametrization the compact-interval kernel bounds are ordinary differentiation under an integral.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source compresses the repeated differentiation and its compact-subdisk domination check.</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Let <span class="math" data-display="false">U\subseteq\mathbb C</span> be open, let <span class="math" data-display="false">f:U\to\mathbb C</span> be holomorphic, and suppose the closed disk <span class="math" data-display="false">\overline D=\{z:|z-z_0|\le r\}</span>, with <span class="math" data-display="false">r&gt;0</span>, lies in <span class="math" data-display="false">U</span>. Let <span class="math" data-display="false">\gamma</span> be its counterclockwise boundary circle. For every integer <span class="math" data-display="false">n\ge0</span> and every <span class="math" data-display="false">a</span> inside the disk,</p>
+<span class="math" data-display="true">f^{(n)}(a)=\frac{n!}{2\pi i}\oint_\gamma\frac{f(z)}{(z-a)^{n+1}}\,dz.</span><hr><h3 id="proof-1--differentiate-the-geometric-kernel-representation--outline">Proof 1 — Differentiate the geometric-kernel representation — outline</h3>
+<p>Cauchy's integral formula gives</p>
+<span class="math" data-display="true">f(a)=\frac{1}{2\pi i}\oint_\gamma\frac{f(z)}{z-a}\,dz.</span><p>Because <span class="math" data-display="false">{\textstyle {\frac {1}{z-a}}}</span> can be expanded as a power series in the variable <span class="math" data-display="false">{\displaystyle a}</span> as</p>
+<span class="math" data-display="true">{\displaystyle {\frac {1}{z-a}}={\frac {1+{\frac {a-z_0}{z-z_0}}+\left({\frac {a-z_0}{z-z_0}}\right)^{2}+\cdots }{z-z_0}},}</span><p>it follows that holomorphic functions are analytic, i.e. they can be expanded as convergent power series.
+In particular <span class="math" data-display="false">{\displaystyle f}</span> is actually infinitely differentiable, with</p>
+<span class="math" data-display="true">{\displaystyle f^{(n)}(a)={\frac {n!}{2\pi i}}\oint _{\gamma }{\frac {f(z)}{\left(z-a\right)^{n+1}}}\,dz.}</span><p>The geometric series converges uniformly on the contour for <span class="math" data-display="false">a</span> in each smaller closed disk centered at <span class="math" data-display="false">z_0</span>; dominated convergence justifies the integration and differentiation.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Multivariable calculus supplies parametrized line integrals, and real analysis supplies derivatives. A complex contour integral is the integral of f(gamma(t))gamma-prime(t); holomorphic means complex differentiable. For the explicitly given circles or smooth curves, these are closely related extensions of familiar calculus, with no residue or Laurent-series machinery needed.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Complex Analysis</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Holomorphic functions</span><span class="badge blue">Complex disks and boundary circles</span><span class="badge blue">Contour integrals</span><span class="badge blue">Higher complex derivatives</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Differentiate the geometric-kernel representation — outline</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The proof combines Cauchy’s holomorphic integral formula with locally uniform geometric-kernel expansion and complex differentiation. This requires a complex-analysis framework rather than only real integral estimates.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Holomorphy</span><span class="badge blue">Cauchy integral formula</span><span class="badge blue">Complex power series</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source compresses the repeated differentiation and its compact-subdisk domination check.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Cauchy integral formula on a disk</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The Cauchy integral of f(z)/(z-a) around the disk equals 2 pi i f(a).</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Start the representation to be differentiated.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Holomorphic contour-integral theorem.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Geometric-kernel analyticity and complex power-series differentiation</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The geometric kernel expands uniformly on smaller disks and complex power series differentiate termwise.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Obtain complex analyticity and the derivative kernels.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The application is complex power-series analysis.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Dominated convergence for differentiating a fixed-contour integral</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Uniform integrable control of the differentiated kernels allows differentiation of the fixed-circle integral.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Pass each derivative through the contour integral.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>After circle parametrization the compact-interval kernel bounds are ordinary differentiation under an integral.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source compresses the repeated differentiation and its compact-subdisk domination check.</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

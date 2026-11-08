@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Ramanujan’s partition congruence modulo 5 · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Highschool level Statement - All proofs have at least undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Ramanujan’s partition congruence modulo 5</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Ramanujan%27s_congruences" target="_blank" rel="noopener">Ramanujan&#x27;s congruences</a><button type="button" data-source="https://en.wikipedia.org/wiki/Ramanujan%27s_congruences">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field" data-noteworthiness-field><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"><span class="badge gold">Highschool level Statement - All proofs have at least undergraduate level</span></div></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;ramanujan-partition-mod-5&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;remove&quot;,
+  &quot;decision_summary&quot;: &quot;Remove the likely flag; a strictly lower-category alternative is not established.&quot;,
+  &quot;explanation&quot;: &quot;The proposed detailed q-product proof still uses formal generating functions. The stored proof is already an undergraduate coefficient extraction from an explicitly stated product identity, whose proof need not be learned under the guide. Supplying that identity&#x27;s proof does not establish a school-level alternative for every k.&quot;,
+  &quot;statement_level&quot;: &quot;High school only&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: null,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/ramanujan-partition-mod-5.md&quot;,
+  &quot;content_sha256&quot;: &quot;df838bbf0a79a7962ba53a7464aebbb4a15f6bbda9d015b3ba8891ba156d2b53&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;52d3b061f1cae0505fa006a8516e27b9fd18c8057927cfb51dc1f0f5c812fb3b&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;ramanujan-partition-mod-5&quot;,
+    &quot;title&quot;: &quot;Ramanujan’s partition congruence modulo 5&quot;,
+    &quot;content_file&quot;: &quot;ramanujan-partition-mod-5.md&quot;,
+    &quot;importance&quot;: &quot;high&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;yes&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Integer partitions&quot;,
+        &quot;Divisibility&quot;
+      ],
+      &quot;level_justification&quot;: &quot;An integer partition is a sum of positive integers with order ignored; the congruences are elementary counting statements.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Combinatorics&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Extract coefficients of the q-product identity — outline&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Formal generating functions&quot;,
+          &quot;Integer coefficients&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Apply the supplied q-product identity, note coefficientwise integrality of the product quotient and compare coefficients. Undergraduate generating functions suffice; formal infinite products are handled one coefficient at a time, with only finitely many factors contributing. No modular-form theory is needed.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;partly&quot;,
+          &quot;justification&quot;: &quot;The coefficient divisibility deduction is local; the substantive q-product identity is an imported result.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Ramanujan q-product identity for the 5k+4 partition subsequence&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Extract coefficients of the q-product identity — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;The generating series for p(5k+4) is five times the displayed quotient of q-products.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/ramanujan-partition-mod-5.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Extract coefficients of the q-product identity — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Expose the common factor five in every coefficient.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Explicit formal generating-function identity.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Integral formal power-series expansions of products of (1-q^d) and their inverse powers&quot;,
+            &quot;kind&quot;: &quot;technique&quot;,
+            &quot;treatment&quot;: &quot;implicitly_assumed&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Extract coefficients of the q-product identity — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Products of (1-q^d) and their inverse positive powers have integer formal coefficients when each coefficient involves finitely many factors.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/ramanujan-partition-mod-5.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Extract coefficients of the q-product identity — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Establish divisibility of the coefficient sequence.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Coefficientwise formal series arithmetic, a small extension of polynomial products.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;routine_omissions&quot;,
+          &quot;notes&quot;: [
+            &quot;The source specifies the identity used for the congruence, leaving the routine integral-coefficient extraction implicit; the identity itself is not proved here.&quot;
+          ]
+        },
+        &quot;id&quot;: &quot;ramanujan-partition-mod-5-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Ramanujan&#x27;s congruences&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Ramanujan%27s_congruences&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/4884/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Ramanujan&#x27;s_congruences_2cdc850d.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Ramanujan&#x27;s congruences&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Ramanujan%27s_congruences&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Ramanujan&#x27;s_congruences_2cdc850d.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Read complete raw source and checked statement/proof scope, dependencies and boundaries.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Defined partition and q-product notation locally; extracted only the source-prescribed divisibility consequence. The q-series identity is an explicit external prerequisite rather than an independently proved result.; Independent reviewer normalized overescaped TeX commands without changing mathematical content.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Elementary q-series/partition arithmetic. Elementary proofs of the requisite mod-5 identities are available, including the self-contained treatment by Berndt, Yee and Yi. Replacing the current unproved q-product identity by an explicit derivation would reduce hidden prerequisites. This does not certify a short school-only proof.&quot;,
+      &quot;references&quot;: [
+        &quot;https://www.sciencedirect.com/science/article/pii/S0377042703006137&quot;,
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="ramanujan-partition-mod-5.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22ramanujan-partition-mod-5%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22remove%22%2C%0A%20%20%22decision_summary%22%3A%20%22Remove%20the%20likely%20flag%3B%20a%20strictly%20lower-category%20alternative%20is%20not%20established.%22%2C%0A%20%20%22explanation%22%3A%20%22The%20proposed%20detailed%20q-product%20proof%20still%20uses%20formal%20generating%20functions.%20The%20stored%20proof%20is%20already%20an%20undergraduate%20coefficient%20extraction%20from%20an%20explicitly%20stated%20product%20identity%2C%20whose%20proof%20need%20not%20be%20learned%20under%20the%20guide.%20Supplying%20that%20identity%27s%20proof%20does%20not%20establish%20a%20school-level%20alternative%20for%20every%20k.%22%2C%0A%20%20%22statement_level%22%3A%20%22High%20school%20only%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20null%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/ramanujan-partition-mod-5.md%22%2C%0A%20%20%22content_sha256%22%3A%20%22df838bbf0a79a7962ba53a7464aebbb4a15f6bbda9d015b3ba8891ba156d2b53%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%2252d3b061f1cae0505fa006a8516e27b9fd18c8057927cfb51dc1f0f5c812fb3b%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22ramanujan-partition-mod-5%22%2C%0A%20%20%20%20%22title%22%3A%20%22Ramanujan%E2%80%99s%20partition%20congruence%20modulo%205%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22ramanujan-partition-mod-5.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22high%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Integer%20partitions%22%2C%0A%20%20%20%20%20%20%20%20%22Divisibility%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22An%20integer%20partition%20is%20a%20sum%20of%20positive%20integers%20with%20order%20ignored%3B%20the%20congruences%20are%20elementary%20counting%20statements.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Combinatorics%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Extract%20coefficients%20of%20the%20q-product%20identity%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Formal%20generating%20functions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Integer%20coefficients%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Apply%20the%20supplied%20q-product%20identity%2C%20note%20coefficientwise%20integrality%20of%20the%20product%20quotient%20and%20compare%20coefficients.%20Undergraduate%20generating%20functions%20suffice%3B%20formal%20infinite%20products%20are%20handled%20one%20coefficient%20at%20a%20time%2C%20with%20only%20finitely%20many%20factors%20contributing.%20No%20modular-form%20theory%20is%20needed.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22partly%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20coefficient%20divisibility%20deduction%20is%20local%3B%20the%20substantive%20q-product%20identity%20is%20an%20imported%20result.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Ramanujan%20q-product%20identity%20for%20the%205k%2B4%20partition%20subsequence%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Extract%20coefficients%20of%20the%20q-product%20identity%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22The%20generating%20series%20for%20p%285k%2B4%29%20is%20five%20times%20the%20displayed%20quotient%20of%20q-products.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/ramanujan-partition-mod-5.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Extract%20coefficients%20of%20the%20q-product%20identity%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Expose%20the%20common%20factor%20five%20in%20every%20coefficient.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Explicit%20formal%20generating-function%20identity.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Integral%20formal%20power-series%20expansions%20of%20products%20of%20%281-q%5Ed%29%20and%20their%20inverse%20powers%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22technique%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22implicitly_assumed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Extract%20coefficients%20of%20the%20q-product%20identity%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Products%20of%20%281-q%5Ed%29%20and%20their%20inverse%20positive%20powers%20have%20integer%20formal%20coefficients%20when%20each%20coefficient%20involves%20finitely%20many%20factors.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/ramanujan-partition-mod-5.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Extract%20coefficients%20of%20the%20q-product%20identity%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Establish%20divisibility%20of%20the%20coefficient%20sequence.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Coefficientwise%20formal%20series%20arithmetic%2C%20a%20small%20extension%20of%20polynomial%20products.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22routine_omissions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22The%20source%20specifies%20the%20identity%20used%20for%20the%20congruence%2C%20leaving%20the%20routine%20integral-coefficient%20extraction%20implicit%3B%20the%20identity%20itself%20is%20not%20proved%20here.%22%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22ramanujan-partition-mod-5-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Ramanujan%27s%20congruences%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Ramanujan%2527s_congruences%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/4884/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Ramanujan%27s_congruences_2cdc850d.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Ramanujan%27s%20congruences%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Ramanujan%2527s_congruences%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Ramanujan%27s_congruences_2cdc850d.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Read%20complete%20raw%20source%20and%20checked%20statement/proof%20scope%2C%20dependencies%20and%20boundaries.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Defined%20partition%20and%20q-product%20notation%20locally%3B%20extracted%20only%20the%20source-prescribed%20divisibility%20consequence.%20The%20q-series%20identity%20is%20an%20explicit%20external%20prerequisite%20rather%20than%20an%20independently%20proved%20result.%3B%20Independent%20reviewer%20normalized%20overescaped%20TeX%20commands%20without%20changing%20mathematical%20content.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Elementary%20q-series/partition%20arithmetic.%20Elementary%20proofs%20of%20the%20requisite%20mod-5%20identities%20are%20available%2C%20including%20the%20self-contained%20treatment%20by%20Berndt%2C%20Yee%20and%20Yi.%20Replacing%20the%20current%20unproved%20q-product%20identity%20by%20an%20explicit%20derivation%20would%20reduce%20hidden%20prerequisites.%20This%20does%20not%20certify%20a%20short%20school-only%20proof.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22https%3A//www.sciencedirect.com/science/article/pii/S0377042703006137%22%2C%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Let <span class="math" data-display="false">p(n)</span> count the partitions of the nonnegative integer <span class="math" data-display="false">n</span> into positive integer summands, with their order ignored. For every integer <span class="math" data-display="false">k\ge0</span>, <span class="math" data-display="false">p(5k+4)\equiv0\pmod{5}</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>An integer partition is a sum of positive integers with order ignored; the congruences are elementary counting statements.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Combinatorics</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Integer partitions</span><span class="badge blue">Divisibility</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Extract coefficients of the q-product identity — outline</h3><p>Write <span class="math" data-display="false">(q^d)_\infty=\prod_{j\ge1}(1-q^{dj})</span>. Use the source identity <span class="math" data-display="false">\sum_{k\ge0}p(5k+4)q^k=5\frac{(q^5)_\infty^5}{(q)_\infty^6}</span>. The product quotients have integer coefficients as formal power series, and every term on the right has a prefactor divisible by <span class="math" data-display="false">5</span>. Comparing coefficients gives the congruence.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Apply the supplied q-product identity, note coefficientwise integrality of the product quotient and compare coefficients. Undergraduate generating functions suffice; formal infinite products are handled one coefficient at a time, with only finitely many factors contributing. No modular-form theory is needed.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Formal generating functions</span><span class="badge blue">Integer coefficients</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source specifies the identity used for the congruence, leaving the routine integral-coefficient extraction implicit; the identity itself is not proved here.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Ramanujan q-product identity for the 5k+4 partition subsequence</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The generating series for p(5k+4) is five times the displayed quotient of q-products.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Expose the common factor five in every coefficient.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit formal generating-function identity.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Integral formal power-series expansions of products of (1-q^d) and their inverse powers</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Technique</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Products of (1-q^d) and their inverse positive powers have integer formal coefficients when each coefficient involves finitely many factors.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Establish divisibility of the coefficient sequence.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Coefficientwise formal series arithmetic, a small extension of polynomial products.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source specifies the identity used for the congruence, leaving the routine integral-coefficient extraction implicit; the identity itself is not proved here.</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Let <span class="math" data-display="false">p(n)</span> count the partitions of the nonnegative integer <span class="math" data-display="false">n</span> into positive integer summands, with their order ignored. For every integer <span class="math" data-display="false">k\ge0</span>, <span class="math" data-display="false">p(5k+4)\equiv0\pmod{5}</span>.</p>
+<hr><h3 id="proof-1--extract-coefficients-of-the-q-product-identity--outline">Proof 1 — Extract coefficients of the q-product identity — outline</h3>
+<p>Write <span class="math" data-display="false">(q^d)_\infty=\prod_{j\ge1}(1-q^{dj})</span>. Use the source identity <span class="math" data-display="false">\sum_{k\ge0}p(5k+4)q^k=5\frac{(q^5)_\infty^5}{(q)_\infty^6}</span>. The product quotients have integer coefficients as formal power series, and every term on the right has a prefactor divisible by <span class="math" data-display="false">5</span>. Comparing coefficients gives the congruence.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>An integer partition is a sum of positive integers with order ignored; the congruences are elementary counting statements.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Combinatorics</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Integer partitions</span><span class="badge blue">Divisibility</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Extract coefficients of the q-product identity — outline</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Apply the supplied q-product identity, note coefficientwise integrality of the product quotient and compare coefficients. Undergraduate generating functions suffice; formal infinite products are handled one coefficient at a time, with only finitely many factors contributing. No modular-form theory is needed.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Formal generating functions</span><span class="badge blue">Integer coefficients</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source specifies the identity used for the congruence, leaving the routine integral-coefficient extraction implicit; the identity itself is not proved here.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Ramanujan q-product identity for the 5k+4 partition subsequence</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>The generating series for p(5k+4) is five times the displayed quotient of q-products.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Expose the common factor five in every coefficient.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit formal generating-function identity.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Integral formal power-series expansions of products of (1-q^d) and their inverse powers</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Technique</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Products of (1-q^d) and their inverse positive powers have integer formal coefficients when each coefficient involves finitely many factors.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Establish divisibility of the coefficient sequence.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Coefficientwise formal series arithmetic, a small extension of polynomial products.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source specifies the identity used for the congruence, leaving the routine integral-coefficient extraction implicit; the identity itself is not proved here.</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

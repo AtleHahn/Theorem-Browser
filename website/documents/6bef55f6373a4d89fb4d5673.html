@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Löb inference rule from modal fixed points · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;high&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Löb inference rule from modal fixed points</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/L%C3%B6b%27s_theorem" target="_blank" rel="noopener">Löb&#x27;s theorem</a><button type="button" data-source="https://en.wikipedia.org/wiki/L%C3%B6b%27s_theorem">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge importance-high">high</span></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div><div class="field" data-noteworthiness-field hidden><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"></div></div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;lob-rule-from-modal-fixed-points&quot;,
+  &quot;review_type&quot;: &quot;Editorial prerequisite assessment of unchanged text; not formal verification&quot;,
+  &quot;resolution&quot;: &quot;proof_level_lowered&quot;,
+  &quot;explanation&quot;: &quot;Lower Proof 1 to high school only under the guide&#x27;s allowance for locally explained elementary concepts. All modal rules and the fixed-point existence assertion are hypotheses of the statement. The fourteen displayed steps use substitutions, propositional implications and the supplied inference rules; no modal semantics, arithmetization or fixed-point theorem must be learned or proved. The same elementary formal reasoning that supports the statement rating suffices for this deduction. This does not classify general modal logic as school mathematics.&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;content_file&quot;: &quot;../../../proof-database/lob-rule-from-modal-fixed-points.md&quot;,
+  &quot;content_sha256&quot;: &quot;212e6d5ce6eebf7ff0ecc83c5b2f9b1d2582f4fde9161ad96a80b15de399f032&quot;,
+  &quot;statement_decision&quot;: {
+    &quot;before&quot;: &quot;High school only&quot;,
+    &quot;after&quot;: &quot;High school only&quot;,
+    &quot;justification&quot;: &quot;Every modal inference rule and the fixed-point hypothesis are explicitly supplied as symbolic formulas. The conclusion concerns a finite deduction using those rules, not modal semantics or arithmetic coding.&quot;
+  },
+  &quot;proof_decisions&quot;: [
+    {
+      &quot;proof_number&quot;: 1,
+      &quot;before&quot;: &quot;Undergraduate level&quot;,
+      &quot;after&quot;: &quot;High school only&quot;,
+      &quot;justification&quot;: &quot;The statement supplies the modal rules and the fixed-point hypothesis. The fourteen steps apply those rules by substitution and elementary propositional implication. This is locally specified symbolic reasoning under the high-school criterion; no modal semantics, arithmetic coding or proof of a fixed-point theorem is required.&quot;,
+      &quot;level_review_status&quot;: &quot;assessed&quot;
+    }
+  ],
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;lob-rule-from-modal-fixed-points&quot;,
+    &quot;title&quot;: &quot;Löb inference rule from modal fixed points&quot;,
+    &quot;content_file&quot;: &quot;lob-rule-from-modal-fixed-points.md&quot;,
+    &quot;importance&quot;: &quot;medium&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;yes&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Classical modal deductive systems&quot;,
+        &quot;Necessitation&quot;,
+        &quot;Modal fixed points&quot;
+      ],
+      &quot;level_justification&quot;: &quot;Every modal inference rule and the fixed-point hypothesis are explicitly supplied as symbolic formulas. The conclusion concerns a finite deduction using those rules, not modal semantics or arithmetic coding.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Mathematical Logic&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Box the fixed point and use internal necessitation&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Modal rules&quot;,
+          &quot;Propositional deduction&quot;,
+          &quot;Fixed-point hypothesis&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Follow the displayed finite deduction using necessitation, distribution and the assumed fixed point, then discharge the theoremhood hypothesis. Undergraduate propositional logic suffices with the explicitly stated modal rules as a small formal extension; no arithmetic coding or proof of the fixed-point hypothesis is required.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;dependencies&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;yes&quot;,
+          &quot;justification&quot;: &quot;All non-background modal rules and the fixed-point assumption are hypotheses of the result; the local derivation is complete relative to formal propositional inference.&quot;
+        },
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;complete&quot;,
+          &quot;notes&quot;: []
+        },
+        &quot;id&quot;: &quot;lob-rule-from-modal-fixed-points-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Löb&#x27;s theorem&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/L%C3%B6b%27s_theorem&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/3542/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Löb&#x27;s_theorem_70bca4b0.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Löb&#x27;s theorem&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/L%C3%B6b%27s_theorem&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Löb&#x27;s_theorem_70bca4b0.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Author reread source and standalone extraction; scope, boundaries, notation, dependencies, proof roles and fresh metadata checked.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Preserved the source’s abstract rule with its explicit fixed-point and K4 hypotheses, rather than claiming the GL axiom schema itself has been derived. Compressed successive propositional inference steps without changing the mechanism.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration, full-run batch 70: Restored Löb / modal proof, complete 14 numbered steps with source inference explanations. Used exactly the fixed-point hypothesis of current statement.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;already_present&quot;,
+      &quot;explanation&quot;: &quot;Finite formal deduction. The fixed-point sentences and modal rules are assumptions of the statement. The proof is already a finite syntactic derivation from them; proving a modal fixed-point theorem is not required. This looks chiefly like a school/introductory-logic classification boundary.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  },
+  &quot;original_metadata_note&quot;: &quot;Snapshot before this review. References inside original_metadata retain their original metadata-directory-relative interpretation, including any historical paths that no longer resolve.&quot;,
+  &quot;screening_report&quot;: &quot;../elementary-proof-assessment-232.txt&quot;,
+  &quot;warning_resolution&quot;: &quot;Removed active simpler_proof_assessment after archiving it here. This resolves the level-screening flag, not every mathematical or completeness issue and not the existence of other proofs.&quot;
+}</pre><a download="lob-rule-from-modal-fixed-points.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22lob-rule-from-modal-fixed-points%22%2C%0A%20%20%22review_type%22%3A%20%22Editorial%20prerequisite%20assessment%20of%20unchanged%20text%3B%20not%20formal%20verification%22%2C%0A%20%20%22resolution%22%3A%20%22proof_level_lowered%22%2C%0A%20%20%22explanation%22%3A%20%22Lower%20Proof%201%20to%20high%20school%20only%20under%20the%20guide%27s%20allowance%20for%20locally%20explained%20elementary%20concepts.%20All%20modal%20rules%20and%20the%20fixed-point%20existence%20assertion%20are%20hypotheses%20of%20the%20statement.%20The%20fourteen%20displayed%20steps%20use%20substitutions%2C%20propositional%20implications%20and%20the%20supplied%20inference%20rules%3B%20no%20modal%20semantics%2C%20arithmetization%20or%20fixed-point%20theorem%20must%20be%20learned%20or%20proved.%20The%20same%20elementary%20formal%20reasoning%20that%20supports%20the%20statement%20rating%20suffices%20for%20this%20deduction.%20This%20does%20not%20classify%20general%20modal%20logic%20as%20school%20mathematics.%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/lob-rule-from-modal-fixed-points.md%22%2C%0A%20%20%22content_sha256%22%3A%20%22212e6d5ce6eebf7ff0ecc83c5b2f9b1d2582f4fde9161ad96a80b15de399f032%22%2C%0A%20%20%22statement_decision%22%3A%20%7B%0A%20%20%20%20%22before%22%3A%20%22High%20school%20only%22%2C%0A%20%20%20%20%22after%22%3A%20%22High%20school%20only%22%2C%0A%20%20%20%20%22justification%22%3A%20%22Every%20modal%20inference%20rule%20and%20the%20fixed-point%20hypothesis%20are%20explicitly%20supplied%20as%20symbolic%20formulas.%20The%20conclusion%20concerns%20a%20finite%20deduction%20using%20those%20rules%2C%20not%20modal%20semantics%20or%20arithmetic%20coding.%22%0A%20%20%7D%2C%0A%20%20%22proof_decisions%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%22before%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%22after%22%3A%20%22High%20school%20only%22%2C%0A%20%20%20%20%20%20%22justification%22%3A%20%22The%20statement%20supplies%20the%20modal%20rules%20and%20the%20fixed-point%20hypothesis.%20The%20fourteen%20steps%20apply%20those%20rules%20by%20substitution%20and%20elementary%20propositional%20implication.%20This%20is%20locally%20specified%20symbolic%20reasoning%20under%20the%20high-school%20criterion%3B%20no%20modal%20semantics%2C%20arithmetic%20coding%20or%20proof%20of%20a%20fixed-point%20theorem%20is%20required.%22%2C%0A%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%7D%0A%20%20%5D%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22lob-rule-from-modal-fixed-points%22%2C%0A%20%20%20%20%22title%22%3A%20%22L%C3%B6b%20inference%20rule%20from%20modal%20fixed%20points%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22lob-rule-from-modal-fixed-points.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22medium%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Classical%20modal%20deductive%20systems%22%2C%0A%20%20%20%20%20%20%20%20%22Necessitation%22%2C%0A%20%20%20%20%20%20%20%20%22Modal%20fixed%20points%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22Every%20modal%20inference%20rule%20and%20the%20fixed-point%20hypothesis%20are%20explicitly%20supplied%20as%20symbolic%20formulas.%20The%20conclusion%20concerns%20a%20finite%20deduction%20using%20those%20rules%2C%20not%20modal%20semantics%20or%20arithmetic%20coding.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Mathematical%20Logic%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Box%20the%20fixed%20point%20and%20use%20internal%20necessitation%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Modal%20rules%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Propositional%20deduction%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Fixed-point%20hypothesis%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Follow%20the%20displayed%20finite%20deduction%20using%20necessitation%2C%20distribution%20and%20the%20assumed%20fixed%20point%2C%20then%20discharge%20the%20theoremhood%20hypothesis.%20Undergraduate%20propositional%20logic%20suffices%20with%20the%20explicitly%20stated%20modal%20rules%20as%20a%20small%20formal%20extension%3B%20no%20arithmetic%20coding%20or%20proof%20of%20the%20fixed-point%20hypothesis%20is%20required.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22All%20non-background%20modal%20rules%20and%20the%20fixed-point%20assumption%20are%20hypotheses%20of%20the%20result%3B%20the%20local%20derivation%20is%20complete%20relative%20to%20formal%20propositional%20inference.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22complete%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22lob-rule-from-modal-fixed-points-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22L%C3%B6b%27s%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/L%25C3%25B6b%2527s_theorem%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/3542/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/L%C3%B6b%27s_theorem_70bca4b0.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22L%C3%B6b%27s%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/L%25C3%25B6b%2527s_theorem%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/L%C3%B6b%27s_theorem_70bca4b0.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Author%20reread%20source%20and%20standalone%20extraction%3B%20scope%2C%20boundaries%2C%20notation%2C%20dependencies%2C%20proof%20roles%20and%20fresh%20metadata%20checked.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Preserved%20the%20source%E2%80%99s%20abstract%20rule%20with%20its%20explicit%20fixed-point%20and%20K4%20hypotheses%2C%20rather%20than%20claiming%20the%20GL%20axiom%20schema%20itself%20has%20been%20derived.%20Compressed%20successive%20propositional%20inference%20steps%20without%20changing%20the%20mechanism.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%2C%20full-run%20batch%2070%3A%20Restored%20L%C3%B6b%20/%20modal%20proof%2C%20complete%2014%20numbered%20steps%20with%20source%20inference%20explanations.%20Used%20exactly%20the%20fixed-point%20hypothesis%20of%20current%20statement.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22already_present%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Finite%20formal%20deduction.%20The%20fixed-point%20sentences%20and%20modal%20rules%20are%20assumptions%20of%20the%20statement.%20The%20proof%20is%20already%20a%20finite%20syntactic%20derivation%20from%20them%3B%20proving%20a%20modal%20fixed-point%20theorem%20is%20not%20required.%20This%20looks%20chiefly%20like%20a%20school/introductory-logic%20classification%20boundary.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%2C%0A%20%20%22original_metadata_note%22%3A%20%22Snapshot%20before%20this%20review.%20References%20inside%20original_metadata%20retain%20their%20original%20metadata-directory-relative%20interpretation%2C%20including%20any%20historical%20paths%20that%20no%20longer%20resolve.%22%2C%0A%20%20%22screening_report%22%3A%20%22../elementary-proof-assessment-232.txt%22%2C%0A%20%20%22warning_resolution%22%3A%20%22Removed%20active%20simpler_proof_assessment%20after%20archiving%20it%20here.%20This%20resolves%20the%20level-screening%20flag%2C%20not%20every%20mathematical%20or%20completeness%20issue%20and%20not%20the%20existence%20of%20other%20proofs.%22%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Let <span class="math" data-display="false">\vdash</span> denote theoremhood in a classical modal deductive system, with propositional tautologies and modus ponens. Assume necessitation (<span class="math" data-display="false">\vdash A</span> implies <span class="math" data-display="false">\vdash\Box A</span>), distribution <span class="math" data-display="false">\vdash\Box(A\to B)\to(\Box A\to\Box B)</span>, and <span class="math" data-display="false">\vdash\Box A\to\Box\Box A</span>. Suppose for each sentence <span class="math" data-display="false">P</span> there is a sentence <span class="math" data-display="false">\Psi</span> with <span class="math" data-display="false">\vdash\Psi\leftrightarrow(\Box\Psi\to P)</span>. Then <span class="math" data-display="false">\vdash\Box P\to P</span> implies <span class="math" data-display="false">\vdash P</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Every modal inference rule and the fixed-point hypothesis are explicitly supplied as symbolic formulas. The conclusion concerns a finite deduction using those rules, not modal semantics or arithmetic coding.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mathematical logic</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Classical modal deductive systems</span><span class="badge blue">Necessitation</span><span class="badge blue">Modal fixed points</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Box the fixed point and use internal necessitation</h3><p>Much of the proof does not make use of the assumption <span class="math" data-display="false">{\displaystyle \Box P\to P}</span>, so for ease of understanding, the proof below is subdivided to leave the parts depending on <span class="math" data-display="false">{\displaystyle \Box P\to P}</span> until the end.</p>
+<p>Let <span class="math" data-display="false">{\displaystyle P}</span> be any modal sentence.</p>
+<ol>
+<li>
+<p>Use the fixed-point hypothesis to choose a sentence <span class="math" data-display="false">{\displaystyle \Psi }</span> such that
+<span class="math" data-display="false">{\displaystyle \vdash \Psi \leftrightarrow (\Box \Psi \rightarrow P)}</span>.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Psi \rightarrow (\Box \Psi \rightarrow P)}</span>, from 1.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box (\Psi \rightarrow (\Box \Psi \rightarrow P))}</span>, from 2 by the necessitation rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow \Box (\Box \Psi \rightarrow P)}</span>, from 3 and the box distributivity rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box (\Box \Psi \rightarrow P)\rightarrow (\Box \Box \Psi \rightarrow \Box P)}</span>, box distributivity rule &quot; <span class="math" data-display="false">{\displaystyle \vdash \Box (A\rightarrow B)\rightarrow (\Box A\rightarrow \Box B)}</span> &quot; with <span class="math" data-display="false">{\displaystyle A=\Box \Psi }</span> and <span class="math" data-display="false">{\displaystyle B=P}</span>.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow (\Box \Box \Psi \rightarrow \Box P)}</span>, from 4 and 5.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow \Box \Box \Psi }</span>, internal necessitation rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow \Box P}</span>, from 6 and 7.</p>
+<p>Now comes the part of the proof where the hypothesis is used.</p>
+</li>
+<li>
+<p>Assume that <span class="math" data-display="false">{\displaystyle \vdash \Box P\rightarrow P}</span>. Roughly speaking, it is a theorem that if <span class="math" data-display="false">{\displaystyle P}</span> is provable, then it is, in fact true. This is a claim of <em>soundness</em>.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow P}</span>, from 8 and 9.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash (\Box \Psi \rightarrow P)\rightarrow \Psi }</span>, from 1.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Psi }</span>, from 10 and 11.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi }</span>, from 12 by the necessitation rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash P}</span>, from 13 and 10.</p>
+</li>
+</ol>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The statement supplies the modal rules and the fixed-point hypothesis. The fourteen steps apply those rules by substitution and elementary propositional implication. This is locally specified symbolic reasoning under the high-school criterion; no modal semantics, arithmetic coding or proof of a fixed-point theorem is required.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Modal rules</span><span class="badge blue">Propositional deduction</span><span class="badge blue">Fixed-point hypothesis</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><p>No substantive additional dependency recorded</p>
+</div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>2026-11-02: Lower Proof 1 to high school only under the guide's allowance for locally explained elementary concepts. All modal rules and the fixed-point existence assertion are hypotheses of the statement. The fourteen displayed steps use substitutions, propositional implications and the supplied inference rules; no modal semantics, arithmetization or fixed-point theorem must be learned or proved. The same elementary formal reasoning that supports the statement rating suffices for this deduction. This does not classify general modal logic as school mathematics.</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Let <span class="math" data-display="false">\vdash</span> denote theoremhood in a classical modal deductive system, with propositional tautologies and modus ponens. Assume necessitation (<span class="math" data-display="false">\vdash A</span> implies <span class="math" data-display="false">\vdash\Box A</span>), distribution <span class="math" data-display="false">\vdash\Box(A\to B)\to(\Box A\to\Box B)</span>, and <span class="math" data-display="false">\vdash\Box A\to\Box\Box A</span>. Suppose for each sentence <span class="math" data-display="false">P</span> there is a sentence <span class="math" data-display="false">\Psi</span> with <span class="math" data-display="false">\vdash\Psi\leftrightarrow(\Box\Psi\to P)</span>. Then <span class="math" data-display="false">\vdash\Box P\to P</span> implies <span class="math" data-display="false">\vdash P</span>.</p>
+<hr><h3 id="proof-1--box-the-fixed-point-and-use-internal-necessitation">Proof 1 — Box the fixed point and use internal necessitation</h3>
+<p>Much of the proof does not make use of the assumption <span class="math" data-display="false">{\displaystyle \Box P\to P}</span>, so for ease of understanding, the proof below is subdivided to leave the parts depending on <span class="math" data-display="false">{\displaystyle \Box P\to P}</span> until the end.</p>
+<p>Let <span class="math" data-display="false">{\displaystyle P}</span> be any modal sentence.</p>
+<ol>
+<li>
+<p>Use the fixed-point hypothesis to choose a sentence <span class="math" data-display="false">{\displaystyle \Psi }</span> such that
+<span class="math" data-display="false">{\displaystyle \vdash \Psi \leftrightarrow (\Box \Psi \rightarrow P)}</span>.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Psi \rightarrow (\Box \Psi \rightarrow P)}</span>, from 1.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box (\Psi \rightarrow (\Box \Psi \rightarrow P))}</span>, from 2 by the necessitation rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow \Box (\Box \Psi \rightarrow P)}</span>, from 3 and the box distributivity rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box (\Box \Psi \rightarrow P)\rightarrow (\Box \Box \Psi \rightarrow \Box P)}</span>, box distributivity rule &quot; <span class="math" data-display="false">{\displaystyle \vdash \Box (A\rightarrow B)\rightarrow (\Box A\rightarrow \Box B)}</span> &quot; with <span class="math" data-display="false">{\displaystyle A=\Box \Psi }</span> and <span class="math" data-display="false">{\displaystyle B=P}</span>.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow (\Box \Box \Psi \rightarrow \Box P)}</span>, from 4 and 5.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow \Box \Box \Psi }</span>, internal necessitation rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow \Box P}</span>, from 6 and 7.</p>
+<p>Now comes the part of the proof where the hypothesis is used.</p>
+</li>
+<li>
+<p>Assume that <span class="math" data-display="false">{\displaystyle \vdash \Box P\rightarrow P}</span>. Roughly speaking, it is a theorem that if <span class="math" data-display="false">{\displaystyle P}</span> is provable, then it is, in fact true. This is a claim of <em>soundness</em>.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi \rightarrow P}</span>, from 8 and 9.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash (\Box \Psi \rightarrow P)\rightarrow \Psi }</span>, from 1.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Psi }</span>, from 10 and 11.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash \Box \Psi }</span>, from 12 by the necessitation rule.</p>
+</li>
+<li>
+<p><span class="math" data-display="false">{\displaystyle \vdash P}</span>, from 13 and 10.</p>
+</li>
+</ol>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Every modal inference rule and the fixed-point hypothesis are explicitly supplied as symbolic formulas. The conclusion concerns a finite deduction using those rules, not modal semantics or arithmetic coding.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mathematical logic</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Classical modal deductive systems</span><span class="badge blue">Necessitation</span><span class="badge blue">Modal fixed points</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Box the fixed point and use internal necessitation</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The statement supplies the modal rules and the fixed-point hypothesis. The fourteen steps apply those rules by substitution and elementary propositional implication. This is locally specified symbolic reasoning under the high-school criterion; no modal semantics, arithmetic coding or proof of a fixed-point theorem is required.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Modal rules</span><span class="badge blue">Propositional deduction</span><span class="badge blue">Fixed-point hypothesis</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><p>No substantive additional dependency recorded</p>
+</div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>2026-11-02: Lower Proof 1 to high school only under the guide's allowance for locally explained elementary concepts. All modal rules and the fixed-point existence assertion are hypotheses of the statement. The fourteen displayed steps use substitutions, propositional implications and the supplied inference rules; no modal semantics, arithmetization or fixed-point theorem must be learned or proved. The same elementary formal reasoning that supports the statement rating suffices for this deduction. This does not classify general modal logic as school mathematics.</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

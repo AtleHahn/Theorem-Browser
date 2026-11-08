@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Bernoulli inequalities for real exponents · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;medium&quot;, &quot;issue&quot;: [&quot;may have an unsatisfactory proof&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Has at least one proof with concepts from a different area&quot;, &quot;Highschool level Statement - All proofs have at least undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Bernoulli inequalities for real exponents</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality" target="_blank" rel="noopener">Bernoulli&#x27;s inequality</a><button type="button" data-source="https://en.wikipedia.org/wiki/Bernoulli%27s_inequality">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge green">medium</span></div></div><div class="field" data-noteworthiness-field><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"><span class="badge gold">Has at least one proof with concepts from a different area</span><span class="badge gold">Highschool level Statement - All proofs have at least undergraduate level</span></div></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;bernoulli-real-exponent&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;remove&quot;,
+  &quot;decision_summary&quot;: &quot;Remove the likely flag; a strictly lower-category alternative is not established.&quot;,
+  &quot;explanation&quot;: &quot;Rational-exponent AM-GM followed by approximation requires continuity for arbitrary real exponents and an additional argument for strictness. The rational case alone is narrower than the statement. No high-school treatment of the full real-exponent and endpoint assertion was established; the proposed route remains undergraduate.&quot;,
+  &quot;statement_level&quot;: &quot;High school only&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: null,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/bernoulli-real-exponent.md&quot;,
+  &quot;content_sha256&quot;: &quot;32233bfe4fd6c926850b503da3d253045d2f1cf6658e43443839addf57f183d7&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;51575bab816d0a6198d5008e22528b2a2e64bf1ffef82809cd71bb294a6e794b&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;bernoulli-real-exponent&quot;,
+    &quot;title&quot;: &quot;Bernoulli inequalities for real exponents&quot;,
+    &quot;content_file&quot;: &quot;bernoulli-real-exponent.md&quot;,
+    &quot;importance&quot;: &quot;medium&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;yes&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Real powers with positive base&quot;,
+        &quot;Real inequalities&quot;,
+        &quot;Endpoint power conventions&quot;
+      ],
+      &quot;level_justification&quot;: &quot;The statement uses real exponentiation, inequalities and explicit conditions at the zero-base endpoint, without calculus.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;High school mathematics&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Strict convexity as a function of the exponent&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Real exponential functions&quot;,
+          &quot;Strict convexity&quot;,
+          &quot;Secant-line inequalities&quot;,
+          &quot;Endpoint cases&quot;
+        ],
+        &quot;level_justification&quot;: &quot;The proof treats the exponent as a real variable and uses strict convexity relative to the chord through exponents zero and one, including its continuation outside that interval. These are undergraduate calculus concepts; the second derivative is (1+x)^alpha times log(1+x)^2&gt;0 for x nonzero. The remaining equality and zero-base cases are direct sign checks.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Strict convexity of a nonconstant real exponential&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;implicitly_assumed&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Strict convexity as a function of the exponent&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;If a&gt;0 and a is not one, alpha-&gt;a^alpha is strictly convex, since its second derivative is a^alpha(log a)^2&gt;0.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/bernoulli-real-exponent.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Strict convexity as a function of the exponent&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Place the graph below the chord for exponents between zero and one.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;This is ordinary second-derivative calculus.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Convex functions lie above the secant-line continuation outside the interval&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;implicitly_assumed&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Strict convexity as a function of the exponent&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;A strictly convex function lies strictly above the continuation of a secant line at points outside the interval between its two defining points.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/bernoulli-real-exponent.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Strict convexity as a function of the exponent&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Reverse the chord inequality for r&lt;0 and r&gt;1.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;The application is the elementary ordered-secant-slope property of convex functions.&quot;,
+            &quot;review_notes&quot;: []
+          }
+        ],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;undergraduate_calculus_linear_algebra&quot;,
+          &quot;status&quot;: &quot;yes&quot;,
+          &quot;justification&quot;: &quot;The inequalities follow locally from the listed convexity facts, with equality and zero-base endpoint checks explicitly included.&quot;
+        },
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;complete&quot;,
+          &quot;notes&quot;: []
+        },
+        &quot;id&quot;: &quot;bernoulli-real-exponent-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [
+          &quot;Real Analysis&quot;
+        ],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Bernoulli&#x27;s inequality&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Bernoulli%27s_inequality&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/290/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Bernoulli&#x27;s_inequality_27b31814.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Bernoulli&#x27;s inequality&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Bernoulli%27s_inequality&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Bernoulli&#x27;s_inequality_27b31814.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Reviewed source hypotheses, all local symbols, proof scope and actual dependencies.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Preserved canonical real-exponent statement and included the source opening endpoint cases with the raw Note2 convention.; Made the source’s reversed-inequality convexity property explicit; endpoint/equality checks are routine.; Independently reassessed statement and each finalized proof: tailored prerequisites and justification to its actual argument, and marked the now-explicit base/endpoint checks complete rather than repeating source-omission boilerplate.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration: Restored the source convexity paragraph and full equality chain; retained equality and zero-base endpoint checks.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;School inequalities plus continuity in the exponent. For rational r, weighted AM-GM gives the fractional-power inequality; inversion/rearrangement gives r&lt;0 and r&gt;1. Approximate real r by rationals, handling strictness separately. This avoids differential convexity, though a real-exponent continuity argument remains.&quot;,
+      &quot;references&quot;: [
+        &quot;../proof-database/am-gm-inequality.md&quot;,
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="bernoulli-real-exponent.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22bernoulli-real-exponent%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22remove%22%2C%0A%20%20%22decision_summary%22%3A%20%22Remove%20the%20likely%20flag%3B%20a%20strictly%20lower-category%20alternative%20is%20not%20established.%22%2C%0A%20%20%22explanation%22%3A%20%22Rational-exponent%20AM-GM%20followed%20by%20approximation%20requires%20continuity%20for%20arbitrary%20real%20exponents%20and%20an%20additional%20argument%20for%20strictness.%20The%20rational%20case%20alone%20is%20narrower%20than%20the%20statement.%20No%20high-school%20treatment%20of%20the%20full%20real-exponent%20and%20endpoint%20assertion%20was%20established%3B%20the%20proposed%20route%20remains%20undergraduate.%22%2C%0A%20%20%22statement_level%22%3A%20%22High%20school%20only%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20null%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/bernoulli-real-exponent.md%22%2C%0A%20%20%22content_sha256%22%3A%20%2232233bfe4fd6c926850b503da3d253045d2f1cf6658e43443839addf57f183d7%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%2251575bab816d0a6198d5008e22528b2a2e64bf1ffef82809cd71bb294a6e794b%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22bernoulli-real-exponent%22%2C%0A%20%20%20%20%22title%22%3A%20%22Bernoulli%20inequalities%20for%20real%20exponents%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22bernoulli-real-exponent.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22medium%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Real%20powers%20with%20positive%20base%22%2C%0A%20%20%20%20%20%20%20%20%22Real%20inequalities%22%2C%0A%20%20%20%20%20%20%20%20%22Endpoint%20power%20conventions%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20statement%20uses%20real%20exponentiation%2C%20inequalities%20and%20explicit%20conditions%20at%20the%20zero-base%20endpoint%2C%20without%20calculus.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22High%20school%20mathematics%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Strict%20convexity%20as%20a%20function%20of%20the%20exponent%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Real%20exponential%20functions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Strict%20convexity%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Secant-line%20inequalities%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Endpoint%20cases%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20proof%20treats%20the%20exponent%20as%20a%20real%20variable%20and%20uses%20strict%20convexity%20relative%20to%20the%20chord%20through%20exponents%20zero%20and%20one%2C%20including%20its%20continuation%20outside%20that%20interval.%20These%20are%20undergraduate%20calculus%20concepts%3B%20the%20second%20derivative%20is%20%281%2Bx%29%5Ealpha%20times%20log%281%2Bx%29%5E2%3E0%20for%20x%20nonzero.%20The%20remaining%20equality%20and%20zero-base%20cases%20are%20direct%20sign%20checks.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Strict%20convexity%20of%20a%20nonconstant%20real%20exponential%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22implicitly_assumed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Strict%20convexity%20as%20a%20function%20of%20the%20exponent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22If%20a%3E0%20and%20a%20is%20not%20one%2C%20alpha-%3Ea%5Ealpha%20is%20strictly%20convex%2C%20since%20its%20second%20derivative%20is%20a%5Ealpha%28log%20a%29%5E2%3E0.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/bernoulli-real-exponent.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Strict%20convexity%20as%20a%20function%20of%20the%20exponent%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Place%20the%20graph%20below%20the%20chord%20for%20exponents%20between%20zero%20and%20one.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22This%20is%20ordinary%20second-derivative%20calculus.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Convex%20functions%20lie%20above%20the%20secant-line%20continuation%20outside%20the%20interval%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22implicitly_assumed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Strict%20convexity%20as%20a%20function%20of%20the%20exponent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22A%20strictly%20convex%20function%20lies%20strictly%20above%20the%20continuation%20of%20a%20secant%20line%20at%20points%20outside%20the%20interval%20between%20its%20two%20defining%20points.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/bernoulli-real-exponent.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Strict%20convexity%20as%20a%20function%20of%20the%20exponent%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Reverse%20the%20chord%20inequality%20for%20r%3C0%20and%20r%3E1.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22The%20application%20is%20the%20elementary%20ordered-secant-slope%20property%20of%20convex%20functions.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22undergraduate_calculus_linear_algebra%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20inequalities%20follow%20locally%20from%20the%20listed%20convexity%20facts%2C%20with%20equality%20and%20zero-base%20endpoint%20checks%20explicitly%20included.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22complete%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22bernoulli-real-exponent-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Real%20Analysis%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Bernoulli%27s%20inequality%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Bernoulli%2527s_inequality%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/290/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Bernoulli%27s_inequality_27b31814.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Bernoulli%27s%20inequality%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Bernoulli%2527s_inequality%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Bernoulli%27s_inequality_27b31814.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Reviewed%20source%20hypotheses%2C%20all%20local%20symbols%2C%20proof%20scope%20and%20actual%20dependencies.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Preserved%20canonical%20real-exponent%20statement%20and%20included%20the%20source%20opening%20endpoint%20cases%20with%20the%20raw%20Note2%20convention.%3B%20Made%20the%20source%E2%80%99s%20reversed-inequality%20convexity%20property%20explicit%3B%20endpoint/equality%20checks%20are%20routine.%3B%20Independently%20reassessed%20statement%20and%20each%20finalized%20proof%3A%20tailored%20prerequisites%20and%20justification%20to%20its%20actual%20argument%2C%20and%20marked%20the%20now-explicit%20base/endpoint%20checks%20complete%20rather%20than%20repeating%20source-omission%20boilerplate.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%3A%20Restored%20the%20source%20convexity%20paragraph%20and%20full%20equality%20chain%3B%20retained%20equality%20and%20zero-base%20endpoint%20checks.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22School%20inequalities%20plus%20continuity%20in%20the%20exponent.%20For%20rational%20r%2C%20weighted%20AM-GM%20gives%20the%20fractional-power%20inequality%3B%20inversion/rearrangement%20gives%20r%3C0%20and%20r%3E1.%20Approximate%20real%20r%20by%20rationals%2C%20handling%20strictness%20separately.%20This%20avoids%20differential%20convexity%2C%20though%20a%20real-exponent%20continuity%20argument%20remains.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../proof-database/am-gm-inequality.md%22%2C%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>For real <span class="math" data-display="false">x&gt;-1</span> and real <span class="math" data-display="false">r</span>, <span class="math" data-display="false">(1+x)^r\ge1+rx</span> if <span class="math" data-display="false">r\le0</span> or <span class="math" data-display="false">r\ge1</span>, while <span class="math" data-display="false">(1+x)^r\le1+rx</span> if <span class="math" data-display="false">0\le r\le1</span>. Each inequality is strict when <span class="math" data-display="false">x\ne0</span> and <span class="math" data-display="false">r\notin\{0,1\}</span>. The nonstrict assertions for <span class="math" data-display="false">r\ge0</span> also hold at <span class="math" data-display="false">x=-1</span>, with the convention <span class="math" data-display="false">0^0=1</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The statement uses real exponentiation, inequalities and explicit conditions at the zero-base endpoint, without calculus.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">High School Mathematics</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Real powers with positive base</span><span class="badge blue">Real inequalities</span><span class="badge blue">Endpoint power conventions</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Strict convexity as a function of the exponent</h3><p>For <span class="math" data-display="false">{\displaystyle 0\neq x&gt;-1}</span> the function <span class="math" data-display="false">{\displaystyle h(\alpha )=(1+x)^{\alpha }}</span> is strictly convex. Therefore, for <span class="math" data-display="false">{\displaystyle 0&lt;\alpha &lt;1}</span> holds <span class="math" data-display="false">{\displaystyle (1+x)^{\alpha }=h(\alpha )=h((1-\alpha )\cdot 0+\alpha \cdot 1)&lt;(1-\alpha )h(0)+\alpha h(1)=1+\alpha x}</span> and the reversed inequality is valid for <span class="math" data-display="false">{\displaystyle \alpha &lt;0}</span> and <span class="math" data-display="false">{\displaystyle \alpha &gt;1}</span>.</p>
+<p>For <span class="math" data-display="false">x=0</span> or <span class="math" data-display="false">r\in\{0,1\}</span> there is equality. At <span class="math" data-display="false">x=-1</span> and <span class="math" data-display="false">r&gt;0</span>, the left side is zero and the stated inequalities follow from the sign of <span class="math" data-display="false">1-r</span>; <span class="math" data-display="false">r=0</span> follows from the adopted convention.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The proof treats the exponent as a real variable and uses strict convexity relative to the chord through exponents zero and one, including its continuation outside that interval. These are undergraduate calculus concepts; the second derivative is (1+x)^alpha times log(1+x)^2&gt;0 for x nonzero. The remaining equality and zero-base cases are direct sign checks.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Real analysis</span></div></div></div><div class="field"><div class="field-label">Warning</div><div class="field-value"><p>This proof is essentially a specialization of a (potentially much) more general result and may therefore be considered unsatisfactory by some readers.</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Real exponential functions</span><span class="badge blue">Strict convexity</span><span class="badge blue">Secant-line inequalities</span><span class="badge blue">Endpoint cases</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Strict convexity of a nonconstant real exponential</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>If a&gt;0 and a is not one, alpha-&gt;a^alpha is strictly convex, since its second derivative is a^alpha(log a)^2&gt;0.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Place the graph below the chord for exponents between zero and one.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>This is ordinary second-derivative calculus.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Convex functions lie above the secant-line continuation outside the interval</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A strictly convex function lies strictly above the continuation of a secant line at points outside the interval between its two defining points.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Reverse the chord inequality for r&lt;0 and r&gt;1.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The application is the elementary ordered-secant-slope property of convex functions.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>For real <span class="math" data-display="false">x&gt;-1</span> and real <span class="math" data-display="false">r</span>, <span class="math" data-display="false">(1+x)^r\ge1+rx</span> if <span class="math" data-display="false">r\le0</span> or <span class="math" data-display="false">r\ge1</span>, while <span class="math" data-display="false">(1+x)^r\le1+rx</span> if <span class="math" data-display="false">0\le r\le1</span>. Each inequality is strict when <span class="math" data-display="false">x\ne0</span> and <span class="math" data-display="false">r\notin\{0,1\}</span>. The nonstrict assertions for <span class="math" data-display="false">r\ge0</span> also hold at <span class="math" data-display="false">x=-1</span>, with the convention <span class="math" data-display="false">0^0=1</span>.</p>
+<hr><h3 id="proof-1--strict-convexity-as-a-function-of-the-exponent">Proof 1 — Strict convexity as a function of the exponent</h3>
+<p>For <span class="math" data-display="false">{\displaystyle 0\neq x&gt;-1}</span> the function <span class="math" data-display="false">{\displaystyle h(\alpha )=(1+x)^{\alpha }}</span> is strictly convex. Therefore, for <span class="math" data-display="false">{\displaystyle 0&lt;\alpha &lt;1}</span> holds <span class="math" data-display="false">{\displaystyle (1+x)^{\alpha }=h(\alpha )=h((1-\alpha )\cdot 0+\alpha \cdot 1)&lt;(1-\alpha )h(0)+\alpha h(1)=1+\alpha x}</span> and the reversed inequality is valid for <span class="math" data-display="false">{\displaystyle \alpha &lt;0}</span> and <span class="math" data-display="false">{\displaystyle \alpha &gt;1}</span>.</p>
+<p>For <span class="math" data-display="false">x=0</span> or <span class="math" data-display="false">r\in\{0,1\}</span> there is equality. At <span class="math" data-display="false">x=-1</span> and <span class="math" data-display="false">r&gt;0</span>, the left side is zero and the stated inequalities follow from the sign of <span class="math" data-display="false">1-r</span>; <span class="math" data-display="false">r=0</span> follows from the adopted convention.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The statement uses real exponentiation, inequalities and explicit conditions at the zero-base endpoint, without calculus.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">High School Mathematics</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Real powers with positive base</span><span class="badge blue">Real inequalities</span><span class="badge blue">Endpoint power conventions</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Strict convexity as a function of the exponent</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>The proof treats the exponent as a real variable and uses strict convexity relative to the chord through exponents zero and one, including its continuation outside that interval. These are undergraduate calculus concepts; the second derivative is (1+x)^alpha times log(1+x)^2&gt;0 for x nonzero. The remaining equality and zero-base cases are direct sign checks.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><div class="badges topics"><span class="badge blue">Real analysis</span></div></div></div><div class="field"><div class="field-label">Warning</div><div class="field-value"><p>This proof is essentially a specialization of a (potentially much) more general result and may therefore be considered unsatisfactory by some readers.</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Real exponential functions</span><span class="badge blue">Strict convexity</span><span class="badge blue">Secant-line inequalities</span><span class="badge blue">Endpoint cases</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Strict convexity of a nonconstant real exponential</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>If a&gt;0 and a is not one, alpha-&gt;a^alpha is strictly convex, since its second derivative is a^alpha(log a)^2&gt;0.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Place the graph below the chord for exponents between zero and one.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>This is ordinary second-derivative calculus.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Convex functions lie above the secant-line continuation outside the interval</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Implicitly assumed</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>A strictly convex function lies strictly above the continuation of a secant line at points outside the interval between its two defining points.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Reverse the chord inequality for r&lt;0 and r&gt;1.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>The application is the elementary ordered-secant-slope property of convex functions.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

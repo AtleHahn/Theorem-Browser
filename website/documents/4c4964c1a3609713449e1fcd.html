@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Material implication replacement rule · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;low&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 2, &quot;reason_candidates&quot;: [], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Material implication replacement rule</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Material_implication_(rule_of_inference)" target="_blank" rel="noopener">Material implication replacement rule</a><button type="button" data-source="https://en.wikipedia.org/wiki/Material_implication_(rule_of_inference)">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>2</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge gray">low</span></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Accepted after separate same-agent source/standalone review; not independent or formal mathematical verification</p>
+</div></div><div class="field" data-noteworthiness-field hidden><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"></div></div></div></div><div class="metadata-fields"></div><div class="review"><p class="warning">Could not load review record material-implication-equivalence.json: [Errno 2] No such file or directory: &#x27;/home/atle/Projects/Prague_Projects/THE_BOOK/Proof-Database/version8/experiment/signature-gap-resolution/reviews/material-implication-equivalence.json&#x27;</p></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>For any propositions <span class="math" data-display="false">P,Q</span> in classical two-valued propositional logic,</p>
+<span class="math" data-display="true">(P\to Q)\ \leftrightarrow\ (\neg P\lor Q).</span><p>Thus either expression can replace the other in a classical logical proof. Here <span class="math" data-display="false">\neg</span> negates the truth value, <span class="math" data-display="false">\lor</span> is inclusive “or”, <span class="math" data-display="false">P\to Q</span> is false exactly when <span class="math" data-display="false">P</span> is true and <span class="math" data-display="false">Q</span> false, and <span class="math" data-display="false">\leftrightarrow</span> asserts equality of truth values.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>All connectives are explicitly defined by elementary two-valued logic; no formal proof-theory background is needed.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mathematical logic</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">classical truth values</span><span class="badge blue">negation, disjunction and implication</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Excluded middle and the converse</h3><p>Assume <span class="math" data-display="false">P\to Q</span>. By excluded middle either <span class="math" data-display="false">\neg P</span> or <span class="math" data-display="false">P</span> holds. In the first case <span class="math" data-display="false">\neg P\lor Q</span> holds; in the second, the given implication yields <span class="math" data-display="false">Q</span>, so again <span class="math" data-display="false">\neg P\lor Q</span> holds.</p>
+<p>Conversely assume <span class="math" data-display="false">\neg P\lor Q</span>. If <span class="math" data-display="false">P</span> is true, the first disjunct is ruled out, so <span class="math" data-display="false">Q</span> is true. Hence <span class="math" data-display="false">P\to Q</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Elementary cases using the stated truth-value definitions; excluded middle is part of the explicitly classical two-valued setting.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">two-valued case analysis</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><p>No substantive additional dependency recorded</p>
+</div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div><hr><h3>Proof 2: Truth table</h3><p>The source truth table compares all four possible assignments:</p>
+<table>
+<thead>
+<tr>
+<th><span class="math" data-display="false">P</span></th>
+<th><span class="math" data-display="false">Q</span></th>
+<th><span class="math" data-display="false">\neg P</span></th>
+<th><span class="math" data-display="false">P\to Q</span></th>
+<th><span class="math" data-display="false">\neg P\lor Q</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<p>The last two columns agree in every row.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Four elementary cases exhaust the truth assignments.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">truth tables</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><p>No substantive additional dependency recorded</p>
+</div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>For any propositions <span class="math" data-display="false">P,Q</span> in classical two-valued propositional logic,</p>
+<span class="math" data-display="true">(P\to Q)\ \leftrightarrow\ (\neg P\lor Q).</span><p>Thus either expression can replace the other in a classical logical proof. Here <span class="math" data-display="false">\neg</span> negates the truth value, <span class="math" data-display="false">\lor</span> is inclusive “or”, <span class="math" data-display="false">P\to Q</span> is false exactly when <span class="math" data-display="false">P</span> is true and <span class="math" data-display="false">Q</span> false, and <span class="math" data-display="false">\leftrightarrow</span> asserts equality of truth values.</p>
+<hr><h3 id="proof-1--excluded-middle-and-the-converse">Proof 1 — Excluded middle and the converse</h3>
+<p>Assume <span class="math" data-display="false">P\to Q</span>. By excluded middle either <span class="math" data-display="false">\neg P</span> or <span class="math" data-display="false">P</span> holds. In the first case <span class="math" data-display="false">\neg P\lor Q</span> holds; in the second, the given implication yields <span class="math" data-display="false">Q</span>, so again <span class="math" data-display="false">\neg P\lor Q</span> holds.</p>
+<p>Conversely assume <span class="math" data-display="false">\neg P\lor Q</span>. If <span class="math" data-display="false">P</span> is true, the first disjunct is ruled out, so <span class="math" data-display="false">Q</span> is true. Hence <span class="math" data-display="false">P\to Q</span>.</p>
+<hr><h3 id="proof-2--truth-table">Proof 2 — Truth table</h3>
+<p>The source truth table compares all four possible assignments:</p>
+<table>
+<thead>
+<tr>
+<th><span class="math" data-display="false">P</span></th>
+<th><span class="math" data-display="false">Q</span></th>
+<th><span class="math" data-display="false">\neg P</span></th>
+<th><span class="math" data-display="false">P\to Q</span></th>
+<th><span class="math" data-display="false">\neg P\lor Q</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>T</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+<p>The last two columns agree in every row.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>All connectives are explicitly defined by elementary two-valued logic; no formal proof-theory background is needed.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mathematical logic</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">classical truth values</span><span class="badge blue">negation, disjunction and implication</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Excluded middle and the converse</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Elementary cases using the stated truth-value definitions; excluded middle is part of the explicitly classical two-valued setting.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">two-valued case analysis</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><p>No substantive additional dependency recorded</p>
+</div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div><hr><h3>Proof 2: Truth table</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge green">High school only</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Four elementary cases exhaust the truth assignments.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">truth tables</span></div></div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><p>No substantive additional dependency recorded</p>
+</div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>No specific omissions identified</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>

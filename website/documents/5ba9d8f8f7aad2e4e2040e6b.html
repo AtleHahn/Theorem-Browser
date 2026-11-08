@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Browse mathematical statements, proofs, sources, and assessments.">
+<title>Mellin integral of log gamma plus Euler’s constant term · Proof Database</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/katex/katex.min.css"><script defer src="../assets/katex/katex.min.js"></script><script defer src="../assets/search.js"></script><script defer src="../assets/noteworthiness.js"></script><script defer src="../assets/document.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><a class="brand" href="../index.html">∴ <span>Proof Database</span></a><span class="muted">Mathematical statements &amp; proofs</span></header>
+<main id="main" class="document hide-reviews"><nav class="document-nav"><a href="../index.html" id="back">← Browse collection</a>
+</nav>
+<section class="document-overview" data-noteworthiness="{&quot;importance&quot;: &quot;medium&quot;, &quot;issue&quot;: [&quot;no potential issues&quot;], &quot;assessed_proof_count&quot;: 1, &quot;reason_candidates&quot;: [&quot;Undergraduate level Statement - All proofs beyond undergraduate level&quot;], &quot;proof_level_issue&quot;: false}"><h2 class="document-title">Mellin integral of log gamma plus Euler’s constant term</h2><div class="metadata-fields"><div class="field"><div class="field-label">Source articles</div><div class="field-value"><div class="source-row"><a href="https://en.wikipedia.org/wiki/Ramanujan%27s_master_theorem" target="_blank" rel="noopener">Ramanujan&#x27;s master theorem</a><button type="button" data-source="https://en.wikipedia.org/wiki/Ramanujan%27s_master_theorem">Filter by this source</button></div></div></div></div><div class="metadata-fields"><div class="field"><div class="field-label">Proof count</div><div class="field-value"><p>1</p>
+</div></div><div class="field"><div class="field-label">Importance</div><div class="field-value"><span class="badge green">medium</span></div></div><div class="field" data-noteworthiness-field><div class="field-label">Noteworthiness</div><div class="field-value"><div class="badges"><span class="badge gold">Undergraduate level Statement - All proofs beyond undergraduate level</span></div></div></div><div class="field review"><div class="field-label">Review status</div><div class="field-value"><p>Main-run extraction and separate source/standalone review; not formal verification</p>
+</div></div></div><div class="metadata-fields"></div><div class="review"><details><summary>Show review record</summary><pre>{
+  &quot;review_date&quot;: &quot;2026-11-02&quot;,
+  &quot;entry_id&quot;: &quot;log-gamma-mellin-integral&quot;,
+  &quot;review_kind&quot;: &quot;Editorial prerequisite-category review; not formal verification&quot;,
+  &quot;criteria&quot;: [
+    &quot;../../../../METADATA_GUIDE.md&quot;,
+    &quot;../../../../METADATA_RULES.md&quot;
+  ],
+  &quot;criterion&quot;: &quot;The full statement must have a credible alternative with strictly lower prerequisites than the easiest recorded proof. Easier exposition or fewer steps at the same category does not qualify. No proof text changes.&quot;,
+  &quot;decision&quot;: &quot;remove&quot;,
+  &quot;decision_summary&quot;: &quot;Remove the likely flag; a strictly lower-category alternative is not established.&quot;,
+  &quot;explanation&quot;: &quot;The proposed product-and-integral route still needs a complex-parameter beta/reflection integral and absolute interchange estimates throughout 0&lt;Re(s)&lt;1. The screening did not supply a checked undergraduate derivation of that entire prerequisite package from the stated definitions. Removing Ramanujan&#x27;s master theorem alone is insufficient evidence of a lower category for the full complex-strip formula; archive as unconfirmed.&quot;,
+  &quot;statement_level&quot;: &quot;Undergraduate level&quot;,
+  &quot;original_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;current_proof_levels&quot;: [
+    &quot;Beyond undergraduate level&quot;
+  ],
+  &quot;likely_alternative_level&quot;: null,
+  &quot;evidence_references&quot;: [],
+  &quot;reference_base&quot;: &quot;Evidence references and original_metadata links are relative to metadata/. Criteria links are relative to this record. Historical links in original_metadata are preserved verbatim and may be stale.&quot;,
+  &quot;evidence_basis&quot;: &quot;Review of the complete stored statement and proofs; local supporting entries and/or the concrete alternative argument recorded above.&quot;,
+  &quot;content_file&quot;: &quot;../../../proof-database/log-gamma-mellin-integral.md&quot;,
+  &quot;content_sha256&quot;: &quot;ceba614b90662166ff4d86967dceb8a8de8c1c89fdb3a7a8594098c2583d6174&quot;,
+  &quot;original_metadata_sha256&quot;: &quot;f01cae3a9a70220ce1fd55146ee8f6e1ea5b019656893834975896cf42e74d4a&quot;,
+  &quot;original_metadata&quot;: {
+    &quot;schema_version&quot;: &quot;6.0&quot;,
+    &quot;assessment_schema_version&quot;: &quot;1.2&quot;,
+    &quot;rubric_version&quot;: &quot;1.1&quot;,
+    &quot;id&quot;: &quot;log-gamma-mellin-integral&quot;,
+    &quot;title&quot;: &quot;Mellin integral of log gamma plus Euler’s constant term&quot;,
+    &quot;content_file&quot;: &quot;log-gamma-mellin-integral.md&quot;,
+    &quot;importance&quot;: &quot;medium&quot;,
+    &quot;elementary_criterion&quot;: &quot;Rubric 1.1 high_school_only; includes elementary geometry&quot;,
+    &quot;statement&quot;: {
+      &quot;high_school_only&quot;: &quot;no&quot;,
+      &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;yes&quot;,
+      &quot;required_topics&quot;: [
+        &quot;Improper integrals&quot;,
+        &quot;Basic complex powers&quot;,
+        &quot;Convergent Dirichlet series&quot;,
+        &quot;Real gamma integral&quot;,
+        &quot;Euler constant&quot;
+      ],
+      &quot;level_justification&quot;: &quot;Understanding the statement involves Improper integrals; Basic complex powers; Convergent Dirichlet series; Real gamma integral; Euler constant. These prerequisites fit undergraduate coursework or a brief extension of it. A bright US college student should be able to understand this statement after approximately 30 minutes of focused background research; this assesses understanding the claim, not its proof.&quot;,
+      &quot;review_notes&quot;: [],
+      &quot;mathematical_fields&quot;: [
+        &quot;Real Analysis&quot;,
+        &quot;Complex Analysis&quot;
+      ]
+    },
+    &quot;proofs&quot;: [
+      {
+        &quot;proof_number&quot;: 1,
+        &quot;proof_title&quot;: &quot;Weierstrass expansion and the master theorem — outline&quot;,
+        &quot;high_school_only&quot;: &quot;no&quot;,
+        &quot;within_undergraduate_calculus_linear_algebra&quot;: &quot;no&quot;,
+        &quot;required_topics&quot;: [
+          &quot;Mellin transforms&quot;,
+          &quot;Complex analytic growth&quot;,
+          &quot;Gamma products&quot;
+        ],
+        &quot;level_justification&quot;: &quot;Expand log Gamma and apply Ramanujan master theorem on a complex strip. Understanding the analytic continuation and growth conditions behind this application exceeds a small undergraduate extension; those conditions are not established by the formal expansion alone.&quot;,
+        &quot;review_notes&quot;: [],
+        &quot;self_containedness&quot;: {
+          &quot;relative_to&quot;: &quot;listed_prerequisites&quot;,
+          &quot;status&quot;: &quot;partly&quot;,
+          &quot;justification&quot;: &quot;The source supplies the displayed transformation and theorem application; the named analytic theorems are external and routine convergence or substitution details are omitted.&quot;
+        },
+        &quot;dependencies&quot;: [
+          {
+            &quot;name&quot;: &quot;Weierstrass product for gamma&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Weierstrass expansion and the master theorem — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Gamma has the displayed Weierstrass infinite product.&quot;,
+            &quot;identification_status&quot;: &quot;verified&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/log-gamma-mellin-integral.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Weierstrass expansion and the master theorem — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Obtain the logarithmic power series.&quot;,
+            &quot;application_level&quot;: &quot;Undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Explicit product and local logarithmic expansion.&quot;,
+            &quot;review_notes&quot;: []
+          },
+          {
+            &quot;name&quot;: &quot;Ramanujan’s master theorem under Hardy’s growth conditions&quot;,
+            &quot;kind&quot;: &quot;theorem&quot;,
+            &quot;treatment&quot;: &quot;cited_without_proof&quot;,
+            &quot;location&quot;: &quot;Proof 1 — Weierstrass expansion and the master theorem — outline&quot;,
+            &quot;database_id&quot;: null,
+            &quot;statement_used&quot;: &quot;Under the requisite Hardy growth and analyticity hypotheses, Ramanujan master theorem evaluates the Mellin transform from the continued coefficient function.&quot;,
+            &quot;identification_status&quot;: &quot;inferred_from_context&quot;,
+            &quot;references&quot;: [
+              {
+                &quot;target&quot;: &quot;../proof-database/log-gamma-mellin-integral.md&quot;,
+                &quot;locator&quot;: &quot;Proof 1 — Weierstrass expansion and the master theorem — outline&quot;
+              }
+            ],
+            &quot;application_in_proof&quot;: &quot;Evaluate the transform of the log-Gamma series.&quot;,
+            &quot;application_level&quot;: &quot;Beyond undergraduate level&quot;,
+            &quot;level_justification&quot;: &quot;Complex Mellin continuation and analytic growth hypotheses.&quot;,
+            &quot;review_notes&quot;: [
+              &quot;The proof invokes the theorem without checking its analytic hypotheses.&quot;
+            ]
+          }
+        ],
+        &quot;completeness&quot;: {
+          &quot;status&quot;: &quot;routine_omissions&quot;,
+          &quot;notes&quot;: [
+            &quot;The source explicitly applies the master theorem to this series; coefficient reindexing and growth/convergence checks are routine omissions.&quot;
+          ]
+        },
+        &quot;id&quot;: &quot;log-gamma-mellin-integral-proof-1&quot;,
+        &quot;fields_used_beyond_statement&quot;: [],
+        &quot;provenance&quot;: {
+          &quot;source_articles&quot;: [
+            {
+              &quot;title&quot;: &quot;Ramanujan&#x27;s master theorem&quot;,
+              &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Ramanujan%27s_master_theorem&quot;
+            }
+          ],
+          &quot;status&quot;: &quot;documented_corroborated&quot;,
+          &quot;audit_record&quot;: &quot;../provenance-audit/audit.json#/files/3571/proofs/0&quot;
+        },
+        &quot;level_review_status&quot;: &quot;assessed&quot;
+      }
+    ],
+    &quot;provenance&quot;: {
+      &quot;source_file&quot;: {
+        &quot;title&quot;: &quot;Local Markdown&quot;,
+        &quot;target&quot;: &quot;../data/theorem_articles/Ramanujan&#x27;s_master_theorem_9fb3455e.md&quot;
+      },
+      &quot;consolidation_records&quot;: [],
+      &quot;source_articles&quot;: [
+        {
+          &quot;title&quot;: &quot;Ramanujan&#x27;s master theorem&quot;,
+          &quot;target&quot;: &quot;https://en.wikipedia.org/wiki/Ramanujan%27s_master_theorem&quot;
+        }
+      ]
+    },
+    &quot;review&quot;: {
+      &quot;status&quot;: &quot;Main-run extraction and separate source/standalone review; not formal verification&quot;,
+      &quot;record&quot;: {
+        &quot;title&quot;: &quot;Accepted review&quot;,
+        &quot;target&quot;: &quot;../experiment/main/reviews/Ramanujan&#x27;s_master_theorem_9fb3455e.json&quot;
+      },
+      &quot;notes&quot;: [
+        &quot;Read complete raw source and checked statement/proof scope, dependencies and boundaries.&quot;
+      ]
+    },
+    &quot;editorial_history&quot;: [
+      {
+        &quot;description&quot;: &quot;Removed source-local section numbering and irrelevant preamble; supplied the source hypotheses and definitions locally.&quot;
+      },
+      {
+        &quot;description&quot;: &quot;Source-fidelity restoration, full-run batch 71: Restored Ramanujan master theorem / Application to gamma full product, series, Mellin displays; explicit local series range; preserved source omission of theorem hypothesis checks.&quot;
+      }
+    ],
+    &quot;simpler_proof_assessment&quot;: {
+      &quot;status&quot;: &quot;likely&quot;,
+      &quot;explanation&quot;: &quot;Improper integrals and convergent series. From the gamma product write gamma*x+log Gamma(1+x)=sum_n[x/n-log(1+x/n)]. Integrate each term against x^(s-3), scale x=nt, and integrate by parts to obtain pi/((2-s)sin(pi*s)); summing gives zeta(2-s). Absolute estimates justify interchange. Ramanujan&#x27;s master theorem is unnecessary.&quot;,
+      &quot;references&quot;: [
+        &quot;../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt&quot;
+      ],
+      &quot;review_date&quot;: &quot;2026-10-26&quot;
+    }
+  }
+}</pre><a download="log-gamma-mellin-integral.json" href="data:application/json;charset=utf-8,%7B%0A%20%20%22review_date%22%3A%20%222026-11-02%22%2C%0A%20%20%22entry_id%22%3A%20%22log-gamma-mellin-integral%22%2C%0A%20%20%22review_kind%22%3A%20%22Editorial%20prerequisite-category%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%22criteria%22%3A%20%5B%0A%20%20%20%20%22../../../../METADATA_GUIDE.md%22%2C%0A%20%20%20%20%22../../../../METADATA_RULES.md%22%0A%20%20%5D%2C%0A%20%20%22criterion%22%3A%20%22The%20full%20statement%20must%20have%20a%20credible%20alternative%20with%20strictly%20lower%20prerequisites%20than%20the%20easiest%20recorded%20proof.%20Easier%20exposition%20or%20fewer%20steps%20at%20the%20same%20category%20does%20not%20qualify.%20No%20proof%20text%20changes.%22%2C%0A%20%20%22decision%22%3A%20%22remove%22%2C%0A%20%20%22decision_summary%22%3A%20%22Remove%20the%20likely%20flag%3B%20a%20strictly%20lower-category%20alternative%20is%20not%20established.%22%2C%0A%20%20%22explanation%22%3A%20%22The%20proposed%20product-and-integral%20route%20still%20needs%20a%20complex-parameter%20beta/reflection%20integral%20and%20absolute%20interchange%20estimates%20throughout%200%3CRe%28s%29%3C1.%20The%20screening%20did%20not%20supply%20a%20checked%20undergraduate%20derivation%20of%20that%20entire%20prerequisite%20package%20from%20the%20stated%20definitions.%20Removing%20Ramanujan%27s%20master%20theorem%20alone%20is%20insufficient%20evidence%20of%20a%20lower%20category%20for%20the%20full%20complex-strip%20formula%3B%20archive%20as%20unconfirmed.%22%2C%0A%20%20%22statement_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%22original_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22current_proof_levels%22%3A%20%5B%0A%20%20%20%20%22Beyond%20undergraduate%20level%22%0A%20%20%5D%2C%0A%20%20%22likely_alternative_level%22%3A%20null%2C%0A%20%20%22evidence_references%22%3A%20%5B%5D%2C%0A%20%20%22reference_base%22%3A%20%22Evidence%20references%20and%20original_metadata%20links%20are%20relative%20to%20metadata/.%20Criteria%20links%20are%20relative%20to%20this%20record.%20Historical%20links%20in%20original_metadata%20are%20preserved%20verbatim%20and%20may%20be%20stale.%22%2C%0A%20%20%22evidence_basis%22%3A%20%22Review%20of%20the%20complete%20stored%20statement%20and%20proofs%3B%20local%20supporting%20entries%20and/or%20the%20concrete%20alternative%20argument%20recorded%20above.%22%2C%0A%20%20%22content_file%22%3A%20%22../../../proof-database/log-gamma-mellin-integral.md%22%2C%0A%20%20%22content_sha256%22%3A%20%22ceba614b90662166ff4d86967dceb8a8de8c1c89fdb3a7a8594098c2583d6174%22%2C%0A%20%20%22original_metadata_sha256%22%3A%20%22f01cae3a9a70220ce1fd55146ee8f6e1ea5b019656893834975896cf42e74d4a%22%2C%0A%20%20%22original_metadata%22%3A%20%7B%0A%20%20%20%20%22schema_version%22%3A%20%226.0%22%2C%0A%20%20%20%20%22assessment_schema_version%22%3A%20%221.2%22%2C%0A%20%20%20%20%22rubric_version%22%3A%20%221.1%22%2C%0A%20%20%20%20%22id%22%3A%20%22log-gamma-mellin-integral%22%2C%0A%20%20%20%20%22title%22%3A%20%22Mellin%20integral%20of%20log%20gamma%20plus%20Euler%E2%80%99s%20constant%20term%22%2C%0A%20%20%20%20%22content_file%22%3A%20%22log-gamma-mellin-integral.md%22%2C%0A%20%20%20%20%22importance%22%3A%20%22medium%22%2C%0A%20%20%20%20%22elementary_criterion%22%3A%20%22Rubric%201.1%20high_school_only%3B%20includes%20elementary%20geometry%22%2C%0A%20%20%20%20%22statement%22%3A%20%7B%0A%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22yes%22%2C%0A%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Improper%20integrals%22%2C%0A%20%20%20%20%20%20%20%20%22Basic%20complex%20powers%22%2C%0A%20%20%20%20%20%20%20%20%22Convergent%20Dirichlet%20series%22%2C%0A%20%20%20%20%20%20%20%20%22Real%20gamma%20integral%22%2C%0A%20%20%20%20%20%20%20%20%22Euler%20constant%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22level_justification%22%3A%20%22Understanding%20the%20statement%20involves%20Improper%20integrals%3B%20Basic%20complex%20powers%3B%20Convergent%20Dirichlet%20series%3B%20Real%20gamma%20integral%3B%20Euler%20constant.%20These%20prerequisites%20fit%20undergraduate%20coursework%20or%20a%20brief%20extension%20of%20it.%20A%20bright%20US%20college%20student%20should%20be%20able%20to%20understand%20this%20statement%20after%20approximately%2030%20minutes%20of%20focused%20background%20research%3B%20this%20assesses%20understanding%20the%20claim%2C%20not%20its%20proof.%22%2C%0A%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22mathematical_fields%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Real%20Analysis%22%2C%0A%20%20%20%20%20%20%20%20%22Complex%20Analysis%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22proofs%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22proof_number%22%3A%201%2C%0A%20%20%20%20%20%20%20%20%22proof_title%22%3A%20%22Weierstrass%20expansion%20and%20the%20master%20theorem%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%22high_school_only%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22within_undergraduate_calculus_linear_algebra%22%3A%20%22no%22%2C%0A%20%20%20%20%20%20%20%20%22required_topics%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%22Mellin%20transforms%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Complex%20analytic%20growth%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22Gamma%20products%22%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Expand%20log%20Gamma%20and%20apply%20Ramanujan%20master%20theorem%20on%20a%20complex%20strip.%20Understanding%20the%20analytic%20continuation%20and%20growth%20conditions%20behind%20this%20application%20exceeds%20a%20small%20undergraduate%20extension%3B%20those%20conditions%20are%20not%20established%20by%20the%20formal%20expansion%20alone.%22%2C%0A%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22self_containedness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22relative_to%22%3A%20%22listed_prerequisites%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22partly%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22justification%22%3A%20%22The%20source%20supplies%20the%20displayed%20transformation%20and%20theorem%20application%3B%20the%20named%20analytic%20theorems%20are%20external%20and%20routine%20convergence%20or%20substitution%20details%20are%20omitted.%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22dependencies%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Weierstrass%20product%20for%20gamma%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Weierstrass%20expansion%20and%20the%20master%20theorem%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Gamma%20has%20the%20displayed%20Weierstrass%20infinite%20product.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22verified%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/log-gamma-mellin-integral.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Weierstrass%20expansion%20and%20the%20master%20theorem%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Obtain%20the%20logarithmic%20power%20series.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Explicit%20product%20and%20local%20logarithmic%20expansion.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22name%22%3A%20%22Ramanujan%E2%80%99s%20master%20theorem%20under%20Hardy%E2%80%99s%20growth%20conditions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22kind%22%3A%20%22theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22treatment%22%3A%20%22cited_without_proof%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22location%22%3A%20%22Proof%201%20%E2%80%94%20Weierstrass%20expansion%20and%20the%20master%20theorem%20%E2%80%94%20outline%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22database_id%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22statement_used%22%3A%20%22Under%20the%20requisite%20Hardy%20growth%20and%20analyticity%20hypotheses%2C%20Ramanujan%20master%20theorem%20evaluates%20the%20Mellin%20transform%20from%20the%20continued%20coefficient%20function.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22identification_status%22%3A%20%22inferred_from_context%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22../proof-database/log-gamma-mellin-integral.md%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22locator%22%3A%20%22Proof%201%20%E2%80%94%20Weierstrass%20expansion%20and%20the%20master%20theorem%20%E2%80%94%20outline%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_in_proof%22%3A%20%22Evaluate%20the%20transform%20of%20the%20log-Gamma%20series.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22application_level%22%3A%20%22Beyond%20undergraduate%20level%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22level_justification%22%3A%20%22Complex%20Mellin%20continuation%20and%20analytic%20growth%20hypotheses.%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22review_notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22The%20proof%20invokes%20the%20theorem%20without%20checking%20its%20analytic%20hypotheses.%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22completeness%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22routine_omissions%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22The%20source%20explicitly%20applies%20the%20master%20theorem%20to%20this%20series%3B%20coefficient%20reindexing%20and%20growth/convergence%20checks%20are%20routine%20omissions.%22%0A%20%20%20%20%20%20%20%20%20%20%5D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22log-gamma-mellin-integral-proof-1%22%2C%0A%20%20%20%20%20%20%20%20%22fields_used_beyond_statement%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Ramanujan%27s%20master%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Ramanujan%2527s_master_theorem%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22status%22%3A%20%22documented_corroborated%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22audit_record%22%3A%20%22../provenance-audit/audit.json%23/files/3571/proofs/0%22%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%22level_review_status%22%3A%20%22assessed%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22provenance%22%3A%20%7B%0A%20%20%20%20%20%20%22source_file%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Local%20Markdown%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../data/theorem_articles/Ramanujan%27s_master_theorem_9fb3455e.md%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22consolidation_records%22%3A%20%5B%5D%2C%0A%20%20%20%20%20%20%22source_articles%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%22Ramanujan%27s%20master%20theorem%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22target%22%3A%20%22https%3A//en.wikipedia.org/wiki/Ramanujan%2527s_master_theorem%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22review%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22Main-run%20extraction%20and%20separate%20source/standalone%20review%3B%20not%20formal%20verification%22%2C%0A%20%20%20%20%20%20%22record%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22title%22%3A%20%22Accepted%20review%22%2C%0A%20%20%20%20%20%20%20%20%22target%22%3A%20%22../experiment/main/reviews/Ramanujan%27s_master_theorem_9fb3455e.json%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22notes%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22Read%20complete%20raw%20source%20and%20checked%20statement/proof%20scope%2C%20dependencies%20and%20boundaries.%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C%0A%20%20%20%20%22editorial_history%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Removed%20source-local%20section%20numbering%20and%20irrelevant%20preamble%3B%20supplied%20the%20source%20hypotheses%20and%20definitions%20locally.%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22description%22%3A%20%22Source-fidelity%20restoration%2C%20full-run%20batch%2071%3A%20Restored%20Ramanujan%20master%20theorem%20/%20Application%20to%20gamma%20full%20product%2C%20series%2C%20Mellin%20displays%3B%20explicit%20local%20series%20range%3B%20preserved%20source%20omission%20of%20theorem%20hypothesis%20checks.%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%2C%0A%20%20%20%20%22simpler_proof_assessment%22%3A%20%7B%0A%20%20%20%20%20%20%22status%22%3A%20%22likely%22%2C%0A%20%20%20%20%20%20%22explanation%22%3A%20%22Improper%20integrals%20and%20convergent%20series.%20From%20the%20gamma%20product%20write%20gamma%2Ax%2Blog%20Gamma%281%2Bx%29%3Dsum_n%5Bx/n-log%281%2Bx/n%29%5D.%20Integrate%20each%20term%20against%20x%5E%28s-3%29%2C%20scale%20x%3Dnt%2C%20and%20integrate%20by%20parts%20to%20obtain%20pi/%28%282-s%29sin%28pi%2As%29%29%3B%20summing%20gives%20zeta%282-s%29.%20Absolute%20estimates%20justify%20interchange.%20Ramanujan%27s%20master%20theorem%20is%20unnecessary.%22%2C%0A%20%20%20%20%20%20%22references%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%22../experiments/missing_elementary_proofs/elementary-proof-assessment-232.txt%22%0A%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%22review_date%22%3A%20%222026-10-26%22%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A">Download review record</a></details></div></section><div role="tablist" aria-label="Document views"><button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true" tabindex="0">Standard View</button><button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Only Content</button><button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Only Metadata</button></div><section role="tabpanel" id="panel-0" aria-labelledby="tab-0"><h3>Statement</h3><p>Write <span class="math" data-display="false">\Gamma(t)=\int_0^\infty u^{t-1}e^{-u}\,du</span> for real <span class="math" data-display="false">t&gt;0</span>, <span class="math" data-display="false">\zeta(t)=\sum_{n\ge1}n^{-t}</span> for real <span class="math" data-display="false">t&gt;1</span>, and <span class="math" data-display="false">\gamma=\lim_{N\to\infty}(\sum_{n=1}^N1/n-\log N)</span>. For complex <span class="math" data-display="false">s</span> with <span class="math" data-display="false">0&lt;\operatorname{Re}s&lt;1</span>, use the convergent Dirichlet series definition of <span class="math" data-display="false">\zeta(2-s)</span> and the real logarithm in <span class="math" data-display="false">x^{s-1}</span>. Then <span class="math" data-display="false">\int_0^\infty x^{s-1}\frac{\gamma x+\log\Gamma(1+x)}{x^2}\,dx=\frac\pi{\sin(\pi s)}\frac{\zeta(2-s)}{2-s}</span>.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Understanding the statement involves Improper integrals; Basic complex powers; Convergent Dirichlet series; Real gamma integral; Euler constant. These prerequisites fit undergraduate coursework or a brief extension of it. A bright US college student should be able to understand this statement after approximately 30 minutes of focused background research; this assesses understanding the claim, not its proof.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Special functions</span><span class="badge blue">Complex Analysis</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Improper integrals</span><span class="badge blue">Basic complex powers</span><span class="badge blue">Convergent Dirichlet series</span><span class="badge blue">Real gamma integral</span><span class="badge blue">Euler constant</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Weierstrass expansion and the master theorem — outline</h3><p>Weierstrass's definition of the gamma function</p>
+<span class="math" data-display="true">{\displaystyle \Gamma (x)={\frac {\,e^{-\gamma \,x\,}}{x}}\,\prod _{n=1}^{\infty }\left(\,1+{\frac {x}{n}}\,\right)^{-1}e^{x/n}\!}</span><p>gives, for real <span class="math" data-display="false">|x|&lt;1</span>, the expression</p>
+<span class="math" data-display="true">{\displaystyle \log \Gamma (1+x)=-\gamma \,x+\sum _{k=2}^{\infty }{\frac {\,\zeta (k)\,}{k}}\,(-x)^{k}}</span><p>where <span class="math" data-display="false">{\textstyle \zeta (k)}</span> is the Riemann zeta function.</p>
+<p>Then applying Ramanujan master theorem we have:</p>
+<span class="math" data-display="true">{\displaystyle \int _{0}^{\infty }x^{s-1}{\frac {\,\gamma \,x+\log \Gamma (1+x)\,}{x^{2}}}\mathrm {d} x={\frac {\pi }{\sin(\pi s)}}{\frac {\zeta (2-s)}{2-s}}\!}</span><p>valid for <span class="math" data-display="false">{\textstyle 0&lt;\operatorname {\mathcal {Re}} (s)&lt;1}</span>.</p>
+<p>Here the product is used for <span class="math" data-display="false">x&gt;0</span> and the series near <span class="math" data-display="false">0</span>. The source applies Ramanujan's master theorem without displaying the coefficient reindexing or verifying its analytic hypotheses.</p>
+<div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Expand log Gamma and apply Ramanujan master theorem on a complex strip. Understanding the analytic continuation and growth conditions behind this application exceeds a small undergraduate extension; those conditions are not established by the formal expansion alone.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mellin transforms</span><span class="badge blue">Complex analytic growth</span><span class="badge blue">Gamma products</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source explicitly applies the master theorem to this series; coefficient reindexing and growth/convergence checks are routine omissions.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Weierstrass product for gamma</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Gamma has the displayed Weierstrass infinite product.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Obtain the logarithmic power series.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit product and local logarithmic expansion.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Ramanujan’s master theorem under Hardy’s growth conditions</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Under the requisite Hardy growth and analyticity hypotheses, Ramanujan master theorem evaluates the Mellin transform from the continued coefficient function.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Evaluate the transform of the log-Gamma series.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Complex Mellin continuation and analytic growth hypotheses.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>The proof invokes the theorem without checking its analytic hypotheses.</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source explicitly applies the master theorem to this series; coefficient reindexing and growth/convergence checks are routine omissions.</p>
+</div></div></div></section><section role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden><h3 id="statement">Statement</h3>
+<p>Write <span class="math" data-display="false">\Gamma(t)=\int_0^\infty u^{t-1}e^{-u}\,du</span> for real <span class="math" data-display="false">t&gt;0</span>, <span class="math" data-display="false">\zeta(t)=\sum_{n\ge1}n^{-t}</span> for real <span class="math" data-display="false">t&gt;1</span>, and <span class="math" data-display="false">\gamma=\lim_{N\to\infty}(\sum_{n=1}^N1/n-\log N)</span>. For complex <span class="math" data-display="false">s</span> with <span class="math" data-display="false">0&lt;\operatorname{Re}s&lt;1</span>, use the convergent Dirichlet series definition of <span class="math" data-display="false">\zeta(2-s)</span> and the real logarithm in <span class="math" data-display="false">x^{s-1}</span>. Then <span class="math" data-display="false">\int_0^\infty x^{s-1}\frac{\gamma x+\log\Gamma(1+x)}{x^2}\,dx=\frac\pi{\sin(\pi s)}\frac{\zeta(2-s)}{2-s}</span>.</p>
+<hr><h3 id="proof-1--weierstrass-expansion-and-the-master-theorem--outline">Proof 1 — Weierstrass expansion and the master theorem — outline</h3>
+<p>Weierstrass's definition of the gamma function</p>
+<span class="math" data-display="true">{\displaystyle \Gamma (x)={\frac {\,e^{-\gamma \,x\,}}{x}}\,\prod _{n=1}^{\infty }\left(\,1+{\frac {x}{n}}\,\right)^{-1}e^{x/n}\!}</span><p>gives, for real <span class="math" data-display="false">|x|&lt;1</span>, the expression</p>
+<span class="math" data-display="true">{\displaystyle \log \Gamma (1+x)=-\gamma \,x+\sum _{k=2}^{\infty }{\frac {\,\zeta (k)\,}{k}}\,(-x)^{k}}</span><p>where <span class="math" data-display="false">{\textstyle \zeta (k)}</span> is the Riemann zeta function.</p>
+<p>Then applying Ramanujan master theorem we have:</p>
+<span class="math" data-display="true">{\displaystyle \int _{0}^{\infty }x^{s-1}{\frac {\,\gamma \,x+\log \Gamma (1+x)\,}{x^{2}}}\mathrm {d} x={\frac {\pi }{\sin(\pi s)}}{\frac {\zeta (2-s)}{2-s}}\!}</span><p>valid for <span class="math" data-display="false">{\textstyle 0&lt;\operatorname {\mathcal {Re}} (s)&lt;1}</span>.</p>
+<p>Here the product is used for <span class="math" data-display="false">x&gt;0</span> and the series near <span class="math" data-display="false">0</span>. The source applies Ramanujan's master theorem without displaying the coefficient reindexing or verifying its analytic hypotheses.</p>
+</section><section role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><h3>Statement</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge yellow">Within undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Understanding the statement involves Improper integrals; Basic complex powers; Convergent Dirichlet series; Real gamma integral; Euler constant. These prerequisites fit undergraduate coursework or a brief extension of it. A bright US college student should be able to understand this statement after approximately 30 minutes of focused background research; this assesses understanding the claim, not its proof.</p>
+</div></div><div class="field"><div class="field-label">Mathematical Field</div><div class="field-value"><div class="badges topics"><span class="badge blue">Special functions</span><span class="badge blue">Complex Analysis</span></div></div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Improper integrals</span><span class="badge blue">Basic complex powers</span><span class="badge blue">Convergent Dirichlet series</span><span class="badge blue">Real gamma integral</span><span class="badge blue">Euler constant</span></div></div></div><div class="field review"><div class="field-label">Review notes</div><div class="field-value">none</div></div></div><hr><h3>Proof 1: Weierstrass expansion and the master theorem — outline</h3><div class="metadata-fields"><div class="field"><div class="field-label">Level</div><div class="field-value"><span class="badge red">Beyond undergraduate level</span></div></div><div class="field"><div class="field-label">Level justification</div><div class="field-value"><p>Expand log Gamma and apply Ramanujan master theorem on a complex strip. Understanding the analytic continuation and growth conditions behind this application exceeds a small undergraduate extension; those conditions are not established by the formal expansion alone.</p>
+</div></div><div class="field"><div class="field-label">Fields Used Beyond Statement</div><div class="field-value"><p>none</p>
+</div></div><div class="field"><div class="field-label">Required topics</div><div class="field-value"><div class="badges topics"><span class="badge blue">Mellin transforms</span><span class="badge blue">Complex analytic growth</span><span class="badge blue">Gamma products</span></div></div></div><div class="field"><div class="field-label">Routine omissions</div><div class="field-value"><p>The source explicitly applies the master theorem to this series; coefficient reindexing and growth/convergence checks are routine omissions.</p>
+</div></div><div class="field"><div class="field-label">Dependencies</div><div class="field-value"><details class="dependency"><summary>Weierstrass product for gamma</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Gamma has the displayed Weierstrass infinite product.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Obtain the logarithmic power series.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Explicit product and local logarithmic expansion.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>none</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details><details class="dependency"><summary>Ramanujan’s master theorem under Hardy’s growth conditions</summary><div class="metadata-fields stacked"><div class="field dependency-field"><span class="field-label">Kind</span>: <div class="field-value"><p>Theorem</p>
+</div></div><div class="field dependency-field"><span class="field-label">Treatment</span>: <div class="field-value"><p>Cited without proof</p>
+</div></div><div class="field dependency-field"><span class="field-label">Statement used</span>: <div class="field-value"><p>Under the requisite Hardy growth and analyticity hypotheses, Ramanujan master theorem evaluates the Mellin transform from the continued coefficient function.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application in proof</span>: <div class="field-value"><p>Evaluate the transform of the log-Gamma series.</p>
+</div></div><div class="field dependency-field"><span class="field-label">Application level</span>: <div class="field-value"><p>Beyond undergraduate level</p>
+</div></div><div class="field dependency-field"><span class="field-label">Level justification</span>: <div class="field-value"><p>Complex Mellin continuation and analytic growth hypotheses.</p>
+</div></div><div class="field dependency-field review"><span class="field-label">Review notes</span>: <div class="field-value"><p>The proof invokes the theorem without checking its analytic hypotheses.</p>
+</div></div><div class="metadata-fields stacked"></div><div class="metadata-fields stacked"></div></div></details></div></div></div><div class="metadata-fields"><div class="field review"><div class="field-label">Review notes</div><div class="field-value"><p>The source explicitly applies the master theorem to this series; coefficient reindexing and growth/convergence checks are routine omissions.</p>
+</div></div></div></section></main><footer>A generated snapshot. Assessments are editorial reviews, not formal verification.
+Source attribution is preserved in each document’s metadata.</footer></body></html>
