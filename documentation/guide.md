@@ -31,7 +31,7 @@ The following examples show how to use these filters.
 
 Find noteworthy results whose statements and at least one recorded proof are at high school level.
 
-1. Open the [Theorem Browser](../website/index.html) and clear the search and any existing filters.
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser_test/website/index.html) and clear the search and any existing filters.
 2. Under **Statement level**, select **High school only**.
 3. Under **Lowest Proof Level**, select **High school only**.
 4. Under **Noteworthiness**, select **any**. Leave all other filters unrestricted.
@@ -43,7 +43,7 @@ The **any** option includes results meeting at least one Noteworthiness criterio
 
 Find results whose statements are at high school level but whose minimum proof level is undergraduate or higher, using only the **Noteworthiness** filter.
 
-1. Open the [Theorem Browser](../website/index.html) and clear the search and any existing filters.
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser_test/website/index.html) and clear the search and any existing filters.
 2. Under **Noteworthiness**, select **Highschool level Statement - All proofs have at least undergraduate level**.
 3. Also select **Highschool level Statement - All proofs beyond undergraduate level**, keeping both values selected. Leave all other filters unrestricted.
 4. Browse the matching results and open a statement to explore its proofs.
@@ -56,7 +56,7 @@ Note that Noteworthiness also requires medium or high importance and may exclude
 
 To find all results in the database classified as highly important whose statements involve complex analysis:
 
-1. Open the [Theorem Browser](../website/index.html) and clear the search and any existing filters.
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser_test/website/index.html) and clear the search and any existing filters.
 2. In **Settings**, set **Search item in Mathematical Fields** to **appears in statement**, then choose **Save settings**.
 3. Under **Mathematical Fields**, select **Complex Analysis**.
 4. Under **Importance**, select **high**. Leave the other filters unrestricted to include results at every statement and proof level.
@@ -67,7 +67,7 @@ Here, “major” means rated **high** in the database's Importance assessment.
 
 Find statements that involve no concepts from algebraic topology but have at least one proof that uses its methods.
 
-1. Open the [Theorem Browser](../website/index.html) and clear the search and any existing filters.
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser_test/website/index.html) and clear the search and any existing filters.
 2. Under **Mathematical Fields**, select **Algebraic topology**.
 3. In **Settings**, set **Search item in Mathematical Fields** to **does NOT appear in statement but in at least one proof**, then choose **Save settings**.
 4. Open a matching result and examine its proofs, especially **Fields Used Beyond Statement**, to see how these methods are used.
