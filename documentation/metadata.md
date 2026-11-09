@@ -173,33 +173,3 @@ assessment, and source attribution. It has no proof-level assessment.
 The note **“No proof is included in the source article”** describes the source.
 It does not mean that no proof is known. If the source contains an unusable
 argument, the availability note should explain that situation instead.
-
-## Reading review information
-
-Proof-level reviews have three states:
-
-- **Not reviewed:** the inherited assessment has not been reviewed under the
-  current criteria.
-- **Assessed:** a review under the current criteria has been completed.
-- **Provisional:** a review has been completed, but unresolved questions require
-  a conservative rating beyond undergraduate level.
-
-A provisional assessment is therefore a completed review with remaining
-uncertainty. Matching statement and proof levels does not, by itself, resolve
-that uncertainty. An editorial review is not formal verification, and a change
-to the storage format is not a mathematical reassessment.
-
-Review records, where available, explain what was checked. An absent review
-link does not establish whether a review took place; consult the recorded status
-and notes.
-
-## Using the viewer and filters
-
-For level filters, **Undergraduate level** excludes high-school-only entries,
-while **Within undergraduate level** includes them. Read the level justification
-alongside the label when deciding whether an entry suits your background.
-
-In the viewer and generated website, entries without a supplied proof have proof
-count zero. Select **Any level** in the proof-level filter to include them. An
-intentional absence of a supplied proof does not itself trigger a potential-issue
-flag.
