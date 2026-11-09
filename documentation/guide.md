@@ -19,6 +19,12 @@ The database originally included only theorems with proofs. It later proved usef
 
 The Theorem Browser helps you discover interesting mathematical results and explore their proofs.
 
+You can browse the list of theorems using the navigation buttons, or use the search and filters to narrow down the results.
+
+Following the external Wikipedia links is often helpful for seeing a result and its proof in context. You can also click **Filter by this source** to explore other results from the same source.
+
+Filters are especially useful for discovering theorems in a particular mathematical field or at a level that suits your background.
+
 The most useful filters for exploring the database are:
 
 - **Noteworthiness**
