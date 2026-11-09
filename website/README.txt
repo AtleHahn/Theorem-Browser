@@ -1,4 +1,4 @@
-Open index.html in a modern browser, or upload this entire directory to any static host.
-All runtime assets are local; no Python server, CDN, or build tool is required.
-Regenerate using html-generator/generate.py in the source repository.
-KaTeX licensing: assets/katex/LICENSE
+After cloning this repository, you can open website/index.html directly in a web browser on your local computer.
+
+Otherwise, use the online version:
+https://atlehahn.github.io/Theorem-Browser/website/index.html
