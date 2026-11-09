@@ -30,3 +30,7 @@ We recommend using the Theorem Browser to identify interesting results or proofs
 Finding an interesting proof without exploring it further in this way would often be like finding a film on IMDb and watching only the trailer rather than the full film (though a short, complete proof may need no further exploration).
 
 Of course, one can also ask a chatbot to suggest interesting theorems or proofs, just as one can ask it to recommend films. Like IMDb, the Theorem Browser has complementary strengths.
+
+## Licensing
+
+Content and documentation are licensed under **CC BY-SA 4.0**; original browser code is licensed under **MIT**. Mathematical material was extracted and adapted from Wikipedia, whose contributors are credited through the source-article links in each result. Third-party components retain their own licenses. See [Licensing](LICENSE.md) for details.
