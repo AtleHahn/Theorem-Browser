@@ -33,6 +33,18 @@ The most useful filters for exploring the database are:
 
 The following examples show how to use these filters.
 
+### Main Example: Explore noteworthy results
+
+Start here to discover interesting results using only the **Noteworthiness** filter.
+
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and clear the search and any existing filters.
+2. Under **Noteworthiness**, select **any**. Leave all other filters unrestricted.
+3. Browse the matching results and explore their statements and proofs.
+
+The **any** option includes results meeting at least one Noteworthiness criterion under your current settings, without restricting your search to a particular mathematical field or statement or proof level.
+
+Note that **Noteworthiness** automatically requires medium or high **Importance** and may exclude results with **Potential Issues**, depending on your settings. These restrictions apply even when you leave the other filters unrestricted.
+
 ### Example 1: Find noteworthy results with high-school-level statements and proofs
 
 Find noteworthy results whose statements and at least one recorded proof are at high school level.
