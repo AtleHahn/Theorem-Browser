@@ -2,7 +2,7 @@
 
 Discover interesting mathematical results and explore their proofs.
 
-**[Explore the database](https://atlehahn.github.io/Theorem-Browser/website/index.html)**
+### [Explore the database](https://atlehahn.github.io/Theorem-Browser/website/index.html)
 
 This project is a work in progress. See the [current limitations](documentation/todo.md#current-limitations).
 
