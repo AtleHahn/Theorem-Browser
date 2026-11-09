@@ -34,3 +34,7 @@ Of course, one can also ask a chatbot to suggest interesting theorems or proofs,
 ## Licensing
 
 Content and documentation are licensed under **CC BY-SA 4.0**; original browser code is licensed under **MIT**. Mathematical material was extracted and adapted from Wikipedia, whose contributors are credited through the source-article links in each result. Third-party components retain their own licenses. See [Licensing](LICENSE.md) for details.
+
+## Acknowledgments
+
+A major part of this project was the development of the HTML generator, inspired by a recent joint project with Adrian De Lon and Josef Urban.
