@@ -10,7 +10,7 @@
    >
    > Shinichi Mochizuki may have [proven](https://www.kurims.kyoto-u.ac.jp/preprint/file/RIMS1759.pdf) the [ABC conjecture](https://en.wikipedia.org/wiki/Abc_conjecture).
    > If correct, his proof would represent a major breakthrough in number theory.
-   > Yet years after it was made public, its correctness remained disputed.
+   > Yet years after it was made public, its correctness remained disputed, and even leading specialists struggled to reach a shared understanding of its central argument.
    >
    > **Questions:**
    >
