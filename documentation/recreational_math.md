@@ -6,11 +6,11 @@
    The benefits of research in pure mathematics are often overestimated, while those of recreational mathematics seem to be underestimated.
    The following two examples, though admittedly extreme, illustrate this contrast. (Of course, research and recreational mathematics can overlap.)
 
-   > **Example 1: Mathematical research with questionable benefit**
+   > **Example 1**
    >
    > Shinichi Mochizuki may have [proven](https://www.kurims.kyoto-u.ac.jp/preprint/file/RIMS1759.pdf) the [ABC conjecture](https://en.wikipedia.org/wiki/Abc_conjecture).
    > If correct, his proof would represent a major breakthrough in number theory.
-   > Yet years after it was made public, its correctness remained disputed, and even leading specialists struggled to reach a shared understanding of its central argument.
+   > Yet years after it was made public, its correctness remains disputed, and even leading specialists struggle to reach a shared understanding of its central argument.
    >
    > **Questions:**
    >
@@ -19,7 +19,7 @@
 
    <br>
 
-   > **Example 2: Recreational mathematics at its best**
+   > **Example 2**
    >
    > Fermat’s [theorem on sums of two squares](https://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares) states that every prime number $p$ of the form $p = 4k + 1$, with $k \in \mathbb{N}$, can be written as
    >
