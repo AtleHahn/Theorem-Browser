@@ -23,9 +23,7 @@
    >
    > Fermat’s [theorem on sums of two squares](https://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares) states that every prime number $p$ of the form $p = 4k + 1$, with $k \in \mathbb{N}$, can be written as
    >
-   > ```math
-   > p = m^2 + n^2 \text{ for some } m, n \in \mathbb{N}.
-   > ```
+   > $p = m^2 + n^2$ for some $m, n \in \mathbb{N}$.
    >
    > Euler’s original proof spans several pages.
    > In 1990, Don Zagier found a remarkable [“one-sentence proof”](https://en.wikipedia.org/wiki/Fermat%27s_theorem_on_sums_of_two_squares#Proofs).
