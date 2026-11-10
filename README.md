@@ -9,13 +9,14 @@ This project is a work in progress. See the [current limitations](documentation/
 ## Documentation
 
 - [Guide](documentation/guide.md)
+- [Some personal thoughts on recreational mathematics](documentation/recreational_math.md)
 - [Current limitations and to-do list](documentation/todo.md)
 - [Methods](documentation/methods.md)
 - [Metadata rules](documentation/metadata.md)
 
 ## Why this project?
 
-As AI advances, mathematical research and work in many other professions will increasingly be automated. Mathematics pursued for enjoyment is therefore likely to become more important, both for professional mathematicians and for mathematically interested people in other fields.
+As AI advances, mathematical research and work in many other professions will increasingly be automated. [Mathematics pursued for enjoyment](documentation/recreational_math.md) is therefore likely to become more important, both for professional mathematicians and for mathematically interested people in other fields.
 
 We believe that a mathematical analogue of the [Internet Movie Database (IMDb)](https://www.imdb.com/) could soon be useful in helping people find the results and proofs
 they would most enjoy exploring.
