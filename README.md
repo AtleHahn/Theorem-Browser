@@ -9,7 +9,6 @@ This project is a work in progress. See the [current limitations](documentation/
 ## Documentation
 
 - [Guide](documentation/guide.md)
-- [Some personal thoughts on recreational mathematics](documentation/recreational_math.md)
 - [Current limitations and to-do list](documentation/todo.md)
 - [Methods](documentation/methods.md)
 - [Metadata rules](documentation/metadata.md)
