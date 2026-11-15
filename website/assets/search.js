@@ -16,19 +16,31 @@
     if (mode === 'does NOT appear in statement but in at least one proof') return !inStatement && selected.some(field => proofs.includes(field));
     return inStatement;
   }
+  function issueLabel(value) {
+    const labels = ['No potential issues', 'Simpler proof likely available', 'May have an unsatisfactory proof'];
+    return labels.find(label => label.toLowerCase() === value.toLowerCase()) || value;
+  }
+  function noteworthinessLabel(value) {
+    const renamed = {
+      "Highschool level Statement - All proofs have at least undergraduate level": "High school level Statement – Lowest proof level: undergraduate",
+      "Highschool level Statement - All proofs beyond undergraduate level": "High school level Statement – Lowest proof level: beyond undergraduate",
+      "Undergraduate level Statement - All proofs beyond undergraduate level": "Undergraduate level Statement – Lowest proof level: beyond undergraduate"
+};
+    return renamed[value] || value;
+  }
   function matches(row, filters, fieldMode = 'appears in statement') {
     if (!matchesFields(row, filters.fields || [], fieldMode)) return false;
     for (const field of ['sources', 'statement', 'proof', 'count', 'importance', 'issue']) {
-      const selected = filters[field] || [];
+      const selected = (filters[field] || []).map(value => field === 'issue' ? issueLabel(value) : value);
       if (!selected.length) continue;
       let values = field === 'sources' ? Object.keys(row.sources) : row[field];
       if (!Array.isArray(values)) values = [values];
       if (!selected.some(v => values.includes(v) ||
-          (field === 'issue' && v === 'has potential issues' && values.some(issue => issue && issue !== 'no potential issues')) ||
+          (field === 'issue' && v === 'has potential issues' && values.some(issue => issue && issue !== 'No potential issues')) ||
           (field === 'count' && v === 'at least one' && !String(row.count ?? '').split(';').map(value => value.trim()).includes('0')) ||
           (field === 'importance' && v === 'at least medium' && ['medium', 'high'].includes(row.importance)))) return false;
     }
-    const selected = filters.noteworthy || [];
+    const selected = (filters.noteworthy || []).map(noteworthinessLabel);
     if (selected.length) {
       const reasons = row.noteworthy;
       if (!selected.some(v => reasons.includes(v)) &&
@@ -57,7 +69,15 @@
     params.delete('resetSources'); // Retired URL preference; Settings is authoritative.
     return params;
   }
-  const api = {fold, matchesFields, matches, search, searchTerms, sourceParams, documentLabel};
+  function relatedDocumentURL(current, filename, matches) {
+    // A real top-level navigation provides native Back/Forward and new-tab support.
+    const params = matches ? new URLSearchParams(current) : new URLSearchParams({state: '1'});
+    params.set('state', '1');
+    params.set('document', filename);
+    const query = new URLSearchParams({related: filename});
+    return '../index.html?' + query + '#' + params;
+  }
+  const api = {noteworthinessLabel, relatedDocumentURL, issueLabel, fold, matchesFields, matches, search, searchTerms, sourceParams, documentLabel};
   if (typeof module !== 'undefined') module.exports = api;
   root.ProofSearch = api;
 })(typeof window === 'undefined' ? globalThis : window);

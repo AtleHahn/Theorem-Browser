@@ -5,10 +5,15 @@
   const tabCount = data.tab_count || 5;
   const filterNames = ['fields', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count', 'sources'];
   function updateNoteworthiness() {
-    for (const row of rows) row.noteworthy = ProofNoteworthiness.reasons(row, ProofNoteworthiness.current());
+    for (const row of rows) {
+      row.base_issue ||= row.issue;
+      row.issue = ProofNoteworthiness.issues(row, ProofNoteworthiness.current());
+      row.noteworthy = ProofNoteworthiness.reasons(row, ProofNoteworthiness.current());
+    }
   }
   updateNoteworthiness();
   window.addEventListener('proof-settings-change', () => { updateNoteworthiness(); render(); });
+  let pendingDocument = null;
   let found = [], selected = '', generation = 0, indexPromise, activeTab = 0, currentURL = '';
   const multiControls = [];
   const unique = values => [...new Set(values)].sort((a, b) => a.localeCompare(b));
@@ -22,12 +27,12 @@
   options('sources', Object.keys(sourceLabels).sort((a, b) => sourceLabels[a].localeCompare(sourceLabels[b]) || a.localeCompare(b)), sourceLabels);
   options('statement', data.levels); options('proof', data.levels);
   options('noteworthy', ['any',
-    'Highschool level Statement - All proofs beyond undergraduate level',
-    'Highschool level Statement - All proofs have at least undergraduate level',
-    'Undergraduate level Statement - All proofs beyond undergraduate level',
+    'High school level Statement – Lowest proof level: beyond undergraduate',
+    'High school level Statement – Lowest proof level: undergraduate',
+    'Undergraduate level Statement – Lowest proof level: beyond undergraduate',
     'Has at least one proof with concepts from a different area', 'Has many Proofs']);
-  options('issue', ['no potential issues',
-    'simpler proof likely available', 'may have an unsatisfactory proof']);
+  options('issue', ['No potential issues',
+    'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue]);
   options('importance', ['at least medium', 'high', 'medium', 'low']);
   options('count', ['at least one', ...unique(rows.map(row => row.count).filter(Boolean)).sort((a, b) => Number(a) - Number(b))]);
   document.querySelector('label[for="sources"]').textContent += ` (${$('sources').options.length.toLocaleString()})`;
@@ -73,10 +78,11 @@
     $('query').value = params.get('q') || '';
     $('case-insensitive').checked = params.get('case') !== 'sensitive';
     filterNames.forEach(name => {
-      const values = name === 'count' && !params.has('state') && !params.has('count') ? ['at least one'] : params.getAll(name);
+      const values = name === 'count' && !params.has('state') && !params.has('count') ? ['at least one'] : params.getAll(name).map(value => name === 'issue' ? ProofSearch.issueLabel(value) : name === 'noteworthy' ? ProofSearch.noteworthinessLabel(value) : value);
       for (const option of $(name).options) option.selected = values.includes(option.value);
       if (!$(name).multiple && !values.length) $(name).value = '';
     });
+    pendingDocument = params.get('openDocument');
     selected = params.get('document') || '';
     activeTab = Math.min(tabCount - 1, Math.max(0, Number.parseInt(params.get('tab'), 10) || 0));
     multiControls.forEach(refresh => refresh());
@@ -88,8 +94,11 @@
     for (const [name, values] of Object.entries(state())) values.forEach(v => params.append(name, v));
     if (selected) params.set('document', selected);
     if (activeTab) params.set('tab', String(activeTab));
-    try { history.replaceState(null, '', '#' + params); } catch (_) { /* file URL restrictions */ }
+    try { history.replaceState(null, '', (new URLSearchParams(location.search).has('related') ? location.pathname : '') + '#' + params); } catch (_) { /* file URL restrictions */ }
     try { sessionStorage.setItem('proof-database-return', '#' + params); } catch (_) { /* optional */ }
+    const listParams = new URLSearchParams(params);
+    listParams.set('settings', JSON.stringify(ProofNoteworthiness.current()));
+    $('matching-list').href = 'matching.html#' + listParams;
     return params;
   }
   function loadIndex() {
@@ -103,7 +112,12 @@
     return indexPromise;
   }
   function readerState() {
-    $('document-frame').contentWindow?.postMessage({type: 'proof-reader-state', tab: activeTab, settings: ProofNoteworthiness.current()}, '*');
+    const currentRow = rows.find(row => row.filename === selected);
+    const matchingNames = new Set(found.map(i => rows[i].filename));
+    const relatedLinks = Object.fromEntries((currentRow?.related_filenames || []).map(filename =>
+      [filename, ProofSearch.relatedDocumentURL(location.hash.slice(1), filename, matchingNames.has(filename))]));
+    $('document-frame').contentWindow?.postMessage({type: 'proof-reader-state', tab: activeTab,
+      settings: ProofNoteworthiness.current(), relatedLinks}, '*');
   }
   function choices() {
     const query = $('document-search').value.toLocaleLowerCase();
@@ -136,6 +150,18 @@
     }
     if (current !== generation) return;
     found = ProofSearch.search(rows, index, $('query').value, 'all', state(), data.casefold, $('case-insensitive').checked, ProofNoteworthiness.current().mathematical_field_search_mode);
+    if (pendingDocument) {
+      const target = pendingDocument;
+      pendingDocument = null;
+      if (rows.some(row => row.filename === target)) {
+        if (!found.some(i => rows[i].filename === target)) {
+          // The saved list may use older filters/settings. Always open its target.
+          restore(new URLSearchParams({state: '1', document: target}));
+          return render();
+        }
+        selected = target;
+      }
+    }
     $('status').textContent = `${found.length.toLocaleString()} matching documents`;
     $('reader').hidden = !found.length;
     if (!found.length) { selected = ''; save(); return; }

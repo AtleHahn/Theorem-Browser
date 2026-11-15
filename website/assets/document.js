@@ -19,6 +19,19 @@ function selectTab(index, notify = true) {
   if (embedded && notify) window.parent.postMessage({type: 'proof-tab', tab: index}, '*');
   resize();
 }
+let relatedMoreDetails = false;
+try { relatedMoreDetails = sessionStorage.getItem('proof-related-more-details') === 'true'; } catch (_) { /* optional */ }
+function updateRelatedDetails() {
+  document.querySelectorAll('[data-related-more]').forEach(input => { input.checked = relatedMoreDetails; });
+  document.querySelectorAll('[data-related-extra]').forEach(detail => { detail.hidden = !relatedMoreDetails; });
+  resize();
+}
+document.querySelectorAll('[data-related-more]').forEach(input => input.addEventListener('change', () => {
+  relatedMoreDetails = input.checked;
+  try { sessionStorage.setItem('proof-related-more-details', String(relatedMoreDetails)); } catch (_) { /* optional */ }
+  updateRelatedDetails();
+}));
+updateRelatedDetails();
 const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 tabs.forEach((tab, index) => {
   tab.addEventListener('click', () => selectTab(index));
@@ -34,6 +47,10 @@ tabs.forEach((tab, index) => {
 });
 window.addEventListener('message', event => {
   if (!embedded || event.source !== window.parent || event.data?.type !== 'proof-reader-state') return;
+  for (const link of document.querySelectorAll('[data-related-document]')) {
+    const href = event.data.relatedLinks?.[link.dataset.relatedDocument];
+    if (href) link.href = href;
+  }
   updateNoteworthiness(event.data.settings || ProofNoteworthiness.current());
   selectTab(event.data.tab, false);
 });
@@ -60,6 +77,12 @@ selectTab(0, false);
 document.fonts?.ready.then(resize);
 
 function updateNoteworthiness(settings) {
+  for (const warning of document.querySelectorAll('[data-better-proof-warning]')) {
+    warning.hidden = warning.dataset.betterProofWarning !== (settings.better_proof_list_criterion || 'dependency_free_proof');
+  }
+  for (const field of document.querySelectorAll('[data-related-results]')) {
+    field.hidden = field.dataset.relatedResults !== (settings.related_results_display_mode || 'all');
+  }
   for (const overview of document.querySelectorAll('[data-noteworthiness]')) {
     const data = JSON.parse(overview.dataset.noteworthiness);
     const reasons = ProofNoteworthiness.reasons(data, settings);
@@ -74,7 +97,7 @@ function updateNoteworthiness(settings) {
     }
     field.querySelector('.field-value').replaceChildren(badges);
     const assessment = overview.querySelector('[data-simpler-assessment]');
-    if (assessment) assessment.hidden = assessment.dataset.warning !== 'true' && reasons.some(reason => reason.includes('Statement - All proofs'));
+    if (assessment) assessment.hidden = assessment.dataset.warning !== 'true';
   }
   resize();
 }

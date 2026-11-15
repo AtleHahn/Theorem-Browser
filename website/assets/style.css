@@ -21,7 +21,7 @@ aside{position:sticky;top:0;height:100vh;overflow-y:auto}.help[open]>.hint{width
 
 /* Compact dependency headers with roomier inline field rows. */
 .dependency{margin:0.4rem 0;padding:0 16px}
-.dependency summary{padding:0.35rem 0;margin-bottom:0}
+.dependency summary{padding:0.25rem 0;margin-bottom:0}
 .dependency[open]>summary{margin-bottom:1rem}
 .dependency .field{margin-bottom:1rem}
 .dependency .dependency-field>.field-label,.dependency .dependency-field>.field-value,
@@ -31,7 +31,7 @@ aside{position:sticky;top:0;height:100vh;overflow-y:auto}.help[open]>.hint{width
 .download-button{display:inline-block;border:1px solid #d5d6dc;border-radius:8px;background:#fff;padding:7px 15px;text-decoration:none;color:var(--ink);font-size:18px}
 .download-button:hover{color:var(--accent);border-color:var(--accent)}
 
-#settings-dialog{width:min(480px,calc(100vw - 32px));border:1px solid var(--line);border-radius:12px;padding:24px;color:var(--ink);font-size:16px;line-height:1.5}#settings-dialog::backdrop{background:#0006}#settings-title{margin:0 0 20px;font-size:26px}#settings-min-proofs{display:block;width:100%;margin:8px 0 20px}.settings-check{display:flex;gap:10px;align-items:baseline;margin:16px 0}.settings-actions{display:flex;gap:12px;margin-top:24px}
+#settings-dialog{width:min(750px,calc(100vw - 32px));border:1px solid var(--line);border-radius:12px;padding:24px;color:var(--ink);font-size:16px;line-height:1.5}#settings-dialog::backdrop{background:#0006}#settings-title{margin:0 0 20px;font-size:26px}#settings-min-proofs{display:block;width:100%;margin:8px 0 20px}.settings-check{display:flex;gap:10px;align-items:baseline;margin:16px 0}.settings-actions{display:flex;gap:12px;margin-top:24px}
 
 [data-noteworthiness-field][hidden],[data-simpler-assessment][hidden]{display:none!important}
 
@@ -48,3 +48,23 @@ aside{position:sticky;top:0;height:100vh;overflow-y:auto}.help[open]>.hint{width
 #settings-dialog legend{padding:0;margin-bottom:8px;font-size:16px;line-height:1.5}
 #settings-dialog fieldset .settings-check{align-items:flex-start;margin:8px 0;cursor:pointer}
 #settings-dialog input[type=radio]{width:18px;height:18px;min-height:0;padding:0;margin:3px 0 0;flex:0 0 18px;accent-color:var(--accent)}
+
+#settings-dialog .settings-section-title{font-size:16px;font-weight:700;line-height:1.5;margin:20px 0 8px}
+#settings-dialog #settings-title+.settings-section-title{margin-top:0}
+#settings-dialog .settings-section-title+fieldset{margin-top:0}
+
+.related-list{margin:0;padding:0 16px}.related-list>summary{padding:0.25rem 0}.related-list[open]{padding-bottom:12px}.related-list ol{padding-left:1.6em;margin:12px 0 0}.related-list li{margin-bottom:.6rem}.related-filename{font-size:.85em;color:#808080}.related-status{color:#60a5fa}
+
+.related-controls{display:grid;grid-template-columns:minmax(0,4fr) minmax(110px,1fr);gap:16px;align-items:start}.related-more-label{display:flex;align-items:center;gap:8px;margin:4px 0 0}.related-extra{font-size:.85em}.related-detail-label{color:#808080}
+
+#reader>p:has(>a#standalone){margin-top:28px}
+
+.better-proof-warning { margin-top: 16px; }
+
+/* Borderless document expanders retain their native keyboard behavior. */
+.document details, .document details>summary { border: none; background: transparent; }
+
+#matching-documents>li{margin-bottom:1rem;overflow-wrap:anywhere}
+#matching-documents>li>a{font-weight:600}
+.matching-filename{display:block}
+.matching-details{font-size:.85em}
