@@ -26,7 +26,7 @@
   const sourceLabels = Object.assign({}, ...rows.map(row => row.sources));
   options('sources', Object.keys(sourceLabels).sort((a, b) => sourceLabels[a].localeCompare(sourceLabels[b]) || a.localeCompare(b)), sourceLabels);
   options('statement', data.levels); options('proof', data.levels);
-  options('noteworthy', ['any',
+  options('noteworthy', ['any', 'Philosophically significant',
     'High school level Statement – Lowest proof level: beyond undergraduate',
     'High school level Statement – Lowest proof level: undergraduate',
     'Undergraduate level Statement – Lowest proof level: beyond undergraduate',

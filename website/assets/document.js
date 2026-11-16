@@ -101,3 +101,6 @@ function updateNoteworthiness(settings) {
   }
   resize();
 }
+
+// Expanding metadata changes the height of an embedded document.
+document.querySelectorAll('[data-philosophical-significance] details').forEach(detail => detail.addEventListener('toggle', resize));
