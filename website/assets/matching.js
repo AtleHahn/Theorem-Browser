@@ -2,6 +2,10 @@
 (function () {
   'use strict';
   const params = new URLSearchParams(location.hash.slice(1));
+  // Discard the temporarily hidden aggregate from older matching-list links.
+  const noteworthyValues = params.getAll('noteworthy').filter(value => value !== 'any');
+  params.delete('noteworthy');
+  noteworthyValues.forEach(value => params.append('noteworthy', value));
   const filters = Object.fromEntries(['fields', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count', 'sources']
     .map(name => [name, params.getAll(name)]));
   if (!params.has('state') && !params.has('count')) filters.count = ['at least one'];

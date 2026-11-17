@@ -26,11 +26,13 @@
   const sourceLabels = Object.assign({}, ...rows.map(row => row.sources));
   options('sources', Object.keys(sourceLabels).sort((a, b) => sourceLabels[a].localeCompare(sourceLabels[b]) || a.localeCompare(b)), sourceLabels);
   options('statement', data.levels); options('proof', data.levels);
-  options('noteworthy', ['any', 'Philosophically significant',
-    'High school level Statement – Lowest proof level: beyond undergraduate',
+  // "any" is temporarily hidden; ProofSearch retains its aggregation logic.
+  options('noteworthy', [
+    'Has at least one proof with concepts from a different area',
     'High school level Statement – Lowest proof level: undergraduate',
+    'High school level Statement – Lowest proof level: beyond undergraduate',
     'Undergraduate level Statement – Lowest proof level: beyond undergraduate',
-    'Has at least one proof with concepts from a different area', 'Has many Proofs']);
+    'Has many Proofs', 'Philosophically significant']);
   options('issue', ['No potential issues',
     'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue]);
   options('importance', ['at least medium', 'high', 'medium', 'low']);
