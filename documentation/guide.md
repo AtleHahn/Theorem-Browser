@@ -31,53 +31,36 @@ The most useful filters for exploring the database are:
 - **Mathematical Fields**
 - **Statement level**
 
-The following examples show how to use these filters.
+### Example 1: Find results with proofs using concepts from a different area
 
-### Main Example: Explore noteworthy results
+Find results with at least one recorded proof using concepts from a mathematical area absent from the statement.
 
-Start here to discover interesting results using only the **Noteworthiness** filter.
-
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and clear the search and any existing filters.
-2. Under **Noteworthiness**, select **any**. Leave all other filters unrestricted.
-3. Browse the matching results and explore their statements and proofs.
-
-The **any** option includes results meeting at least one Noteworthiness criterion under your current settings, without restricting your search to a particular mathematical field or statement or proof level.
-
-Note that **Noteworthiness** automatically requires medium or high **Importance** and may exclude results with **Potential Issues**, depending on your settings. These restrictions apply even when you leave the other filters unrestricted.
-
-### Example 1: Find noteworthy results with high-school-level statements and proofs
-
-Find noteworthy results whose statements and at least one recorded proof are at high school level.
-
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and clear the search and any existing filters.
-2. Under **Statement level**, select **High school only**.
-3. Under **Lowest Proof Level**, select **High school only**.
-4. Under **Noteworthiness**, select **any**. Leave all other filters unrestricted.
-5. Browse the matching results and explore their statements and proofs.
-
-The **any** option includes results meeting at least one Noteworthiness criterion under your current settings. **Lowest Proof Level** requires only one recorded proof to be at high school level; other proofs may use more advanced methods.
-
-### Example 2: Find high-school-level statements with more advanced proofs
-
-Find results whose statements are at high school level but whose minimum proof level is undergraduate or higher, using only the **Noteworthiness** filter.
-
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and clear the search and any existing filters.
-2. Under **Noteworthiness**, select **Highschool level Statement - All proofs have at least undergraduate level**.
-3. Also select **Highschool level Statement - All proofs beyond undergraduate level**, keeping both values selected. Leave all other filters unrestricted.
-4. Browse the matching results and open a statement to explore its proofs.
-
-This shows all results meeting either selected Noteworthiness criterion under your current settings. The proof levels refer to the proofs recorded in the database.
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
+2. Under **Noteworthiness**, select **Has at least one proof with concepts from a different area**.
+3. Browse the matching results and explore their proofs, especially **Fields Used Beyond Statement**, to see which additional areas they use.
 
 Note that Noteworthiness also requires medium or high importance and may exclude results with potential issues, depending on your settings.
+
+### Example 2: Find philosophically significant results
+
+Find philosophically significant results without restricting the number of recorded proofs.
+
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
+2. Under **Noteworthiness**, select **Philosophically significant**.
+3. Under **Proof count**, clear **at least one** to include results without recorded proofs.
+4. Browse the matching results and explore their statements and any recorded proofs.
+
+Note that you can change the minimum philosophical significance level in **Settings**.
 
 ### Example 3: Find major results in complex analysis
 
 To find all results in the database classified as highly important whose statements involve complex analysis:
 
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and clear the search and any existing filters.
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
 2. In **Settings**, set **Search item in Mathematical Fields** to **appears in statement**, then choose **Save settings**.
 3. Under **Mathematical Fields**, select **Complex Analysis**.
-4. Under **Importance**, select **high**. Leave the other filters unrestricted to include results at every statement and proof level.
+4. Under **Importance**, select **high**.
+5. Under **Proof count**, clear **at least one** to include results without recorded proofs. Leave the other filters unrestricted to include results at every statement and proof level.
 
 Here, “major” means rated **high** in the database's Importance assessment.
 
@@ -85,7 +68,7 @@ Here, “major” means rated **high** in the database's Importance assessment.
 
 Find statements that involve no concepts from algebraic topology but have at least one proof that uses its methods.
 
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and clear the search and any existing filters.
+1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
 2. Under **Mathematical Fields**, select **Algebraic topology**.
 3. In **Settings**, set **Search item in Mathematical Fields** to **does NOT appear in statement but in at least one proof**, then choose **Save settings**.
 4. Open a matching result and examine its proofs, especially **Fields Used Beyond Statement**, to see how these methods are used.
