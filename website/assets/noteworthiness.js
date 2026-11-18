@@ -1,6 +1,8 @@
 /* Shared by filtering and both embedded and standalone document views. */
 (function (root) {
   'use strict';
+  // Retain the optional policy for future restoration; enforce the default while hidden.
+  const showIssueExclusionSetting = false;
   const fieldModes = ['appears in statement', 'appears exclusively in statement', 'does NOT appear in statement but in at least one proof'];
   const defaults = {min_proof_count_for_noteworthiness: 3,
     exclude_simpler_proof_warnings_from_noteworthiness: true,
@@ -18,6 +20,7 @@
     if (['all', 'obvious'].includes(value?.related_results_display_mode)) result.related_results_display_mode = value.related_results_display_mode;
     if (['missing_proofs', 'dependency_free_proof'].includes(value?.better_proof_list_criterion)) result.better_proof_list_criterion = value.better_proof_list_criterion;
     if (['major', 'medium', 'minor'].includes(value?.minimum_philosophical_significance_level)) result.minimum_philosophical_significance_level = value.minimum_philosophical_significance_level;
+    if (!showIssueExclusionSetting) result.exclude_simpler_proof_warnings_from_noteworthiness = true;
     return result;
   }
   let settings = {...defaults};
@@ -43,7 +46,7 @@
     if (philosophicalSignificance(row, config)) result.unshift('Philosophically significant');
     return result;
   }
-  const api = {philosophicalSignificance, fieldModes, reasons, issues, betterIssue, current: () => ({...settings}), set: value => { settings = normalize(value); }};
+  const api = {showIssueExclusionSetting, philosophicalSignificance, fieldModes, reasons, issues, betterIssue, current: () => ({...settings}), set: value => { settings = normalize(value); }};
   root.ProofNoteworthiness = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(typeof window === 'undefined' ? globalThis : window);

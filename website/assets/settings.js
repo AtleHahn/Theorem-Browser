@@ -27,6 +27,8 @@
       }
     }
   } catch (_) { /* Storage is optional. */ }
+  if (!ProofNoteworthiness.showIssueExclusionSetting) settings.exclude_simpler_proof_warnings_from_noteworthiness = true;
+  $('settings-warnings-control').hidden = !ProofNoteworthiness.showIssueExclusionSetting;
   $('settings').addEventListener('click', () => {
     $('settings-min-proofs').value = String(settings.min_proof_count_for_noteworthiness);
     $('settings-warnings').checked = settings.exclude_simpler_proof_warnings_from_noteworthiness;
@@ -45,7 +47,7 @@
       better_proof_list_criterion: $('settings-better-dependency_free_proof').checked ? 'dependency_free_proof' : 'missing_proofs',
       related_results_display_mode: $('settings-related-all').checked ? 'all' : 'obvious',
       min_proof_count_for_noteworthiness: Number($('settings-min-proofs').value),
-      exclude_simpler_proof_warnings_from_noteworthiness: $('settings-warnings').checked,
+      exclude_simpler_proof_warnings_from_noteworthiness: ProofNoteworthiness.showIssueExclusionSetting ? $('settings-warnings').checked : true,
       clear_filters_on_source_selection: $('settings-reset-source-filters').checked,
       mathematical_field_search_mode: ProofNoteworthiness.fieldModes.find((mode, i) => $('settings-field-mode-' + i).checked) || ProofNoteworthiness.fieldModes[0]
     };
