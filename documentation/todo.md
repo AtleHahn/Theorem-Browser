@@ -3,7 +3,7 @@
 ## Current limitations
 
 - The dependency fields at the end of each proof do not yet link to any internal or external files or resources.
-- Some theorem extractions contain errors, and some proofs were overlooked during the extraction phase.
+- Theorem extractions may contain errors, and some proofs may have been overlooked during the extraction phase.
   We plan to rerun proof extraction regularly as new large language models (LLMs) become available
   to address these issues.
 - Potential issues include duplicate results and likely simpler proofs that were either unavailable on Wikipedia or not extracted.
