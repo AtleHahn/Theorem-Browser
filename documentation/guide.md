@@ -39,7 +39,7 @@ Find results with at least one recorded proof using concepts from a mathematical
 2. Under **Noteworthiness**, select **Has at least one proof with concepts from a different area**.
 3. Browse the matching results and explore their proofs, especially **Fields Used Beyond Statement**, to see which additional areas they use.
 
-Note that Noteworthiness also requires medium or high importance and may exclude results with potential issues, depending on your settings.
+Note that Noteworthiness requires medium or high importance and excludes all results with potential issues.
 
 ### Example 2: Find philosophically significant results
 
