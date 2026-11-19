@@ -3,7 +3,7 @@
   const $ = id => document.getElementById(id);
   const data = window.PROOF_CATALOGUE, rows = data.documents;
   const tabCount = data.tab_count || 5;
-  const filterNames = ['fields', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count', 'sources'];
+  const filterNames = ['fields', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count', 'sources'].filter(id => $(id));
   function updateNoteworthiness() {
     for (const row of rows) {
       row.base_issue ||= row.issue;
@@ -19,6 +19,7 @@
   const unique = values => [...new Set(values)].sort((a, b) => a.localeCompare(b));
   function options(id, values, labels = {}) {
     const select = $(id);
+    if (!select) return;
     if (!select.multiple) select.add(new Option('Any level', ''));
     values.forEach(value => select.add(new Option(labels[value] || value, value)));
   }
@@ -34,7 +35,7 @@
     'Undergraduate level Statement – Lowest proof level: beyond undergraduate',
     'Has many Proofs', 'Philosophically significant']);
   options('issue', ['No potential issues',
-    'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue]);
+    'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue], {'No potential issues': 'No warnings'});
   options('importance', ['at least medium', 'high', 'medium', 'low']);
   options('count', ['at least one', ...unique(rows.map(row => row.count).filter(Boolean)).sort((a, b) => Number(a) - Number(b))]);
   document.querySelector('label[for="sources"]').textContent += ` (${$('sources').options.length.toLocaleString()})`;

@@ -35,7 +35,7 @@
     const ranks = {major: 0, medium: 1, minor: 2, auxiliary: 2};
     return Boolean(row.has_philosophical_significance &&
       ranks[row.philosophical_significance_level] <= ranks[normalize(options).minimum_philosophical_significance_level] &&
-      issues(row, options).every(issue => issue === 'No potential issues'));
+      issues(row, options).every(issue => ['No potential issues', 'May have an unsatisfactory proof'].includes(issue)));
   }
   function reasons(row, options = settings) {
     const config = normalize(options);
