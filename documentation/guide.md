@@ -43,12 +43,9 @@ Note that Noteworthiness requires medium or high importance.
 
 ### Example 2: Find philosophically significant results
 
-Find philosophically significant results without restricting the number of recorded proofs.
-
 1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
 2. Under **Noteworthiness**, select **Philosophically significant**.
-3. Under **Proof count**, clear **at least one** to include results without recorded proofs.
-4. Browse the matching results and explore their statements and any recorded proofs.
+3. Browse the matching results and explore their statements and any recorded proofs.
 
 Note that you can change the minimum philosophical significance level in **Settings**.
 
@@ -60,7 +57,7 @@ To find all results in the database classified as highly important whose stateme
 2. In **Settings**, set **Search item in Mathematical Fields** to **appears in statement**, then choose **Save settings**.
 3. Under **Mathematical Fields**, select **Complex Analysis**.
 4. Under **Importance**, select **high**.
-5. Under **Proof count**, clear **at least one** to include results without recorded proofs. Leave the other filters unrestricted to include results at every statement and proof level.
+5. Browse the matching results and explore their statements and any recorded proofs.
 
 Here, “major” means rated **high** in the database's Importance assessment.
 
