@@ -7,11 +7,13 @@ proof.
 
 This guide defines the assessment criteria for readers and contributors. 
 
-Three questions are assessed separately:
+The assessments and subject classifications answer different questions:
 
-| Assessment | Question it answers |
+| Assessment or classification | Question it answers |
 | --- | --- |
 | Importance | How much independent mathematical significance does this result have? |
+| Mathematical Field | Which broad mathematical subjects does the statement concern? |
+| Fields Used Beyond Statement | Which additional subjects does this particular proof use beyond those listed for the statement? |
 | Statement level | What background is needed to understand the complete claim? |
 | Proof level | What background is needed to understand the claim and follow this particular proof? |
 
@@ -61,6 +63,30 @@ and statements with additional conclusions. A special case may have exceptional
 historical significance, so broader scope does not automatically require a higher
 importance rating. Such differences call for individual assessment and an
 explanation, rather than a rigid ordering by generality.
+
+## Mathematical fields
+
+**Mathematical Field** identifies the broad subjects to which the statement
+belongs. More than one field may be listed when a result concerns several
+subjects.
+
+Each proof’s **Fields Used Beyond Statement** lists additional subjects used in
+that particular argument, beyond those already listed for the statement.
+Different proofs of the same result may draw on different fields. For example,
+the arithmetic–geometric mean inequality is classified under High School
+Mathematics, while its proof using the concavity of the logarithm additionally
+uses Real analysis.
+
+The categories broadly follow the main subject divisions of the Mathematics
+Subject Classification (MSC), with familiar shorter names where convenient.
+High School Mathematics is retained as a separate category. These are broad
+groupings: two distinct topics may fall within the same field. Consequently, no
+additional field being listed does not mean that the proof introduces no new
+concepts or techniques.
+
+Fields describe subject matter, not difficulty. Consult **Required topics** for
+more specific prerequisites and the statement and proof levels for the
+background needed to understand them.
 
 ## Understanding statement levels
 
