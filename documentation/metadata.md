@@ -230,3 +230,30 @@ assessment, and source attribution. It has no proof-level assessment.
 The note **“No proof is included in the source article”** describes the source.
 It does not mean that no proof is known. If the source contains an unusable
 argument, the availability note should explain that situation instead.
+
+## Related results
+
+**Related results** identifies other database entries with a recorded
+mathematical relationship to the current result.
+
+Each relationship label describes the **listed result relative to the result
+you are currently viewing**:
+
+| Label | Meaning |
+| --- | --- |
+| broader | The listed result is more general or has stronger conclusions than the current result. |
+| equivalent | The listed result expresses equivalent mathematical content, possibly in a different formulation. |
+| narrower | The listed result is a special case or has weaker conclusions than the current result. |
+| related_only | The results have a mathematical connection, but the recorded relationship does not assert equivalence or that either is broader than the other. |
+
+For example, when viewing a special case, its general theorem is labelled
+**broader**. When viewing the general theorem, that special case is labelled
+**narrower**.
+
+These labels compare mathematical statements. A result used in another result’s
+proof is not automatically broader, and a broader result need not have greater
+importance or a more difficult proof. Some relationships require mathematical
+explanation to recognize.
+
+The list is not exhaustive. An absent link does not mean that two results are
+unrelated.
