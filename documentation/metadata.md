@@ -12,6 +12,7 @@ The assessments and subject classifications answer different questions:
 | Assessment or classification | Question it answers |
 | --- | --- |
 | Importance | How much independent mathematical significance does this result have? |
+| Philosophical significance | What connection does this result have to philosophical questions, directly or through its role in another result? |
 | Mathematical Field | Which broad mathematical subjects does the statement concern? |
 | Fields Used Beyond Statement | Which additional subjects does this particular proof use beyond those listed for the statement? |
 | Statement level | What background is needed to understand the complete claim? |
@@ -63,6 +64,36 @@ and statements with additional conclusions. A special case may have exceptional
 historical significance, so broader scope does not automatically require a higher
 importance rating. Such differences call for individual assessment and an
 explanation, rather than a rigid ordering by generality.
+
+## Philosophical significance
+
+Some entries include a **Philosophical significance** assessment. Expand its
+level label to read an explanation of the result’s connection to questions
+about foundations, truth and proof, knowledge, infinity, evidence, randomness,
+physical explanation, or collective rationality and fairness.
+
+| Level | How to interpret it |
+| --- | --- |
+| Major | The result itself establishes a fundamental philosophical limit, incompatibility, or substantial revision of basic intuitions about truth, knowledge, infinity, reality, or collective rationality. |
+| Medium | The result has a substantial philosophical connection or explanatory role, but its broader force depends more on interpretation or application, or its reach is more specialized. |
+| Minor | The result has a direct but narrower or illustrative philosophical significance, meaningful in its own right. |
+| Auxiliary | The result’s philosophical relevance comes chiefly from its supporting role in the proof or proof strategy of another result. The explanation identifies that result and the supporting role. |
+
+These levels concern philosophical significance, rather than technical
+difficulty or mathematical fame. A short proof or use in another proof does
+not, by itself, make a result auxiliary. Read the explanation alongside the
+level: the connection may depend on particular assumptions, and a mathematical
+theorem does not by itself settle every philosophical interpretation attached
+to it.
+
+Philosophical significance and mathematical importance answer different
+questions, but the database links them through an editorial policy: entries
+with Major or Medium philosophical significance receive High importance; those
+with Minor or Auxiliary significance receive at least Medium importance.
+
+If no philosophical significance assessment is shown, no sufficiently direct
+connection was identified in the review. This does not rule out other
+philosophical interpretations.
 
 ## Mathematical fields
 
