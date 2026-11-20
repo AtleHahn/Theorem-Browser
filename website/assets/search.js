@@ -61,8 +61,6 @@
     const params = new URLSearchParams(current);
     if (reset) {
       for (const name of ['q', 'fields', 'sources', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count']) params.delete(name);
-    } else if (!params.has('state') && !params.has('count')) {
-      params.set('count', 'at least one');
     }
     params.set('state', '1');
     params.set('sources', url);

@@ -86,6 +86,8 @@ function updateNoteworthiness(settings) {
   for (const overview of document.querySelectorAll('[data-noteworthiness]')) {
     const data = JSON.parse(overview.dataset.noteworthiness);
     const reasons = ProofNoteworthiness.reasons(data, settings);
+    const note = overview.querySelector('[data-no-proof-note]');
+    if (note) note.hidden = !reasons.includes('High school level Statement with no proof in database');
     const displayed = data.proof_level_issue ? [...reasons, 'Potential Issue'] : reasons;
     const field = overview.querySelector('[data-noteworthiness-field]');
     field.hidden = !displayed.length;

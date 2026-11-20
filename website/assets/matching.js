@@ -8,7 +8,6 @@
   noteworthyValues.forEach(value => params.append('noteworthy', value));
   const filters = Object.fromEntries(['fields', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count', 'sources']
     .map(name => [name, params.getAll(name)]));
-  if (!params.has('state') && !params.has('count')) filters.count = ['at least one'];
   let settings = ProofNoteworthiness.current();
   try {
     const value = JSON.parse(params.get('settings'));

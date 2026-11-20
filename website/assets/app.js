@@ -32,6 +32,7 @@
     'Has at least one proof with concepts from a different area',
     'High school level Statement – Lowest proof level: undergraduate',
     'High school level Statement – Lowest proof level: beyond undergraduate',
+    'High school level Statement with no proof in database',
     'Undergraduate level Statement – Lowest proof level: beyond undergraduate',
     'Has many Proofs', 'Philosophically significant']);
   options('issue', ['No potential issues',
@@ -81,7 +82,7 @@
     $('query').value = params.get('q') || '';
     $('case-insensitive').checked = params.get('case') !== 'sensitive';
     filterNames.forEach(name => {
-      const values = name === 'count' && !params.has('state') && !params.has('count') ? ['at least one'] : params.getAll(name).map(value => name === 'issue' ? ProofSearch.issueLabel(value) : name === 'noteworthy' ? ProofSearch.noteworthinessLabel(value) : value);
+      const values = params.getAll(name).map(value => name === 'issue' ? ProofSearch.issueLabel(value) : name === 'noteworthy' ? ProofSearch.noteworthinessLabel(value) : value);
       for (const option of $(name).options) option.selected = values.includes(option.value);
       if (!$(name).multiple && !values.length) $(name).value = '';
     });
@@ -176,7 +177,7 @@
   [...filterNames, 'case-insensitive'].forEach(name => $(name).addEventListener('change', render));
   $('reset').addEventListener('click', () => {
     $('query').value = ''; $('case-insensitive').checked = true;
-    filterNames.forEach(name => { for (const option of $(name).options) option.selected = name === 'count' && option.value === 'at least one'; if (!$(name).multiple) $(name).value = ''; });
+    filterNames.forEach(name => { for (const option of $(name).options) option.selected = false; if (!$(name).multiple) $(name).value = ''; });
     multiControls.forEach(refresh => refresh()); render();
   });
   $('document-select').addEventListener('change', () => { selected = $('document-select').value; $('document-picker').open = false; showDocument(); });
