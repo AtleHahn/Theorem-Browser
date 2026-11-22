@@ -3,6 +3,9 @@
   'use strict';
   // Retain the optional policy for future restoration; enforce the default while hidden.
   const showIssueExclusionSetting = false;
+  // Keep in sync with presentation.py when restoring this display option.
+  const showStatementOnlyNoteworthinessOption = false;
+  const statementOnlyNoteworthinessLabel = 'High school level Statement with no proof in database';
   const fieldModes = ['appears in statement', 'appears exclusively in statement', 'does NOT appear in statement but in at least one proof'];
   const defaults = {min_proof_count_for_noteworthiness: 3,
     exclude_simpler_proof_warnings_from_noteworthiness: true,
@@ -46,7 +49,7 @@
     if (philosophicalSignificance(row, config)) result.unshift('Philosophically significant');
     return result;
   }
-  const api = {showIssueExclusionSetting, philosophicalSignificance, fieldModes, reasons, issues, betterIssue, current: () => ({...settings}), set: value => { settings = normalize(value); }};
+  const api = {showStatementOnlyNoteworthinessOption, statementOnlyNoteworthinessLabel, showIssueExclusionSetting, philosophicalSignificance, fieldModes, reasons, issues, betterIssue, current: () => ({...settings}), set: value => { settings = normalize(value); }};
   root.ProofNoteworthiness = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(typeof window === 'undefined' ? globalThis : window);

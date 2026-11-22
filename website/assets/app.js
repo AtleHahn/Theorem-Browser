@@ -30,13 +30,14 @@
   // "any" is temporarily hidden; ProofSearch retains its aggregation logic.
   options('noteworthy', [
     'Has at least one proof with concepts from a different area',
-    'High school level Statement – Lowest proof level: undergraduate',
     'High school level Statement – Lowest proof level: beyond undergraduate',
-    'High school level Statement with no proof in database',
+    'High school level Statement – Lowest proof level: undergraduate',
+    ...(ProofNoteworthiness.showStatementOnlyNoteworthinessOption ? [ProofNoteworthiness.statementOnlyNoteworthinessLabel] : []),
     'Undergraduate level Statement – Lowest proof level: beyond undergraduate',
     'Has many Proofs', 'Philosophically significant']);
   options('issue', ['No potential issues',
-    'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue], {'No potential issues': 'No warnings'});
+    'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue,
+    'Unclear or unassessed proof level', 'Proof rated below statement level', 'Missing proof-level assessments'], {'No potential issues': 'No warnings'});
   options('importance', ['at least medium', 'high', 'medium', 'low']);
   options('count', ['at least one', ...unique(rows.map(row => row.count).filter(Boolean)).sort((a, b) => Number(a) - Number(b))]);
   document.querySelector('label[for="sources"]').textContent += ` (${$('sources').options.length.toLocaleString()})`;

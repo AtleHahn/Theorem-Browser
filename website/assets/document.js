@@ -87,14 +87,14 @@ function updateNoteworthiness(settings) {
     const data = JSON.parse(overview.dataset.noteworthiness);
     const reasons = ProofNoteworthiness.reasons(data, settings);
     const note = overview.querySelector('[data-no-proof-note]');
-    if (note) note.hidden = !reasons.includes('High school level Statement with no proof in database');
-    const displayed = data.proof_level_issue ? [...reasons, 'Potential Issue'] : reasons;
+    if (note) note.hidden = !ProofNoteworthiness.showStatementOnlyNoteworthinessOption || !reasons.includes(ProofNoteworthiness.statementOnlyNoteworthinessLabel);
+    const displayed = reasons.filter(reason => ProofNoteworthiness.showStatementOnlyNoteworthinessOption || reason !== ProofNoteworthiness.statementOnlyNoteworthinessLabel);
     const field = overview.querySelector('[data-noteworthiness-field]');
     field.hidden = !displayed.length;
     const badges = document.createElement('div'); badges.className = 'badges';
     for (const reason of displayed) {
       const badge = document.createElement('span');
-      badge.className = 'badge ' + (reason === 'Potential Issue' ? 'red' : 'gold');
+      badge.className = 'badge gold';
       badge.textContent = reason; badges.append(badge);
     }
     field.querySelector('.field-value').replaceChildren(badges);
