@@ -31,11 +31,13 @@ The most useful filters for exploring the database are:
 - **Mathematical Fields**
 - **Statement level**
 
+Before trying the examples below, open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) if you haven’t already.
+
 ### Example 1: Find results with proofs using concepts from a different area
 
 Find results with at least one recorded proof using concepts from a mathematical area absent from the statement.
 
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
+1. Click **Reset** to restore the default search and filters.
 2. Under **Noteworthiness**, select **Has at least one proof with concepts from a different area**.
 3. Browse the matching results and explore their proofs, especially **Fields Used Beyond Statement**, to see which additional areas they use.
 
@@ -43,7 +45,7 @@ Note that Noteworthiness requires medium or high importance.
 
 ### Example 2: Find philosophically significant results
 
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
+1. Click **Reset** to restore the default search and filters.
 2. Under **Noteworthiness**, select **Philosophically significant**.
 3. Browse the matching results and explore their statements and any recorded proofs.
 
@@ -53,7 +55,7 @@ Note that you can change the minimum philosophical significance level in **Setti
 
 To find all results in the database classified as highly important whose statements involve complex analysis:
 
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
+1. Click **Reset** to restore the default search and filters.
 2. In **Settings**, set **Search item in Mathematical Fields** to **appears in statement**, then choose **Save settings**.
 3. Under **Mathematical Fields**, select **Complex Analysis**.
 4. Under **Importance**, select **high**.
@@ -65,7 +67,7 @@ Here, “major” means rated **high** in the database's Importance assessment.
 
 Find statements that involve no concepts from algebraic topology but have at least one proof that uses its methods.
 
-1. Open the [Theorem Browser](https://atlehahn.github.io/Theorem-Browser/website/index.html) and reset the search and filters to their defaults.
+1. Click **Reset** to restore the default search and filters.
 2. Under **Mathematical Fields**, select **Algebraic topology**.
 3. In **Settings**, set **Search item in Mathematical Fields** to **does NOT appear in statement but in at least one proof**, then choose **Save settings**.
 4. Open a matching result and examine its proofs, especially **Fields Used Beyond Statement**, to see how these methods are used.
