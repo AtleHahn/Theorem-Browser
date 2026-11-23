@@ -43,15 +43,7 @@ Find results with at least one recorded proof using concepts from a mathematical
 
 Note that Noteworthiness requires medium or high importance.
 
-### Example 2: Find philosophically significant results
-
-1. Click **Reset** to restore the default search and filters.
-2. Under **Noteworthiness**, select **Philosophically significant**.
-3. Browse the matching results and explore their statements and any recorded proofs.
-
-Note that you can change the minimum philosophical significance level in **Settings**.
-
-### Example 3: Find major results in complex analysis
+### Example 2: Find major results in complex analysis
 
 To find all results in the database classified as highly important whose statements involve complex analysis:
 
@@ -63,7 +55,7 @@ To find all results in the database classified as highly important whose stateme
 
 Here, “major” means rated **high** in the database's Importance assessment.
 
-### Example 4: Find proofs that use algebraic topology as a tool
+### Example 3: Find proofs that use algebraic topology as a tool
 
 Find statements that involve no concepts from algebraic topology but have at least one proof that uses its methods.
 
@@ -73,3 +65,11 @@ Find statements that involve no concepts from algebraic topology but have at lea
 4. Open a matching result and examine its proofs, especially **Fields Used Beyond Statement**, to see how these methods are used.
 
 This search excludes statements classified under algebraic topology and requires at least one proof to use it beyond the statement.
+
+### Example 4: Find philosophically significant results
+
+1. Click **Reset** to restore the default search and filters.
+2. Under **Noteworthiness**, select **Philosophically significant**.
+3. Browse the matching results. Notice that most are from **Mathematical Logic**.
+4. In **Settings**, change **Minimum philosophical significance for Noteworthiness** to **Major or medium**, then choose **Save settings**.
+5. Try different options under **Mathematical Fields** to discover which other fields have matching results.
