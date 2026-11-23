@@ -70,6 +70,6 @@ This search excludes statements classified under algebraic topology and requires
 
 1. Click **Reset** to restore the default search and filters.
 2. Under **Noteworthiness**, select **Philosophically significant**.
-3. Browse the matching results. Notice that most are from **Mathematical Logic**.
+3. Browse the matching results. Click the expander beside **Philosophical significance** to see why a result is significant. Notice that most results are from **Mathematical Logic**.
 4. In **Settings**, change **Minimum philosophical significance for Noteworthiness** to **Major or medium**, then choose **Save settings**.
 5. Try different options under **Mathematical Fields** to discover which other fields have matching results.
