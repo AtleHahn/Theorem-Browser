@@ -2,7 +2,7 @@
 
 Discover interesting mathematical results and explore their proofs.
 
-- **[Explore the database](https://atlehahn.github.io/Theorem-Browser/website/index.html)**
+- **[Explore the database](https://atlehahn.github.io/Theorem-Browser/website/index.html)** 👈
 
 This project is a work in progress. See the [current limitations](documentation/todo.md#current-limitations).
 
@@ -15,7 +15,7 @@ This project is a work in progress. See the [current limitations](documentation/
 
 ## Why this project?
 
-As AI advances, mathematical research and work in many other professions will increasingly be automated. [Mathematics pursued for enjoyment](documentation/recreational_math.md) is therefore likely to become more important, both for professional mathematicians and for mathematically interested people in other fields.
+As AI advances, mathematical research and work in many other professions will increasingly be automated. [Mathematics pursued for enjoyment](documentation/recreational_math.md) is therefore likely to become much more important, both for professional mathematicians and for mathematically interested people in other fields.
 
 We believe that a mathematical analogue of the [Internet Movie Database (IMDb)](https://www.imdb.com/) could soon be useful in helping people find the results and proofs
 they would most enjoy exploring.
