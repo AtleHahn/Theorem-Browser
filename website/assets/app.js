@@ -29,7 +29,7 @@
   options('statement', data.levels); options('proof', data.levels);
   // "any" is temporarily hidden; ProofSearch retains its aggregation logic.
   options('noteworthy', [
-    'Has at least one proof with concepts from a different area',
+    'Has at least one proof using concepts from a different mathematical field',
     'High school level Statement – Lowest proof level: beyond undergraduate',
     'High school level Statement – Lowest proof level: undergraduate',
     ...(ProofNoteworthiness.showStatementOnlyNoteworthinessOption ? [ProofNoteworthiness.statementOnlyNoteworthinessLabel] : []),
@@ -177,6 +177,11 @@
   $('query').addEventListener('input', () => { ++generation; clearTimeout(debounce); debounce = setTimeout(render, 160); });
   [...filterNames, 'case-insensitive'].forEach(name => $(name).addEventListener('change', render));
   $('reset').addEventListener('click', () => {
+    clearTimeout(debounce);
+    window.ProofSettings.reset();
+    updateNoteworthiness();
+    selected = ''; pendingDocument = null; activeTab = 0; currentURL = '';
+    $('document-search').value = ''; $('document-picker').open = false;
     $('query').value = ''; $('case-insensitive').checked = true;
     filterNames.forEach(name => { for (const option of $(name).options) option.selected = false; if (!$(name).multiple) $(name).value = ''; });
     multiControls.forEach(refresh => refresh()); render();

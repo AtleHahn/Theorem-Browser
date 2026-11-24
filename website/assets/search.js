@@ -22,6 +22,7 @@
   }
   function noteworthinessLabel(value) {
     const renamed = {
+      "Has at least one proof with concepts from a different area": "Has at least one proof using concepts from a different mathematical field",
       "Highschool level Statement - All proofs have at least undergraduate level": "High school level Statement – Lowest proof level: undergraduate",
       "Highschool level Statement - All proofs beyond undergraduate level": "High school level Statement – Lowest proof level: beyond undergraduate",
       "Undergraduate level Statement - All proofs beyond undergraduate level": "Undergraduate level Statement – Lowest proof level: beyond undergraduate"

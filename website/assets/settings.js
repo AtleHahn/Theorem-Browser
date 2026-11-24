@@ -39,6 +39,12 @@
     for (const level of ['major', 'medium', 'minor']) $('settings-philosophy-' + level).checked = settings.minimum_philosophical_significance_level === level;
     $('settings-dialog').showModal();
   });
+  window.ProofSettings = {reset() {
+    settings = {...defaults};
+    try { sessionStorage.setItem(storageKey, JSON.stringify(settings)); } catch (_) { /* Keep in memory. */ }
+    ProofNoteworthiness.set(settings);
+    $('settings-dialog').close();
+  }};
   $('settings-cancel').addEventListener('click', () => $('settings-dialog').close());
   $('settings-form').addEventListener('submit', event => {
     event.preventDefault();

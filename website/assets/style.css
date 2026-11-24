@@ -68,3 +68,10 @@ aside{position:sticky;top:0;height:100vh;overflow-y:auto}.help[open]>.hint{width
 #matching-documents>li>a{font-weight:600}
 .matching-filename{display:block}
 .matching-details{font-size:.85em}
+
+/* Match the viewer's neutral Reset and Settings buttons. */
+:is(#reset,#settings),:is(#reset,#settings):hover,:is(#reset,#settings):focus{color:var(--ink);background:#fff;border-color:#b8bbc2}
+
+/* Equal button widths with a little more separation in the sidebar. */
+#settings,#reset{width:7rem}
+#reset{margin-left:1rem}
