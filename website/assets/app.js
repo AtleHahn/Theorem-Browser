@@ -84,6 +84,9 @@
   function restore(params = new URLSearchParams(location.hash.slice(1))) {
     $('query').value = params.get('q') || '';
     $('case-insensitive').checked = params.get('case') !== 'sensitive';
+    $('exclude-enabled').checked = params.get('excludeEnabled') === '1';
+    $('exclude-text').value = params.get('exclude') || '';
+    $('exclude-controls').hidden = !$('exclude-enabled').checked;
     filterNames.forEach(name => {
       const values = ProofSearch.filterValues(name, params.getAll(name));
       for (const option of $(name).options) option.selected = values.includes(option.value);
@@ -97,6 +100,8 @@
   function save() {
     const params = new URLSearchParams({state: '1'});
     if ($('query').value) params.set('q', $('query').value);
+    if ($('exclude-enabled').checked) params.set('excludeEnabled', '1');
+    if ($('exclude-text').value) params.set('exclude', $('exclude-text').value);
     if (!$('case-insensitive').checked) params.set('case', 'sensitive');
     for (const [name, values] of Object.entries(state())) values.forEach(v => params.append(name, v));
     if (selected) params.set('document', selected);
@@ -150,13 +155,14 @@
   async function render() {
     const current = ++generation;
     let index = window.PROOF_SEARCH_INDEX;
-    if (ProofSearch.searchTerms($('query').value, data.casefold, $('case-insensitive').checked).length && !index) {
+    const excludedText = $('exclude-enabled').checked ? $('exclude-text').value : '';
+    if ((excludedText || ProofSearch.searchTerms($('query').value, data.casefold, $('case-insensitive').checked).length) && !index) {
       $('status').textContent = 'Loading search index…';
       try { index = await loadIndex(); }
       catch (error) { if (current === generation) $('status').textContent = error.message; return; }
     }
     if (current !== generation) return;
-    found = ProofSearch.search(rows, index, $('query').value, 'all', state(), data.casefold, $('case-insensitive').checked, ProofNoteworthiness.current().mathematical_field_search_mode);
+    found = ProofSearch.search(rows, index, $('query').value, 'all', state(), data.casefold, $('case-insensitive').checked, ProofNoteworthiness.current().mathematical_field_search_mode, excludedText);
     if (pendingDocument) {
       const target = pendingDocument;
       pendingDocument = null;
@@ -176,7 +182,11 @@
     showDocument();
   }
   let debounce;
-  $('query').addEventListener('input', () => { ++generation; clearTimeout(debounce); debounce = setTimeout(render, 160); });
+  for (const id of ['query', 'exclude-text']) $(id).addEventListener('input', () => { ++generation; clearTimeout(debounce); debounce = setTimeout(render, 160); });
+  $('exclude-enabled').addEventListener('change', () => {
+    $('exclude-controls').hidden = !$('exclude-enabled').checked;
+    render();
+  });
   [...filterNames, 'case-insensitive'].forEach(name => $(name).addEventListener('change', render));
   $('reset').addEventListener('click', () => {
     clearTimeout(debounce);
@@ -185,6 +195,7 @@
     selected = ''; pendingDocument = null; activeTab = 0; currentURL = '';
     $('document-search').value = ''; $('document-picker').open = false;
     $('query').value = ''; $('case-insensitive').checked = true;
+    $('exclude-enabled').checked = false; $('exclude-text').value = ''; $('exclude-controls').hidden = true;
     filterNames.forEach(name => { for (const option of $(name).options) option.selected = false; if (!$(name).multiple) $(name).value = ''; });
     document.querySelectorAll('.multiselect').forEach(menu => {
       menu.open = false;

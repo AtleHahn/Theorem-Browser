@@ -6,7 +6,7 @@
   // Keep in sync with presentation.py when restoring this display option.
   const showStatementOnlyNoteworthinessOption = false;
   const statementOnlyNoteworthinessLabel = 'High school level Statement with no proof in database';
-  const fieldModes = ['appears in statement', 'appears exclusively in statement', 'does NOT appear in statement but in at least one proof'];
+  const fieldModes = ['appears in statement', 'appears in statement or in at least one proof', 'does NOT appear in statement but in at least one proof', 'does not appear in statement nor in any proof'];
   const defaults = {min_proof_count_for_noteworthiness: 3,
     exclude_simpler_proof_warnings_from_noteworthiness: true,
     minimum_philosophical_significance_level: 'major',

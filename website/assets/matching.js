@@ -15,7 +15,8 @@
   } catch (_) { /* Use saved defaults for a malformed link. */ }
   const rows = window.PROOF_CATALOGUE.documents.map(row => ({...row, issue: ProofNoteworthiness.issues(row, settings), noteworthy: ProofNoteworthiness.reasons(row, settings)}));
   const found = ProofSearch.search(rows, window.PROOF_SEARCH_INDEX, params.get('q') || '', 'all', filters,
-    window.PROOF_CATALOGUE.casefold, params.get('case') !== 'sensitive', settings.mathematical_field_search_mode);
+    window.PROOF_CATALOGUE.casefold, params.get('case') !== 'sensitive', settings.mathematical_field_search_mode,
+    params.get('excludeEnabled') === '1' ? params.get('exclude') || '' : '');
   document.getElementById('matching-count').textContent = `${found.length.toLocaleString()} matching documents`;
   const list = document.getElementById('matching-documents');
   for (const index of found) {

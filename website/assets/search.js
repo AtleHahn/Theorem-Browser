@@ -12,7 +12,8 @@
     if (!selected.length) return true;
     const statement = row.fields || [], proofs = row.proof_fields || [];
     const inStatement = selected.some(field => statement.includes(field));
-    if (mode === 'appears exclusively in statement') return statement.length > 0 && statement.every(field => selected.includes(field));
+    if (mode === 'appears in statement or in at least one proof') return inStatement || selected.some(field => proofs.includes(field));
+    if (mode === 'does not appear in statement nor in any proof') return !inStatement && !selected.some(field => proofs.includes(field));
     if (mode === 'does NOT appear in statement but in at least one proof') return !inStatement && selected.some(field => proofs.includes(field));
     return inStatement;
   }
@@ -67,15 +68,17 @@
     const terms = Array.from(query.matchAll(/"([^"]*)(?:"|$)|([^\s"]+)/gu), match => match[1] ?? match[2]).filter(Boolean);
     return caseInsensitive ? terms.map(term => fold(term, mapping)) : terms;
   }
-  function search(rows, index, query, scope, filters, mapping, caseInsensitive = true, fieldMode = 'appears in statement') {
+  function search(rows, index, query, scope, filters, mapping, caseInsensitive = true, fieldMode = 'appears in statement', excludedText = '') {
     const terms = searchTerms(query, mapping, caseInsensitive);
+    const excluded = caseInsensitive ? fold(excludedText, mapping) : excludedText;
     return rows.flatMap((row, i) => matches(row, filters, fieldMode) &&
+      (!excluded || !index[i][caseInsensitive ? scope : 'raw'].includes(excluded)) &&
       (!terms.length || terms.every(term => index[i][caseInsensitive ? scope : 'raw'].includes(term))) ? [i] : []);
   }
   function sourceParams(current, url, reset = true) {
     const params = new URLSearchParams(current);
     if (reset) {
-      for (const name of ['q', 'fields', 'sources', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count']) params.delete(name);
+      for (const name of ['q', 'exclude', 'excludeEnabled', 'fields', 'sources', 'statement', 'proof', 'noteworthy', 'issue', 'importance', 'count']) params.delete(name);
     }
     params.set('state', '1');
     params.set('sources', url);

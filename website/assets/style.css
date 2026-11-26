@@ -75,3 +75,5 @@ aside{position:sticky;top:0;height:100vh;overflow-y:auto}.help[open]>.hint{width
 /* Equal button widths with a little more separation in the sidebar. */
 #settings,#reset{width:7rem}
 #reset{margin-left:1rem}
+
+.search-options{display:flex;gap:16px;flex-wrap:wrap}.search-options label{display:flex;align-items:center;gap:5px}
