@@ -26,7 +26,8 @@
   options('fields', unique(rows.flatMap(row => [...row.fields, ...(row.proof_fields || [])])));
   const sourceLabels = Object.assign({}, ...rows.map(row => row.sources));
   options('sources', Object.keys(sourceLabels).sort((a, b) => sourceLabels[a].localeCompare(sourceLabels[b]) || a.localeCompare(b)), sourceLabels);
-  options('statement', data.levels); options('proof', data.levels);
+  const visibleLevels = data.levels.filter(level => level !== 'Within undergraduate level');
+  options('statement', visibleLevels); options('proof', visibleLevels);
   // "any" is temporarily hidden; ProofSearch retains its aggregation logic.
   options('noteworthy', [
     'Has at least one proof using concepts from a different mathematical field',
@@ -38,7 +39,7 @@
   options('issue', ['No potential issues',
     'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue,
     'Unclear or unassessed proof level', 'Proof rated below statement level', 'Missing proof-level assessments'], {'No potential issues': 'No warnings'});
-  options('importance', ['at least medium', 'high', 'medium', 'low']);
+  options('importance', ['high', 'medium', 'low']);
   options('count', ['at least one', ...unique(rows.map(row => row.count).filter(Boolean)).sort((a, b) => Number(a) - Number(b))]);
   document.querySelector('label[for="sources"]').textContent += ` (${$('sources').options.length.toLocaleString()})`;
   // Searchable checkbox menus retain native select state for one filtering path.
@@ -46,6 +47,7 @@
     const select = $(id), menu = document.createElement('details'), summary = document.createElement('summary');
     menu.className = 'multiselect'; menu.append(summary); select.after(menu); select.hidden = true;
     const search = document.createElement('input'); search.type = 'search'; search.placeholder = 'Search options';
+    search.hidden = !['fields', 'sources'].includes(id);
     search.setAttribute('aria-label', `Search ${document.querySelector(`label[for="${id}"]`).textContent}`);
     const list = document.createElement('div'); list.className = 'option-list'; menu.append(search, list);
     const refresh = () => {
@@ -83,7 +85,7 @@
     $('query').value = params.get('q') || '';
     $('case-insensitive').checked = params.get('case') !== 'sensitive';
     filterNames.forEach(name => {
-      const values = params.getAll(name).map(value => name === 'issue' ? ProofSearch.issueLabel(value) : name === 'noteworthy' ? ProofSearch.noteworthinessLabel(value) : value);
+      const values = ProofSearch.filterValues(name, params.getAll(name));
       for (const option of $(name).options) option.selected = values.includes(option.value);
       if (!$(name).multiple && !values.length) $(name).value = '';
     });
@@ -184,6 +186,10 @@
     $('document-search').value = ''; $('document-picker').open = false;
     $('query').value = ''; $('case-insensitive').checked = true;
     filterNames.forEach(name => { for (const option of $(name).options) option.selected = false; if (!$(name).multiple) $(name).value = ''; });
+    document.querySelectorAll('.multiselect').forEach(menu => {
+      menu.open = false;
+      menu.querySelector('input[type="search"]').value = '';
+    });
     multiControls.forEach(refresh => refresh()); render();
   });
   $('document-select').addEventListener('change', () => { selected = $('document-select').value; $('document-picker').open = false; showDocument(); });

@@ -29,10 +29,24 @@
 };
     return renamed[value] || value;
   }
+  // Expand retired combined choices when restoring saved links or searching them directly.
+  function filterValues(field, values = []) {
+    if (typeof values === 'string') values = [values];
+    return [...new Set(values.flatMap(value => {
+      if (field === 'statement' || field === 'proof') {
+        if (!value || value === 'Any level') return [];
+        if (value === 'Within undergraduate level') return ['High school only', 'Undergraduate level'];
+      }
+      if (field === 'importance' && value === 'at least medium') return ['high', 'medium'];
+      if (field === 'issue') return [issueLabel(value)];
+      if (field === 'noteworthy') return [noteworthinessLabel(value)];
+      return [value];
+    }))];
+  }
   function matches(row, filters, fieldMode = 'appears in statement') {
     if (!matchesFields(row, filters.fields || [], fieldMode)) return false;
     for (const field of ['sources', 'statement', 'proof', 'count', 'importance', 'issue']) {
-      const selected = (filters[field] || []).map(value => field === 'issue' ? issueLabel(value) : value);
+      const selected = filterValues(field, filters[field]);
       if (!selected.length) continue;
       let values = field === 'sources' ? Object.keys(row.sources) : row[field];
       if (!Array.isArray(values)) values = [values];
@@ -76,7 +90,7 @@
     const query = new URLSearchParams({related: filename});
     return '../index.html?' + query + '#' + params;
   }
-  const api = {noteworthinessLabel, relatedDocumentURL, issueLabel, fold, matchesFields, matches, search, searchTerms, sourceParams, documentLabel};
+  const api = {filterValues, noteworthinessLabel, relatedDocumentURL, issueLabel, fold, matchesFields, matches, search, searchTerms, sourceParams, documentLabel};
   if (typeof module !== 'undefined') module.exports = api;
   root.ProofSearch = api;
 })(typeof window === 'undefined' ? globalThis : window);
