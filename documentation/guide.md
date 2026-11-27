@@ -48,10 +48,9 @@ Note that Noteworthiness requires medium or high importance.
 To find all results in the database classified as highly important whose statements involve complex analysis:
 
 1. Click **Reset** to restore the default search and filters.
-2. In **Settings**, set **Search item in Mathematical Fields** to **appears in statement**, then choose **Save settings**.
-3. Under **Mathematical Fields**, select **Complex Analysis**.
-4. Under **Importance**, select **high**.
-5. Browse the matching results and explore their statements and any recorded proofs.
+2. Under **Mathematical Fields**, select **Complex Analysis**.
+3. Under **Importance**, select **high**.
+4. Browse the matching results and explore their statements and any recorded proofs.
 
 Here, “major” means rated **high** in the database's Importance assessment.
 
@@ -71,5 +70,7 @@ This search excludes statements classified under algebraic topology and requires
 1. Click **Reset** to restore the default search and filters.
 2. Under **Noteworthiness**, select **Philosophically significant**.
 3. Browse the matching results. Click the expander beside **Philosophical significance** to see why a result is significant. Notice that most results are from **Mathematical Logic**.
-4. In **Settings**, change **Minimum philosophical significance for Noteworthiness** to **Major or medium**, then choose **Save settings**.
-5. Try different options under **Mathematical Fields** to discover which other fields have matching results.
+4. In **Settings**, change **Minimum philosophical significance for Noteworthiness** to **Major or medium**, then choose **Save settings**. This roughly triples the number of matching results.
+5. In **Settings**, set **Search item in Mathematical Fields** to **does not appear in statement nor in any proof**, then choose **Save settings**.
+6. Under **Mathematical Fields**, select **Mathematical Logic**.
+7. Browse the matching results to explore philosophically significant results that involve no concepts from mathematical logic in their statements or recorded proofs.
