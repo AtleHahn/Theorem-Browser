@@ -30,12 +30,13 @@
   options('statement', visibleLevels); options('proof', visibleLevels);
   // "any" is temporarily hidden; ProofSearch retains its aggregation logic.
   options('noteworthy', [
+    'Philosophically significant',
     'Has at least one proof using concepts from a different mathematical field',
     'High school level Statement – Lowest proof level: beyond undergraduate',
     'High school level Statement – Lowest proof level: undergraduate',
     ...(ProofNoteworthiness.showStatementOnlyNoteworthinessOption ? [ProofNoteworthiness.statementOnlyNoteworthinessLabel] : []),
     'Undergraduate level Statement – Lowest proof level: beyond undergraduate',
-    'Has many Proofs', 'Philosophically significant']);
+    'Has many Proofs']);
   options('issue', ['No potential issues',
     'Simpler proof likely available', 'May have an unsatisfactory proof', ProofNoteworthiness.betterIssue,
     'Unclear or unassessed proof level', 'Proof rated below statement level', 'Missing proof-level assessments'], {'No potential issues': 'No warnings'});
